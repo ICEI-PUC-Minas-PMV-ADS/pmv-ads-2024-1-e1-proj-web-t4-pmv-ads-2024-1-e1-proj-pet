@@ -26,13 +26,13 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 ### Processo
 
 | Ferramenta    | Plataforma    | Link de Acesso |
-| ------------- | ------------- | -------------- |
-| Comunicação  | WhatsApp, Microsoft Teams | WhatsApp, Microsoft Teams |
+| ------------- | ------------- | :--------------: |
+| Comunicação  | WhatsApp, Microsoft Teams | [WhatsApp](https://chat.whatsapp.com/L3GuUVdSou61DLyppwq2sW), [Microsoft Teams](https://www.figma.com/files/team/1357489104899224107/Pet-in-a-Flat?fuid=1357620730416371658) |
 | Ferramenta de desenvolvimento  | Visual Studio Code, Terminal | --   |
-| Gerenciamento de Projeto  | GitHub  | GitHub   |
-| Repositório de Código Fonte  | GitHub | Repositório GitHub |
+| Gerenciamento de Projeto  | GitHub  | [GitHub](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/970)   |
+| Repositório de Código Fonte  | GitHub | [Repositório GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet) |
 | Servidor de Hospedagem | Não definido | --  |
-| Wireframes | Figma  | Figma   |
+| Wireframes | Figma  | [Figma](https://www.figma.com/files/team/1357489104899224107/Pet-in-a-Flat?fuid=1357620730416371658)   |
 
 
 A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Project para acompanhar o andamento das atividades a serem realizadas até a sua conclusão. O quadro Kanban tem a seguinte estrutura:
