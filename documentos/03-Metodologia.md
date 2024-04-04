@@ -28,7 +28,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 | Ferramenta    | Plataforma    | Link de Acesso |
 | ------------- | ------------- | -------------- |
 | Comunicação  | WhatsApp, Microsoft Teams | WhatsApp, Microsoft Teams |
-| Ferramenta de desenvolovimento  | Visual Studio Code, Terminal | --   |
+| Ferramenta de desenvolvimento  | Visual Studio Code, Terminal | --   |
 | Gerenciamento de Projeto  | GitHub  | GitHub   |
 | Repositório de Código Fonte  | GitHub | Repositório GitHub |
 | Servidor de Hospedagem | Não definido | --  |
