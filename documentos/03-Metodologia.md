@@ -65,7 +65,7 @@ A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Pr
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
-| Ambiente    | Plataforma    | Links de Acesso |
+| Ambiente    | Plataforma    | Link de Acesso |
 | ------------- | ------------- | :--------------: |
 | Repositório de Código Fonte  | GitHub | [Repositório GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet) |
 | Documentos do Projeto               | GitHub                             | [GitHub]()                       |
