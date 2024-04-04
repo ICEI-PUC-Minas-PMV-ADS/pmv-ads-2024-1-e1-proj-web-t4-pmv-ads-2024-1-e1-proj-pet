@@ -25,6 +25,16 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 
 ### Processo
 
+| Ferramenta    | Plataforma    | Link de Acesso |
+| ------------- | ------------- | -------------- |
+| Comunicação  | WhatsApp, Microsoft Teams | WhatsApp, Microsoft Teams |
+| Ferramenta de desenvolovimento  | Visual Studio Code, Terminal | --   |
+| Gerenciamento de Projeto  | GitHub  | GitHub   |
+| Repositório de Código Fonte  | GitHub | Repositório GitHub |
+| Servidor de Hospedagem | Não definido | --  |
+| Wireframes | Figma  | Figma   |
+
+
 A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Project para acompanhar o andamento das atividades a serem realizadas até a sua conclusão. O quadro Kanban tem a seguinte estrutura:
 
 - Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
