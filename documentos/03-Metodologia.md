@@ -25,15 +25,6 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 
 ### Processo
 
-| Ferramentas    | Plataformas    | Links de Acesso |
-| ------------- | ------------- | :--------------: |
-| Comunicação  | WhatsApp,<br /> Microsoft Teams | [WhatsApp](https://chat.whatsapp.com/L3GuUVdSou61DLyppwq2sW),<br /> [Microsoft Teams](https://www.figma.com/files/team/1357489104899224107/Pet-in-a-Flat?fuid=1357620730416371658) |
-| Desenvolvimento  | Visual Studio Code, Terminal | --   |
-| Gerenciamento de Projeto  | GitHub Project | [GitHub](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/970)   |
-| Repositório de Código Fonte  | GitHub | [Repositório GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet) |
-| Servidor de Hospedagem | Não definido | --  |
-| Wireframes | Figma  | [Figma](https://www.figma.com/files/team/1357489104899224107/Pet-in-a-Flat?fuid=1357620730416371658)   |
-
 
 A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Project para acompanhar o andamento das atividades a serem realizadas até a sua conclusão. O quadro Kanban tem a seguinte estrutura:
 
@@ -73,6 +64,15 @@ A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Pr
 [Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+
+| Ambiente    | Plataforma    | Links de Acesso |
+| ------------- | ------------- | :--------------: |
+| Repositório de Código Fonte  | GitHub | [Repositório GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet) |
+| Documentos do projeto               | GitHub                             | [GitHub]()                       |
+| Projeto de Interface | Figma  | [Figma](https://www.figma.com/files/team/1357489104899224107/Pet-in-a-Flat?fuid=1357620730416371658)   |
+| Gerenciamento do Projeto  | GitHub Project | [GitHub](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/970)   |
+| Hospedagem | GitHub Pages | --  |
+
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
