@@ -25,16 +25,57 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 
 ### Processo  
 
-A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Project para acompanhar o andamento das atividades a serem realizadas até a sua conclusão. O quadro Kanban tem a seguinte estrutura:
+A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Project para acompanhar o andamento das tarefas a serem realizadas até a sua conclusão. 
 
-- Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
-- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
-- Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
-- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.  
+São elas: 
 
+`Documentação de Contexto:`
+<ul>
+<li>Introdução</li>
+<li>Problema</li>
+<li>Objetivos</li>
+<li>Justificativa</li>
+<li>Público-alvo</li>
+</ul>
+
+`Especificação do Projeto:`
+<ul>
+<li>Perfis de Usuários</li>
+<li>Histórias de usuários</li>
+<li>Requisitos do Projeto</li>
+  <li>Requisitos Funcionais</li>
+  <li>Requisitos não-funcionais</li>
+</ul>
+
+`Metodologia:`
+<ul>
+<li>Gerenciamento de Projeto</li>
+    <li>Divisão de Papéis</li>
+    <li>Processo</li>
+    <li>Etiquetas</li>
+    <li>Ferramentas</li>
+</ul>
+
+`Projeto de Interface:`
+<ul>
+<li>User Flow</li>
+<li>Protótipo</li>
+  <li>Protótipo de baixa fidelidade</li>
+</ul>
+
+`Template Padrão da Aplicação`
+
+`Programação de Funcionalidades`
+
+`Plano de Testes de Software`
+
+`Registro de Testes de Software`
+
+`Referências Bibliográficas`
+
+No [GitHub Project](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/970) as *tasks* foram adicionadas a um quadro Kanban, que tem a seguinte estrutura:
 
   ![Imagem do quadro Kanban](/documentos/img/kanban.png)
-
 
 > **Links Úteis**:
 > - [Project management, made simple](https://github.com/features/project-management/)
