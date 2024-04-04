@@ -68,7 +68,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Ambiente    | Plataforma    | Links de Acesso |
 | ------------- | ------------- | :--------------: |
 | Repositório de Código Fonte  | GitHub | [Repositório GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet) |
-| Documentos do projeto               | GitHub                             | [GitHub]()                       |
+| Documentos do Projeto               | GitHub                             | [GitHub]()                       |
 | Projeto de Interface | Figma  | [Figma](https://www.figma.com/files/team/1357489104899224107/Pet-in-a-Flat?fuid=1357620730416371658)   |
 | Gerenciamento do Projeto  | GitHub Project | [GitHub](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/970)   |
 | Hospedagem | GitHub Pages | --  |
