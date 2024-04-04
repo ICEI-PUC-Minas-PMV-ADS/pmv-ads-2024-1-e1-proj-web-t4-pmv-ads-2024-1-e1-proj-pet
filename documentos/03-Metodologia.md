@@ -1,4 +1,3 @@
-teste
 # Metodologia
 
 Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
