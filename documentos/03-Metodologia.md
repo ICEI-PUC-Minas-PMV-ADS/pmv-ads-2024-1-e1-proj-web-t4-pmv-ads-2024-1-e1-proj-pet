@@ -115,13 +115,6 @@ As ferramentas utilizadas pela equipe para a construção da plataforma web est�
 | Reuniões| Microsoft Teams | https://www.microsoft.com/pt-br/microsoft-teams/log-in  |
 | Editor de código | Visual Studio Code | https://code.visualstudio.com/  |
 
-| AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
-|-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
-| Hospedagem                          | GitHub Pages                       | http://....                            |
 
 
 ### Estratégia de Organização de Codificação 
