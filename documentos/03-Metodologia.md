@@ -116,7 +116,7 @@ As ferramentas utilizadas pela equipe para a construção da plataforma web est�
 | Reuniões| Microsoft Teams | https://www.microsoft.com/pt-br/microsoft-teams/log-in  |
 | Editor de código | Visual Studio Code | https://code.visualstudio.com/  |
 
-
+A seleção das ferramentas listadas na tabela acima são fundamentais para o sucesso de um projeto web, pois cada uma desempenha um papel na otimização do processo de desenvolvimento, desde a concepção até a implantação. O GitHub facilita a colaboração no código, enquanto o Heroku simplifica a hospedagem e o Figma promove a colaboração no design da interface, garantindo uma UX/UI eficaz. O Trello auxilia na organização e gerenciamento do projeto, o Google Drive centraliza a documentação, o Microsoft Teams asseguram comunicação efetiva por meio de reuniões de alinhamento, e o Visual Studio Code proporciona um ambiente de desenvolvimento adaptável. Juntas, essas ferramentas melhoram a eficiência, a colaboração e a qualidade do projeto. 
 
 ### Estratégia de Organização de Codificação 
 
