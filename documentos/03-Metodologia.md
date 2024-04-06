@@ -111,7 +111,7 @@ As ferramentas utilizadas pela equipe para a construção da plataforma web est�
 | Hospedagem do site              | Heroku                             | https://id.heroku.com/login                      |
 | Projeto de Interface | Figma  | [Figma](https://www.figma.com/team_invite/redeem/3wTXpNHVxcfTUjeJyKqvyL)   |
 | Gerenciamento do Projeto  | Trello | https://trello.com/b/gFBU3Xsj/pet-in-a-flat   |
-| Hospedagem temporária de documentos | Google Drive | (https://drive.google.com/drive/folders/1q8KBVoVc54aO71NztnKEOOnPk_iTMU0L)  |
+| Hospedagem temporária de documentos | Google Drive | https://drive.google.com/drive/folders/1q8KBVoVc54aO71NztnKEOOnPk_iTMU0L |
 | Reuniões| Microsoft Teams | (https://www.microsoft.com/pt-br/microsoft-teams/log-in)  |
 | Editor de código | Visual Studio Code | (https://code.visualstudio.com/)  |
 
