@@ -102,6 +102,7 @@ No [GitHub Project](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/970)
   
 ### Ferramentas
 
+A utilização de um conjunto integrado de ferramentas para o desenvolvimento de um projeto web não apenas otimiza o fluxo de trabalho da equipe, mas também garante a qualidade e a escalabilidade do projeto.
 As ferramentas utilizadas pela equipe para a construção da plataforma web estão listadas na tabela a seguir:
 
 
