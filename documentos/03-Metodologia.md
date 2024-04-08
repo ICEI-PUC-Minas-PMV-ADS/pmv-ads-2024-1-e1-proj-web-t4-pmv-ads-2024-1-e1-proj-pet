@@ -32,7 +32,7 @@ A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Pr
 - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
 
-No [GitHub Project](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/970) as *tasks* foram adicionadas a um quadro Kanban, que tem a seguinte estrutura:
+No [GitHub Project](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/970) as listas de tarefas ou *tasks*, em seu estado atual, foram adicionadas a um quadro Kanban, que tem a seguinte estrutura:
 
   ![Imagem do quadro Kanban](/documentos/img/kanban.png)
 
