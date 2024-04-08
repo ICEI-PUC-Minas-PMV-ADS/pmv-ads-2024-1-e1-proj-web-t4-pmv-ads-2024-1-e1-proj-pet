@@ -64,7 +64,7 @@ As ferramentas utilizadas pela equipe para a construção da plataforma web est�
 
 
 | Ambiente    | Plataforma    | Link de Acesso |
-| ------------- | ------------- | :-------------- |
+| ------------- | :-------------: | :-------------- |
 | Repositório de Código  | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet) |
 | Hospedagem do site              | Heroku                             | https://id.heroku.com/login                   |
 | Projeto de Interface | Figma  | https://www.figma.com/team_invite/redeem/3wTXpNHVxcfTUjeJyKqvyL  |
