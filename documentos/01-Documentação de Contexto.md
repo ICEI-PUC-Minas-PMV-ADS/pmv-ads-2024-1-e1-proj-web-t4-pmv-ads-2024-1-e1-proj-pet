@@ -10,7 +10,7 @@ Considerando essa demanda, surge a oportunidade da criação de uma plataforma w
 
 ## Problema
 
-Em razão de situações em que os tutores estão ausentes devido a viagens ou falta de tempo para atender às necessidades de seus animais de estimação, faz-se necessária a criação de uma plataforma que conecte tutores e cuidadores de pet. O suporte inadequado aos pets pode afetar a saúde e o bem-estar dos animais, causando estresse aos bichinhos e aos tutores. Para garantir a qualidade desses serviços, a plataforma web proposta deve alinhar expectativas entre donos de pets e pet sitters, a fim de proporcionar um ambiente confiável para ambas as partes envolvidas.
+Os tutores de pet frequentemente se tornam ausentes devido a viagens a trabalho ou a lazer, ou mesmo por falta de tempo para atender às necessidades de seus animais de estimação, necessitando portanto da ajuda de um cuidador de pets. Um suporte inadequado aos pets pode afetar a saúde e o bem-estar desses animais, causando estresse aos bichinhos e também aos seus tutores. Sendo assim, é oportuna e necessária a criação de uma plataforma que conecte tutores e cuidadores de pet para que garantir a qualidade desses serviços. A plataforma web proposta deve alinhar as expectativas entre donos de pets e pet sitters, a fim de proporcionar um ambiente confiável e eficiente para ambas as partes envolvidas.
 
 ## Objetivos
 
