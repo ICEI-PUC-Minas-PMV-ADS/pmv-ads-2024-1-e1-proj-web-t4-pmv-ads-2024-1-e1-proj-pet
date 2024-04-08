@@ -109,12 +109,12 @@ As ferramentas utilizadas pela equipe para a construção da plataforma web est�
 | Ambiente    | Plataforma    | Link de Acesso |
 | ------------- | ------------- | :--------------: |
 | Repositório de Código  | GitHub | [Repositório GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet) |
-| Hospedagem do site              | Heroku                             | https://id.heroku.com/login                      |
+| Hospedagem do site              | Heroku                             | [Heroku](https://id.heroku.com/login)                      |
 | Projeto de Interface | Figma  | [Figma](https://www.figma.com/team_invite/redeem/3wTXpNHVxcfTUjeJyKqvyL)   |
-| Gerenciamento do Projeto  | Trello | https://trello.com/b/gFBU3Xsj/pet-in-a-flat   |
-| Hospedagem temporária de documentos | Google Drive | https://drive.google.com/drive/folders/1q8KBVoVc54aO71NztnKEOOnPk_iTMU0L |
-| Reuniões| Microsoft Teams | https://www.microsoft.com/pt-br/microsoft-teams/log-in  |
-| Editor de código | Visual Studio Code | https://code.visualstudio.com/  |
+| Gerenciamento do Projeto  | Trello | [Trello](https://trello.com/b/gFBU3Xsj/pet-in-a-flat)   |
+| Hospedagem temporária de documentos | Google Drive | [Google Drive](https://drive.google.com/drive/folders/1q8KBVoVc54aO71NztnKEOOnPk_iTMU0L) |
+| Reuniões| Microsoft Teams | [Microsoft Teams](https://teams.microsoft.com/l/channel/19%3A17129c5a7bbd412aa8ce543d05b235bc%40thread.tacv2/G1_19_00?groupId=746b3a25-9332-4acc-84f3-5593a4cf979a&tenantId=&ngc=true)  |
+| Editor de código | Visual Studio Code | [Visual Studio Code](https://code.visualstudio.com/)  |
 
 A seleção das ferramentas listadas na tabela acima são fundamentais para o sucesso de um projeto web, pois cada uma desempenha um papel na otimização do processo de desenvolvimento, desde a concepção até a implantação. O GitHub facilita a colaboração no código, enquanto o Heroku simplifica a hospedagem e o Figma promove a colaboração no design da interface, garantindo uma UX/UI eficaz. O Trello auxilia na organização e gerenciamento do projeto, o Google Drive centraliza a documentação, o Microsoft Teams asseguram comunicação efetiva por meio de reuniões de alinhamento, e o Visual Studio Code proporciona um ambiente de desenvolvimento adaptável. Juntas, essas ferramentas melhoram a eficiência, a colaboração e a qualidade do projeto. 
 
