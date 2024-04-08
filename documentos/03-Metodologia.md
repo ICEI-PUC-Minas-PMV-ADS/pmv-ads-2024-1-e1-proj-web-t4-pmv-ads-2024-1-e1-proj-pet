@@ -34,7 +34,10 @@ A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Pr
 
 No [GitHub Project](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/970) as listas de tarefas ou *tasks*, em seu estado atual, foram adicionadas a um quadro Kanban, que tem a seguinte estrutura:
 
-  ![Imagem do quadro Kanban](/documentos/img/kanban.png)
+<figure> 
+  <img src="/documentos/img/kanban.png"
+    <figcaption>Figura 2 - Tela do quadro Kanban do projeto, em seu estado atual</figcaption>
+</figure> 
 
 
 ### Etiquetas
