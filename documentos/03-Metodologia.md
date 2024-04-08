@@ -15,7 +15,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Scrum Master: Vinicius Sartini da Silva.
 - Product Owner: Ana Cristina Cavalcanti Moreira Soares.
 - Equipe de Desenvolvimento: Ana Cristina Cavalcanti Moreira Soares, Felipe Soares Kutschera, Grace Kelly Santos, Isaac Redel Novaes, Vinicius Sartini da Silva.
-- Equipe de Design: Isaac Redel Novaes, Vinicius Sartini da Silva.
+- Equipe de Design: Ana Cristina Cavalcanti Moreira Soares, Isaac Redel Novaes, Vinicius Sartini da Silva.
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
