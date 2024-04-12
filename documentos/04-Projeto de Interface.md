@@ -11,25 +11,34 @@ Segue abaixo, o exemplo de como seria o nosso User Flow:
 
 <figure> 
   <img src="[documentos/img/UserFlow.png](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/main/documentos/img/UserFlow.png)"
-    <figcaption>Figura 1 - User Flow
+    <figcaption>Imagem 1 - User Flow
 </figure> 
 <hr>
 
 
 ### Protótipo de baixa fidelidade
 
-As telas do sistema possuem uma estrutura geral conforme mostrado na Figura 2. Nesta estrutura, existem 3 grandes blocos conforme descrito abaixo. eles são:
+As páginas do sistema possuem uma estrutura geral conforme mostrado na Figura 2. Nesta estrutura, existem 3 pontos conforme descrito abaixo. eles são:
 <ul>
-  <li>Cabeçalho - Exibe o nome da aplicação web e a localização da navegação principal do site ou seja, o menu principal;</li>
+  <li>Cabeçalho - Exibe o logo da aplicação web e a localização da navegação principal do site ou seja, o menu principal;</li>
   <li>Conteúdo - mostra o conteúdo da tela para o usuário;</li>
-  <li>Rodapé - Exibe informações sobre direitos autorais.</li>
+  <li>Rodapé - Exibe informações sobre direitos autorais e as rede sociais da Pet in a Flat.</li>
 </ul>
 
  <figure> 
   <img src=""
-    <figcaption>Figura 2 - Estrutura do site
+    <figcaption>Imagem 2 - Estrutura do site
 </figure> 
 <hr>
 
+<h3><b>Página - Home page</b></h3>
+<p>A home page apresenta informações para o usuário que demonstra, o campo de busca, depoimentos de outros usuários, login e cadastro e Uma breve visão sobre nós. </p>
 
+<figure> 
+  <img src=""
+    <figcaption>Imagem 3 - Home Page
+</figure> 
+<hr>
 
+<h3><b>Página - Busca</b></h3>
+<p>A página de Busca as informações de localizacao dos pet sitters, uma breve apresentação dos pet sitters disponiveis com base na localização inserida.</p>
