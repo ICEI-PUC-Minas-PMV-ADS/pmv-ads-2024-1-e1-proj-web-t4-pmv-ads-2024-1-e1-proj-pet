@@ -10,13 +10,11 @@ Considerando essa demanda, surge a oportunidade da criação de uma plataforma w
 
 ## Problema
 
-Os tutores de pet frequentemente se tornam ausentes devido a viagens a trabalho ou a lazer, ou mesmo por falta de tempo para atender às necessidades de seus animais de estimação, necessitando portanto da ajuda de um cuidador de pets. Um suporte inadequado aos pets pode afetar a saúde e o bem-estar desses animais, causando estresse aos bichinhos e também aos seus tutores. Sendo assim, é oportuna e necessária a criação de uma plataforma que conecte tutores e cuidadores de pet para que garantir a qualidade desses serviços. A plataforma web proposta deve alinhar as expectativas entre donos de pets e pet sitters, a fim de proporcionar um ambiente confiável e eficiente para ambas as partes envolvidas.
+Os tutores de pet frequentemente se tornam ausentes devido a viagens a trabalho ou a lazer, ou mesmo por falta de tempo para atender às necessidades de seus animais de estimação, necessitando portanto da ajuda de um cuidador de pets.
 
 ## Objetivos
 
-O objetivo da plataforma web proposta é prover uma rede de contatos profissionais aptos para cuidar de diferentes animais domésticos em diferentes circunstâncias. A plataforma deve promover cadastros suficientemente informativos, a fim de criar uma relação de confiança entre a pessoa a ser contratada como pet sitter e o tutor do animal de estimação.
-
-De forma um pouco mais específica, a plataforma tem como objetivos:
+Os objetivos deste projeto é prover uma plataforma web que ofereça:
 
 - Cadastrar e listar pessoas que buscam trabalho como cuidadores de animais de estimação;
 - Cadastrar usuários interessados em contratar serviços de cuidados com animais, possibilitando o contato entre essas pessoas e os profissionais disponíveis para realizar os serviços;
@@ -24,8 +22,7 @@ De forma um pouco mais específica, a plataforma tem como objetivos:
 
 ## Justificativa
 
-Com o crescimento do mercado de cuidados com animais de estimação, há também uma demanda crescente por serviços de pet sitting, que garantem os cuidados dos pets durante a ausência de seus tutores, facilitando, portanto, a
-prestação desses serviços de cuidados com pets. Assim, a criação de uma plataforma web que conecte pet sitters e tutores atende essa demanda, proporcionando uma solução eficaz e moderna para ambas as partes.
+Com o crescimento do mercado de cuidados com animais de estimação, há também uma demanda crescente por serviços de pet sitting, que garantem os cuidados dos pets durante a ausência de seus tutores. Assim, a criação de uma plataforma web que conecte pet sitters e tutores atende essa demanda, proporcionando uma solução eficaz e moderna.
 
 ## Público-Alvo
 
