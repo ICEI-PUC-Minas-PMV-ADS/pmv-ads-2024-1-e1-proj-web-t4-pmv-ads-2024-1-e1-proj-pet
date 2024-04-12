@@ -17,11 +17,6 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Equipe de Desenvolvimento: Ana Cristina Cavalcanti Moreira Soares, Felipe Soares Kutschera, Grace Kelly Santos, Isaac Redel Novaes, Vinicius Sartini da Silva.
 - Equipe de Design: Ana Cristina Cavalcanti Moreira Soares, Isaac Redel Novaes, Vinicius Sartini da Silva.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
 ### Processo  
 
 A equipe desenvolvedora do projeto Pet in a Flat escolheu a ferramenta GitHub Project para acompanhar o andamento das tarefas a serem realizadas até a sua conclusão. Nessa plataforma estão estruturadas as seguintes listas:
