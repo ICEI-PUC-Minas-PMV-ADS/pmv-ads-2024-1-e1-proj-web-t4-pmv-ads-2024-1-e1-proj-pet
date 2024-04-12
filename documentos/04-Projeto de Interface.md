@@ -10,21 +10,26 @@ Segue abaixo, o exemplo de como seria o nosso User Flow:
 
 
 <figure> 
-    <figcaption>Figura 1 - Fluxo de telas do usuário
-</figure>  
+  <img src="documentos/img/UserFlow.png"
+    <figcaption>Figura 1 - User Flow
+</figure> 
+<hr>
 
-## Protótipo
-
-Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas de validar uma ideia, conceito ou funcionalidade. Isso permite a interação, avaliação, modificação e aprovação das principais características de uma interface antes de entrar na fase de desenvolvimento. Leia o artigo [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135).
 
 ### Protótipo de baixa fidelidade
 
-Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
+As telas do sistema possuem uma estrutura geral conforme mostrado na Figura 2. Nesta estrutura, existem 3 grandes blocos conforme descrito abaixo. eles são:
+<ul>
+  <li>Cabeçalho - Exibe o nome da aplicação web e a localização da navegação principal do site ou seja, o menu principal;</li>
+  <li>Conteúdo - mostra o conteúdo da tela para o usuário;</li>
+  <li>Rodapé - Exibe informações sobre direitos autorais.</li>
+</ul>
 
-[Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
-
-[Adicione aqui as telas da sua aplicação com seus devidos títulos.] 
- 
+ <figure> 
+  <img src=""
+    <figcaption>Figura 2 - Estrutura do site
+</figure> 
+<hr>
 
 
 
