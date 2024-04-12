@@ -10,7 +10,7 @@ Segue abaixo, o exemplo de como seria o nosso User Flow:
 
 
 <figure> 
-  <img src="documentos/img/UserFlow.png"
+  <img src="[documentos/img/UserFlow.png](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/main/documentos/img/UserFlow.png)"
     <figcaption>Figura 1 - User Flow
 </figure> 
 <hr>
