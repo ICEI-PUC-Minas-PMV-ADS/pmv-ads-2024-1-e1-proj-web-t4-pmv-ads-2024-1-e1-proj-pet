@@ -27,17 +27,17 @@ As páginas da aplicação possuem uma estrutura padrão conforme descrito abaix
 </figure> 
 <hr>
 
-### Página - Home page
-A home page apresenta ao usuário o que é o Pet in a Flat, o campo de busca, depoimentos de outros usuários, login e cadastro e Uma breve visão sobre nós.
+### Página - Homepage
+A _Homepage_ apresenta ao usuário o que é o Pet in a Flat, o campo de busca, depoimentos de outros usuários, login e cadastro e Uma breve visão sobre nós.
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/fca5ed75ff7beaad99bc2f5cbec4694ce5aebcbd/documentos/img/PetinaFlat-HomePage.png"
-    <figcaption>Figura 3 - Home page
+    <figcaption>Figura 3 - Homepage
 </figure> 
 <hr>
 
 ### Página - Login
-A página de login apresenta os campos de e-mail e senha e informações caso o usuário tenha esquecido sua senha ou ainda não seja cadastrado.
+A página _Login_ apresenta os campos de e-mail e senha e informações caso o usuário tenha esquecido sua senha ou ainda não seja cadastrado.
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/fca5ed75ff7beaad99bc2f5cbec4694ce5aebcbd/documentos/img/PetinaFlat-P%C3%A1ginadeLogin.png"
@@ -46,7 +46,7 @@ A página de login apresenta os campos de e-mail e senha e informações caso o 
 <hr>
 
 ### Página - Cadastro
-A página de cadastro apresenta os campos de nome, e-mail e senha para os usuários que desejam se cadastrar na plataforma.
+A página _Cadastro_ apresenta os campos de nome, e-mail e senha para os usuários que desejam se cadastrar na plataforma.
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/fca5ed75ff7beaad99bc2f5cbec4694ce5aebcbd/documentos/img/PetinaFlat-P%C3%A1ginadeCadastro.png"
@@ -55,7 +55,7 @@ A página de cadastro apresenta os campos de nome, e-mail e senha para os usuár
 <hr>
 
 ### Página - Recuperação de senha
-A página de recuperação de senha informa como o usuário fará para recuperar seu acesso caso ele tenha perdido.
+A página _Recuperação de senha_ informa como o usuário fará para recuperar seu acesso caso ele tenha perdido.
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/fca5ed75ff7beaad99bc2f5cbec4694ce5aebcbd/documentos/img/PetinaFlat-P%C3%A1ginadeRecupera%C3%A7%C3%A3odeSenha.png"
@@ -64,7 +64,7 @@ A página de recuperação de senha informa como o usuário fará para recuperar
 <hr>
 
 ### Página - Editar Perfil
-A página de edição do perfil mostra todas as informações necessárias que o usuário preencha para poder utilizar a plataforma corretamente.
+A página de _Editar Perfil_ mostra todas as informações necessárias que o usuário preencha para poder utilizar a plataforma corretamente.
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/fca5ed75ff7beaad99bc2f5cbec4694ce5aebcbd/documentos/img/PetinaFlat-P%C3%A1ginadeEditarPerfil.png"
@@ -73,7 +73,7 @@ A página de edição do perfil mostra todas as informações necessárias que o
 <hr>
 
 ### Página - Perfil
-A página de perfil mostra as informações preenchidas na página de edição perfil de forma consolidada e a agenda de disponibilidade para os serviços.
+A página _Perfil_ mostra as informações preenchidas na página de edição perfil de forma consolidada e a agenda de disponibilidade para os serviços.
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/fca5ed75ff7beaad99bc2f5cbec4694ce5aebcbd/documentos/img/PetinaFlat-P%C3%A1ginadePerfil.png"
@@ -82,7 +82,7 @@ A página de perfil mostra as informações preenchidas na página de edição p
 <hr>
 
 ### Página - Busca
-A página de busca é onde os usuários e visitantes poderão localizar os pet sitters cadastrados na plataforma, mostrando sua localização e informações úteis para a contratação do serviço.
+A página _Busca_ é onde os usuários e visitantes poderão localizar os pet sitters cadastrados na plataforma, mostrando sua localização e informações úteis para a contratação do serviço.
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/fca5ed75ff7beaad99bc2f5cbec4694ce5aebcbd/documentos/img/PetinaFlat-P%C3%A1ginadeBusca.png"
@@ -91,10 +91,10 @@ A página de busca é onde os usuários e visitantes poderão localizar os pet s
 <hr>
 
 ### Página - Sobre
-A página sobre descreve mais detalhadamente sobre o projeto Pet in a flat.
+A página _Sobre Nós_ descreve mais detalhadamente sobre o projeto Pet in a flat.
 
 <figure> 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/blob/fca5ed75ff7beaad99bc2f5cbec4694ce5aebcbd/documentos/img/PetinaFlat-Sobre.png"
-    <figcaption>Figura 9 - Página sobre nós
+    <figcaption>Figura 9 - Página sobre a empresa Pet in a Flat
 </figure> 
 <hr>
