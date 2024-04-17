@@ -1,6 +1,6 @@
 # Template padrão da Aplicação
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+O layout padrão do site foi construído por meio do uso das linguagens de marcação HTML, CSS e JavaScript que foram usadas a partir da definição de identidade visual, aspectos de responsividade e iconografia.
 
 [Apresente a estrutura padrão da sua aplicação.]
 
