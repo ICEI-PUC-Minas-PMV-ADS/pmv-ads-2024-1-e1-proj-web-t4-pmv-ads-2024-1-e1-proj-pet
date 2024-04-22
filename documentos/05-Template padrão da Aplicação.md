@@ -2,7 +2,7 @@
 
 O layout padrão do site foi construído por meio do uso das linguagens de marcação HTML, CSS e JavaScript que foram usadas a partir da definição de identidade visual, aspectos de responsividade e iconografia.
 
-- Cores: #FFFFFF, #FFE9E3, #C4C1E0, #7C73E6;
+- Cores: #white, #6F4F8B, #6D739D, #7dbcc8, #B9EAF5, #black
 - Font-family:
 - Font-size: 
 
