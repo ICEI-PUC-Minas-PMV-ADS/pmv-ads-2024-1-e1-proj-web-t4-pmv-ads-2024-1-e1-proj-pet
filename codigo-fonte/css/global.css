@@ -1,5 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --azul-escuro: #7DBCC8;
+    --azul-claro: #B9EAF5;
+    --roxo-escuro: #6F4F8B;
+    --roxo-claro: #6D739D;
+    --branco: #FAFAFA;
+    --preto: #1E1E1E;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header, footer {
+    background-color: var(--roxo-escuro);
+    height: 150px;
+}
+
+header {
+    align-content: center;
+}
+
+header nav {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav > img {
+    display: block;
+}
+
+.header-links > a {
+    margin-left: 35px;
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.footer-wrapper {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-wrapper > p {
+    padding-top: 120px;
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    color: var(--branco);
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social h3 {
+    margin: 50px 0 30px 0;
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--branco);
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
 }
