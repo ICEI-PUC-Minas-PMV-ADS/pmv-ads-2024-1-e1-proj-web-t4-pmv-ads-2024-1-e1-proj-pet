@@ -1,0 +1,46 @@
+main {
+    margin: auto;
+}
+
+.header-perfil {
+    background-color: var(--roxo-claro);
+}
+
+.header-perfil-wrapper {
+    max-width: 1280px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header-perfil-wrapper h1 {
+    margin-left: 60px;
+    font-family: "Lilita One", sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    color: var(--branco);
+}
+
+.header-perfil-wrapper button {
+    margin-left: 390px;
+    height: 40px;
+    padding: 0 30px;
+    border-style: none;
+    border-radius: 5px;
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--branco);
+    background-color: var(--roxo-escuro);
+    
+}
+
+#profile-picture {
+    margin-top: 260px;
+}
+
+#favorite-icon {
+    margin-left: 50px;
+}
