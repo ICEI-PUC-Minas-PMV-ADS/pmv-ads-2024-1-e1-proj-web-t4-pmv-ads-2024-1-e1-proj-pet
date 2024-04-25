@@ -44,3 +44,62 @@ main {
 #favorite-icon {
     margin-left: 50px;
 }
+
+.main-content {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.about-me,
+.user-infos {
+    margin-top: 160px;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.about-me {
+
+}
+
+.about-me h2 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.about-me, .user-infos p {
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+}
+
+.about-me button {
+    height: 40px;
+    padding: 0 30px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--branco);
+    background-color: var(--roxo-escuro);
+    margin: 40px 0;
+}
+
+.about-me > div {
+    display: flex;
+    gap: 25px;
+}
+
+
+.user-infos {
+    margin-left: 130px;
+    border: 1px solid black;
+}
+
+.user-infos p {
+    margin-bottom: 20px;
+}
