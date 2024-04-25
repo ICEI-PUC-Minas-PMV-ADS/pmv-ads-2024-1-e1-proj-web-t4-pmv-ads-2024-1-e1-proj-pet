@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: var(--branco);
+}
+
 header, footer {
     background-color: var(--roxo-escuro);
     height: 150px;
