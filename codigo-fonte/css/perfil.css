@@ -3,7 +3,7 @@ main {
 }
 
 .header-perfil {
-    background-color: var(--roxo-claro);
+    background-color: var(--azul-claro);
 }
 
 .header-perfil-wrapper {
@@ -19,7 +19,7 @@ main {
     margin-left: 60px;
     font-family: "Poppins", sans-serif;
     font-size: 40px;
-    color: var(--branco);
+    color: var(--roxo-escuro);
 }
 
 .header-perfil-wrapper button {
@@ -42,6 +42,7 @@ main {
 
 #favorite-icon {
     margin-left: 50px;
+    width: 50px;
 }
 
 .main-content {

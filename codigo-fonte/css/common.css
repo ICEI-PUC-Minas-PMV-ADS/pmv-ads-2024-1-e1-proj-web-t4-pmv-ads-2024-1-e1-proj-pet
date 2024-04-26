@@ -58,7 +58,7 @@ nav > img {
 }
 
 .footer-wrapper > p {
-  padding: 100px 50px;
+  padding-top: 100px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: var(--branco);
