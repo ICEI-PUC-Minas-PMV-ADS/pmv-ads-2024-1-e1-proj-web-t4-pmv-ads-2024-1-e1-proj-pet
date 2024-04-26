@@ -17,24 +17,23 @@ main {
 
 .header-perfil-wrapper h1 {
     margin-left: 60px;
-    font-family: "Lilita One", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 40px;
-    font-weight: 200;
     color: var(--branco);
 }
 
 .header-perfil-wrapper button {
-    margin-left: 390px;
-    height: 40px;
+    margin-left: 300px;
+    height: 45px;
     padding: 0 30px;
     border-style: none;
     border-radius: 5px;
-    font-family: "Figtree", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 400;
     color: var(--branco);
     background-color: var(--roxo-escuro);
-    
+    cursor: pointer;
 }
 
 #profile-picture {
@@ -54,8 +53,8 @@ main {
 
 .about-me,
 .user-infos {
-    margin-top: 160px;
-    max-width: 600px;
+    margin-top: 100px;
+    max-width: 520px;
     margin-bottom: 60px;
 }
 
@@ -64,28 +63,28 @@ main {
 }
 
 .about-me h2 {
-    font-family: "Lilita One", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 30px;
-    font-weight: 200;
     margin-bottom: 40px;
 }
 
 .about-me, .user-infos p {
-    font-family: "Figtree", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
 }
 
 .about-me button {
-    height: 40px;
+    height: 45px;
     padding: 0 30px;
     border-style: none;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    font-family: "Figtree", sans-serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 400;
     color: var(--branco);
     background-color: var(--roxo-escuro);
+    cursor: pointer;
     margin: 40px 0;
 }
 
@@ -96,10 +95,32 @@ main {
 
 
 .user-infos {
-    margin-left: 130px;
-    border: 1px solid black;
+    margin-left: 80px;
 }
 
 .user-infos p {
-    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 10px 50px 10px 30px;
+}
+
+.skills,
+.calendar {
+    border-radius: 10px;
+    background-color: var(--azul-escuro);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.skills {
+    margin-bottom:  40px;
+}
+
+#exp {
+    height: 28px;
+    width: 28px;
+    border-radius: 14px;
+    text-align: center;
+    align-content: center;
+    background-color: var(--preto);
+    color: var(--azul-escuro);
 }
