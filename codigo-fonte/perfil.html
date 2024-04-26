@@ -6,6 +6,8 @@
     <title>Perfil</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 </head>
 <body>
     <header>
@@ -56,8 +58,18 @@
                     <p><span class="icon-skills"><img src="images/iconegps.png" alt="Ícone GPS"></span>XX,X km de deslocamento</p>
                     <p><span class="icon-skills"><img src="images/iconelocalizacao.png" alt="Ícone localização"></span>Santa Efigênia</p>
                 </div>
-                <div class="calendar">
-                    <p>Inserir calendário</p>
+                <div class="calendar-wrapper">
+                    <div class="calendar"></div>
+                    <div class="calendar-labels">
+                        <div>
+                            <div id="available"></div>
+                            <p>Disponível</p>
+                        </div>
+                        <div>
+                            <div id="unavailable"></div>
+                            <p>Indisponível</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -79,5 +91,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="js/perfil.js"></script>
+
 </body>
 </html>

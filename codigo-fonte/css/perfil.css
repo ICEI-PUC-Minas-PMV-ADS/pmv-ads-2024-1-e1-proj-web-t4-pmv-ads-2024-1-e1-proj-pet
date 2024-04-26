@@ -92,17 +92,17 @@ main {
 
 
 .user-infos {
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
-.user-infos p {
+.skills p {
     display: flex;
     gap: 20px;
     padding: 10px 50px 10px 30px;
 }
 
 .skills,
-.calendar {
+.calendar-wrapper {
     border-radius: 10px;
     background-color: var(--azul-escuro);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
@@ -120,4 +120,46 @@ main {
     align-content: center;
     background-color: var(--preto);
     color: var(--azul-escuro);
+}
+
+.calendar {
+    margin: auto;
+    max-width: fit-content;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.calendar-labels {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.calendar-labels div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calendar-labels p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+#available,
+#unavailable {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#available {
+    background-color: var(--roxo-claro);
+}
+
+#unavailable {
+    background-color: var(--roxo-escuro);
 }
