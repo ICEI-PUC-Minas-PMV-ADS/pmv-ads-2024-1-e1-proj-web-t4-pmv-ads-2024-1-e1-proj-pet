@@ -21,7 +21,7 @@ html {
 
 header,
 footer {
-  background-color: var(--roxo-escuro);
+  background-color: var(--roxo-claro);
   height: 150px;
 }
 
