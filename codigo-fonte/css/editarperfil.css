@@ -1,0 +1,84 @@
+main {
+    max-width: 1280px;
+    margin: auto;
+}
+
+#profile,
+#about-me {
+    margin: 90px 0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    background-color: var(--azul-escuro);
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#profile-wrapper {
+    display: flex;
+    gap: 10%;
+}
+
+#profile-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#profile-picture img {
+    width: 128px;
+    margin-bottom: 20px;
+}
+
+#profile-picture button {
+    width: 128px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--branco);
+    background-color: var(--preto);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-infos {
+    max-width: 285px;
+}
+
+.profile-infos input {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.profile-infos input[type="text"],
+input[type="email"], input[type="tel"],
+select{
+    width: 285px;
+    height: 40px;
+}
+
+.profile-infos input::placeholder {
+    padding-left: 15px;
+}
+
+.profile-infos input[type="checkbox"] {
+    display: inline-block;
+    scale: 1.5;
+    margin-left: 10px;
+}
+
+input[type="checkbox"]:checked{
+    background-color: var(--branco);
+}
+
+.profile-infos p, label {
+    font-weight: bold;
+}
+
+.profile-infos span {
+    margin-right: 15%;
+}

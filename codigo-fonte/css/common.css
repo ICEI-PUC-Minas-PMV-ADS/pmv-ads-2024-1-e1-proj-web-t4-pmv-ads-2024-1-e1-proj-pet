@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -43,7 +44,6 @@ nav > img {
 
 .header-links > a {
   margin-left: 35px;
-  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: var(--branco);
@@ -59,7 +59,6 @@ nav > img {
 
 .footer-wrapper > p {
   padding-top: 100px;
-  font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: var(--branco);
 }
@@ -72,7 +71,6 @@ nav > img {
 
 .footer-social h3 {
   margin: 50px 0 15px 0;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: var(--branco);
