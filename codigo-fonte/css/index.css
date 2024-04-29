@@ -1,3 +1,89 @@
-body {
-	
+.form {
+  display: flex;
+  align-items: center;
+  background-color: var(--azul-claro);
+  height: 150px;
+}
+
+.form p {
+  color: var(--roxo-escuro);
+  font-size: 14px;
+}
+
+.col,
+.col,
+.form-button {
+  flex: 1;
+  gap: 10px;
+}
+
+.form-button {
+  background-color: var(--roxo-escuro);
+  color: var(--branco);
+}
+
+.intro {
+  text-align: center;
+  height: 200px;
+  padding: 30px;
+}
+
+.intro h1,
+h2 {
+  color: var(--roxo-escuro);
+}
+.personas {
+  height: 200px;
+  padding: 30px;
+  align-items: center;
+  display: flex;
+}
+
+.personas img {
+  width: 40px;
+  height: 40px;
+}
+
+.sitters {
+  display: block;
+}
+
+.owners {
+  display: block;
+}
+
+.rates {
+  height: 70px;
+  padding: 30px;
+  background-color: var(--azul-escuro);
+  align-content: center;
+  text-align: center;
+}
+
+.reviews {
+  height: 230px;
+  padding: 30px;
+  background-color: var(--roxo-claro);
+}
+
+.about {
+  align-content: center;
+  height: 230px;
+  padding: 30px;
+}
+
+.about p,
+h2 {
+  margin: 20px 100px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1000px;
 }
