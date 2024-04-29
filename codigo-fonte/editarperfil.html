@@ -1,160 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editar Perfil</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/editarperfil.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/editarperfil.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <img src="images/logoheader.png" alt="Logo">
-            <div class="header-links">
-                <a href="#">Home</a>
-                <a href="#">Busca</a>
-                <a href="#">Sobre</a>
-                <a href="#">Login</a>
-                <a href="#">Cadastre-se</a>
-            </div>
-        </nav>
+      <nav>
+        <img src="images/logoheader.png" alt="Logo" />
+        <div class="header-links">
+          <a href="#">Home</a>
+          <a href="#">Busca</a>
+          <a href="#">Sobre</a>
+          <a href="#">Login</a>
+          <a href="#">Cadastro</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="profile">
-            <h2>Perfil</h2>
-            <div id="profile-wrapper">
-                <div id="profile-picture">
-                    <img src="images/imgperfil1.png" alt="Foto de perfil">
-                    <button type="button">Editar</button>
-                </div>
-                <div class="profile-infos">
-                    <input type="text" placeholder="Nome">
-                    <input type="text" placeholder="Sobrenome">
-                    <input type="text" placeholder="*Endereço">
-                    <input type="text" placeholder="Cidade">
-                    <input type="text" placeholder="CEP">
-                    <div id="be-pet-sitter">
-                        <input type="checkbox" name="" id="pet-sitter-option">
-                        <p>Quero ser pet sitter</p>
-                    </div>
-                </div>
-                <div class="profile-infos">
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Telefone">
-                    <input type="text" placeholder="Endereço">
-                    <input type="text" placeholder="Estado">
-                    <label for="service-radius">Defina seu raio de atendimento</label>
-                    <select name="service-radius" id="">
-                        <option value=""></option>
-                        <option value="1">Até 1km</option>
-                        <option value="2">de 1km até 5km</option>
-                        <option value="3">de 5km até 10km</option>
-                    </select>
-                </div>
+      <section id="profile">
+        <h2>Perfil</h2>
+        <div id="profile-wrapper">
+          <div id="profile-picture">
+            <img src="images/imgperfil1.png" alt="Foto de perfil" />
+            <button type="button">Editar</button>
+          </div>
+          <div class="profile-infos">
+            <input type="text" placeholder="Nome" />
+            <input type="text" placeholder="Sobrenome" />
+            <input type="text" placeholder="*Endereço" />
+            <input type="text" placeholder="Cidade" />
+            <input type="text" placeholder="CEP" />
+            <div id="be-pet-sitter">
+              <input type="checkbox" name="" id="pet-sitter-option" />
+              <p>Quero ser pet sitter</p>
             </div>
-        </section>
+          </div>
+          <div class="profile-infos">
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="Telefone" />
+            <input type="text" placeholder="Endereço" />
+            <input type="text" placeholder="Estado" />
+            <label for="service-radius">Defina seu raio de atendimento</label>
+            <select name="service-radius" id="">
+              <option value=""></option>
+              <option value="1">Até 1km</option>
+              <option value="2">de 1km até 5km</option>
+              <option value="3">de 5km até 10km</option>
+            </select>
+          </div>
+        </div>
+      </section>
 
-        <section id="about-me">
-            <h2>Sobre mim</h2>
-            <div id="about-me-wrapper">
-                <div class="about-me-infos">
-                    <label for="">Conte-nos sobre você e sua experiência com pets</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <h3>Redes Sociais</h3>
-                    <input class="input-social-media" type="text" name="" id="">
-                    <input class="input-social-media" type="text" name="" id="">
-                    <input class="input-social-media" type="text" name="" id="">
-                </div>
-                <div class="about-me-infos">
-                    <h3>Precificação</h3>
-                    <div id="pricing">
-                        <div id="one-visit">
-                            <label class="price-label" for="">1 visita/dia</label>
-                            <input class="price-field" id="" type="text" name=""  placeholder="R$00,00">
-                        </div>
-                        <div id="two-visits">
-                            <label class="price-label" for="">2 visitas/dia</label>
-                            <input class="price-field" id="" type="text" name=""  placeholder="R$00,00">
-                        </div>
-                    </div>
-                    <div id="years-of-experience">
-                        <label id="years-label" for="">Anos de experiência com pets</label>
-                        <input id="years-field" id="" type="text" name="" placeholder="00 Anos">
-                    </div>
-                    <h3>Seus Serviços</h3>
-                    <div id="services">
-                        <div class="service-option">
-                            <p>
-                                <span><img src="images/iconetempet.png" alt="Ícone tem/teve pet"></span>
-                                Tem/teve algum pet
-                            </p>
-                            <input type="checkbox" name="" id="">
-                        </div>
-                        <div class="service-option">
-                            <p>
-                                <span><img src="images/iconeremedios.png" alt="Ícone administra medicamentos"></span>
-                                Pode administrar medicamentos
-                            </p>
-                            <input type="checkbox" name="" id="">
-                        </div>
-                        <div class="service-option">
-                            <p>
-                                <span><img src="images/iconeinjecao.png" alt="Ícone aplica injeções"></span>
-                                Pode aplicar injeções
-                            </p>
-                            <input type="checkbox" name="" id="">
-                        </div>
-                    </div>
-                    <h3>Disponível para cuidar de</h3>
-                    <div id="pet-type">
-                        <div class="pet-option">
-                            <p>
-                                <span><img src="images/iconegato.png" alt="Ícone gato"></span>
-                                Gato
-                            </p>
-                            <input type="checkbox" name="" id="">
-                        </div>
-                        <div class="pet-option">
-                            <p>
-                                <span><img src="images/iconecachorro.png" alt="Ícone cachorro"></span>
-                                Cachorro
-                            </p>
-                            <input type="checkbox" name="" id="">
-                        </div>
-                        <div class="pet-option">
-                            <p>
-                                <span><img src="images/iconepassaro.png" alt="Ícone pássaros"></span>
-                                Pássaro
-                            </p>
-                            <input type="checkbox" name="" id="">
-                        </div>
-                    </div>
-                </div>
+      <section id="about-me">
+        <h2>Sobre mim</h2>
+        <div id="about-me-wrapper">
+          <div class="about-me-infos">
+            <label for=""
+              >Conte-nos sobre você e sua experiência com pets</label
+            >
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <h3>Redes Sociais</h3>
+            <input class="input-social-media" type="text" name="" id="" />
+            <input class="input-social-media" type="text" name="" id="" />
+            <input class="input-social-media" type="text" name="" id="" />
+          </div>
+          <div class="about-me-infos">
+            <h3>Precificação</h3>
+            <div id="pricing">
+              <div id="one-visit">
+                <label class="price-label" for="">1 visita/dia</label>
+                <input
+                  class="price-field"
+                  id=""
+                  type="text"
+                  name=""
+                  placeholder="R$00,00"
+                />
+              </div>
+              <div id="two-visits">
+                <label class="price-label" for="">2 visitas/dia</label>
+                <input
+                  class="price-field"
+                  id=""
+                  type="text"
+                  name=""
+                  placeholder="R$00,00"
+                />
+              </div>
             </div>
-            <div id="btn-area">
-                <input type="button" value="Cancelar">
-                <input type="button" value="Confirmar">
+            <div id="years-of-experience">
+              <label id="years-label" for=""
+                >Anos de experiência com pets</label
+              >
+              <input
+                id="years-field"
+                id=""
+                type="text"
+                name=""
+                placeholder="00 Anos"
+              />
             </div>
-        </section>
+            <h3>Seus Serviços</h3>
+            <div id="services">
+              <div class="service-option">
+                <p>
+                  <span
+                    ><img src="images/iconetempet.png" alt="Ícone tem/teve pet"
+                  /></span>
+                  Tem/teve algum pet
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="service-option">
+                <p>
+                  <span
+                    ><img
+                      src="images/iconeremedios.png"
+                      alt="Ícone administra medicamentos"
+                  /></span>
+                  Pode administrar medicamentos
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="service-option">
+                <p>
+                  <span
+                    ><img
+                      src="images/iconeinjecao.png"
+                      alt="Ícone aplica injeções"
+                  /></span>
+                  Pode aplicar injeções
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </div>
+            <h3>Disponível para cuidar de</h3>
+            <div id="pet-type">
+              <div class="pet-option">
+                <p>
+                  <span
+                    ><img src="images/iconegato.png" alt="Ícone gato"
+                  /></span>
+                  Gato
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="pet-option">
+                <p>
+                  <span
+                    ><img src="images/iconecachorro.png" alt="Ícone cachorro"
+                  /></span>
+                  Cachorro
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="pet-option">
+                <p>
+                  <span
+                    ><img src="images/iconepassaro.png" alt="Ícone pássaros"
+                  /></span>
+                  Pássaro
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="btn-area">
+          <input type="button" value="Cancelar" />
+          <input type="button" value="Confirmar" />
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-wrapper">
-            <p>© Copyright 2024 Pet in a Flat</p>
-            <div class="footer-social">
-                <h3>Siga nossa redes sociais</h3>
-                <div class="footer-links">
-                    <a href="#">
-                        <img src="images/facebook.png" alt="Logo Facebook">
-                    </a>
-                    <a href="#">
-                        <img src="images/instagram.png" alt="Logo Instagram">
-                    </a>
-                </div>
-            </div>
+      <div class="footer-wrapper">
+        <p>© Copyright 2024 Pet in a Flat</p>
+        <div class="footer-social">
+          <h3>Siga nossa redes sociais</h3>
+          <div class="footer-links">
+            <a href="#">
+              <img src="images/facebook.png" alt="Logo Facebook" />
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" alt="Logo Instagram" />
+            </a>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

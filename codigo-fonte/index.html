@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet in a Flat</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -16,44 +18,46 @@
           <a href="#">Busca</a>
           <a href="#">Sobre</a>
           <a href="#">Login</a>
-          <a href="#">Cadastre-se</a>
+          <a href="#">Cadastro</a>
         </div>
       </nav>
     </header>
     <main>
-      <div class="form">
+      <div class="section form">
         <div class="cta">
           <p>Encontre cuidadores de pet na sua região:</p>
         </div>
-        <div class="fields">
-          <div class="row">
-            <div class="col">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Localização"
-                aria-label="Localização"
-              />
-            </div>
-            <div class="col">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Data de início"
-                aria-label="Data de início"
-              />
-            </div>
-            <div class="col">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Data do término"
-                aria-label="Data do término"
-              />
+        <div class="content-form">
+          <div class="fields">
+            <div class="row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Localização"
+                  aria-label="Localização"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Data de início"
+                  aria-label="Data de início"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Data do término"
+                  aria-label="Data do término"
+                />
+              </div>
             </div>
           </div>
+          <button type="button" class="form-button">Buscar</button>
         </div>
-        <button type="button" class="form-button">Buscar</button>
       </div>
       <div class="intro">
         <h1>Pet in a Flat</h1>
@@ -66,25 +70,24 @@
         <div class="wrapper">
           <div class="sitters">
             <img src="images/local.png" alt="Ícone de Localização" />
-            <h2>Cuidadores de pet</h2>
+            <h2>Busca por pet sitters</h2>
             <p>
               Encontre as melhores pessoas cuidadoras de pet bem pertinho de
               você.
             </p>
             <button>Buscar</button>
           </div>
-          <div class="owners">
+          <div class="users">
             <img src="images/user.png" alt="Ícone de Usuário" />
-            <h2>Donos de pet</h2>
+            <h2>Cadastro em nosso site</h2>
             <p>
-              Precisa de alguém para cuidar do seu pet com amor e carinho ou
-              quer trabalhar cuidando do pet de alguém? Cadastre-se aqui!
+              Faça o seu cadastro de pessoa tutora (donos) ou cuidadora de pet.
             </p>
             <button>Cadastrar</button>
           </div>
         </div>
       </div>
-      <div class="rates">
+      <div class="highlight">
         <p>Mais de 1200 cuidadores de pet cadastrados!</p>
       </div>
       <div class="reviews section">
@@ -95,10 +98,13 @@
           <div id="carousel" class="slides" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="..." />
+                <div>Cavalcanti</div>
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+                <div>Ana</div>
+              </div>
+              <div class="carousel-item">
+                <div>Daria</div>
               </div>
             </div>
           </div>
@@ -131,5 +137,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

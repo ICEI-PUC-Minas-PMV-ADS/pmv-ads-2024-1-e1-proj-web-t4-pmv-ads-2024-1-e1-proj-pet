@@ -1,10 +1,8 @@
-.form {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
+div.form {
+  align-items: flex-start;
   background-color: var(--azul-claro);
   height: 150px;
+  padding: 30px;
 }
 
 .form p {
@@ -17,11 +15,13 @@
 }
 
 .form button {
-  padding: 14px 35px;
+  max-height: 48px;
+  width: 200px;
+  display: block;
+  padding: 12px 35px;
   border-style: none;
   border-radius: 5px;
   font-size: 14px;
-  font-weight: 400;
   color: var(--branco);
   background-color: var(--roxo-escuro);
   cursor: pointer;
@@ -32,19 +32,28 @@
 }
 
 .form input {
-  flex: 1;
+  display: flex;
   flex-direction: row;
   margin-right: 10px;
   padding: 12px;
   align-items: center;
   border-style: none;
   border-radius: 2px;
-  margin: 10px;
+}
+
+.form row {
+  display: flex;
+}
+
+.content-form {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
 .intro {
   text-align: center;
-  height: 200px;
+  height: 150px;
   padding: 30px;
 }
 
@@ -53,9 +62,9 @@ h2 {
   color: var(--roxo-escuro);
 }
 .personas {
-  height: 200px;
-  padding: 30px;
+  height: 300px;
   align-items: center;
+  padding: 0px 50px;
 }
 
 .personas img {
@@ -74,21 +83,26 @@ h2 {
   color: var(--branco);
   background-color: var(--roxo-escuro);
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .personas button:hover {
   background-color: var(--roxo-claro);
 }
 
-.sitters {
-  display: block;
+.personas h2 {
+  justify-items: center;
 }
 
-.owners {
-  display: block;
+.sitters,
+.users {
+  width: calc(50% - 20px);
+  margin: 10px;
+  text-align: center;
 }
 
-.rates {
+.highlight {
   height: 70px;
   padding: 30px;
   background-color: var(--azul-escuro);
@@ -129,5 +143,5 @@ h2 {
 
 .wrapper {
   display: flex;
-  max-width: 1000px;
+  max-width: 1280px;
 }
