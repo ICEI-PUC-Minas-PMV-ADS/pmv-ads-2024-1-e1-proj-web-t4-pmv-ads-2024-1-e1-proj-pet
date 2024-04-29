@@ -10,6 +10,17 @@
   font-size: 14px;
 }
 
+.form button {
+  padding: 0px 30px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--branco);
+  background-color: var(--roxo-escuro);
+  cursor: pointer;
+}
+
 .col,
 .col,
 .form-button {
@@ -66,10 +77,18 @@ h2 {
   background-color: var(--roxo-claro);
 }
 
+.reviews img {
+  width: 300px;
+  height: 180px;
+  margin-right: 50px;
+}
+
 .about {
-  align-content: center;
   height: 230px;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .about p,
