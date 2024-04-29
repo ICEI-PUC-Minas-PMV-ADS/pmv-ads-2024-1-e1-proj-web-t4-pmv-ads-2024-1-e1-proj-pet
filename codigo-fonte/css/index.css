@@ -1,5 +1,7 @@
 .form {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   background-color: var(--azul-claro);
   height: 150px;
@@ -10,8 +12,12 @@
   font-size: 14px;
 }
 
+.form ::placeholder {
+  color: var(--roxo-escuro);
+}
+
 .form button {
-  padding: 0px 30px;
+  padding: 14px 35px;
   border-style: none;
   border-radius: 5px;
   font-size: 14px;
@@ -21,16 +27,19 @@
   cursor: pointer;
 }
 
-.col,
-.col,
-.form-button {
-  flex: 1;
-  gap: 10px;
+.form button:hover {
+  background-color: var(--roxo-claro);
 }
 
-.form-button {
-  background-color: var(--roxo-escuro);
-  color: var(--branco);
+.form input {
+  flex: 1;
+  flex-direction: row;
+  margin-right: 10px;
+  padding: 12px;
+  align-items: center;
+  border-style: none;
+  border-radius: 2px;
+  margin: 10px;
 }
 
 .intro {
@@ -47,12 +56,28 @@ h2 {
   height: 200px;
   padding: 30px;
   align-items: center;
-  display: flex;
 }
 
 .personas img {
   width: 40px;
   height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+.personas button {
+  padding: 14px 35px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--branco);
+  background-color: var(--roxo-escuro);
+  cursor: pointer;
+}
+
+.personas button:hover {
+  background-color: var(--roxo-claro);
 }
 
 .sitters {
