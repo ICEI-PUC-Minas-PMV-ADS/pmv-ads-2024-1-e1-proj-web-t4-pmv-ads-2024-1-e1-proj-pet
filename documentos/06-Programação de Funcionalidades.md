@@ -4,7 +4,24 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
-### Título da funcionalidade
+### Tela de Cadastro (RF-01)
+
+Responsável: 
+
+Texto explicando a funcionalidade 
+
+Exemplo da Tela de Cadastro:
+[Adicione imagem da funcionalidade/tela]
+
+Requisito atendido
+
+RF-01: O sistema deve permitir o registro e a listagem de pet sitters.
+
+Artefatos da funcionalidade:
+
+- nomedapagina.html
+
+### Listagem de Cadastros
 
 [Adicione imagem da funcionalidade/tela]
 
