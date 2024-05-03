@@ -1,8 +1,13 @@
-div.form {
-  align-items: flex-start;
-  background-color: var(--azul-claro);
+.form {
   height: 150px;
-  padding: 30px;
+  display: flex;
+  align-items: center;
+  background-color: var(--azul-claro);
+}
+
+.form-position {
+  margin-left: calc((100vw - 1280px)/2);
+  max-width: 1280px;
 }
 
 .form p {
@@ -142,20 +147,19 @@ h4 {
 .star{
   width: 25px;
   height: 25px;
-  margin: 0.5px;
+  margin-right: 0.5px;
+  margin-bottom: 10px;
 }
 
 .about {
+  margin: auto;
+  max-width: 980px;
   height: 400px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+  align-content: center;
 }
 
-.about p,
-h3 {
-  margin: 20px 100px;
+.about h3 {
+  margin: 20px 0px;
 }
 
 .section {
