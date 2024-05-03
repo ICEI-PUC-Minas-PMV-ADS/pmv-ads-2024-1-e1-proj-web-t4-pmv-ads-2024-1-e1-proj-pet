@@ -58,7 +58,7 @@ div.form {
 }
 
 .intro h1,
-h2 {
+h4 {
   color: var(--roxo-escuro);
 }
 .personas {
@@ -81,17 +81,17 @@ h2 {
   font-size: 14px;
   font-weight: 400;
   color: var(--branco);
-  background-color: var(--roxo-escuro);
+  background-color: var(--roxo-claro);
   cursor: pointer;
   display: block;
   margin: 0 auto;
 }
 
 .personas button:hover {
-  background-color: var(--roxo-claro);
+  background-color: var(--roxo-escuro);
 }
 
-.personas h2 {
+.personas h4 {
   justify-items: center;
 }
 
@@ -122,6 +122,12 @@ h2 {
   margin-right: 50px;
 }
 
+.item img {
+  width: 25px;
+  height: 25px;
+  margin: 0.5px;
+}
+
 .about {
   height: 230px;
   padding: 30px;
@@ -131,7 +137,7 @@ h2 {
 }
 
 .about p,
-h2 {
+h3 {
   margin: 20px 100px;
 }
 
