@@ -6,7 +6,7 @@
 }
 
 .form-position {
-  margin-left: calc((100vw - 1280px)/2);
+  margin-left: calc((100vw - 1280px) / 2);
   max-width: 1280px;
 }
 
@@ -144,7 +144,7 @@ h4 {
   height: 180px;
 }
 
-.star{
+.star {
   width: 25px;
   height: 25px;
   margin-right: 0.5px;
