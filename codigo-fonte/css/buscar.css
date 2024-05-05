@@ -152,11 +152,12 @@ section {
 }
 
 .card-body {
-  background-color: var(--azul-claro);
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
   border-radius: 0 0 15px 15px;
+  background-color: var(--azul-claro);
 }
 
 .card.body,
@@ -176,6 +177,8 @@ section {
 }
 
 .card-photo img {
+  position: relative;
+  top: -10px;
   width: 120px;
   height: 120px;
 }
