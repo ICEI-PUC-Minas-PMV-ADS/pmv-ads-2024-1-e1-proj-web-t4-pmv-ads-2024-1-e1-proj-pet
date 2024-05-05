@@ -46,6 +46,10 @@
   border-radius: 2px;
 }
 
+.col > input[type="date"] {
+  color: var(--roxo-escuro);
+}
+
 .form row {
   display: flex;
 }
@@ -57,11 +61,13 @@
 }
 
 .map {
-  width: 45%;
+  width: 100%;
 }
 
 iframe {
   width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 section {
   width: 45%;
@@ -131,6 +137,8 @@ section {
   margin-bottom: 0;
   padding-left: 20px;
   border-radius: 15px 15px 0 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title a {
@@ -138,6 +146,9 @@ section {
   text-decoration: none;
   color: var(--preto);
   font-size: 20px;
+  display: block;
+  align-items: center;
+  margin: auto 0;
 }
 
 .card-body {

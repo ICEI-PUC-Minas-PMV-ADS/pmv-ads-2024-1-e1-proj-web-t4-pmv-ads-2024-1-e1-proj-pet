@@ -46,6 +46,10 @@
   border-radius: 2px;
 }
 
+.col > input[type="date"] {
+  color: var(--roxo-escuro);
+}
+
 .form row {
   display: flex;
 }
@@ -96,10 +100,16 @@ h4 {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  display: inline-block;
 }
 
 .personas button:hover {
   background-color: var(--roxo-escuro);
+}
+
+.personas button a {
+  text-decoration: none;
+  color: var(--branco);
 }
 
 .personas h4 {
