@@ -1,0 +1,24 @@
+main {
+    max-width: 1920px;
+    max-height: 150px;
+    margin: auto;
+    margin-top: auto
+    
+}
+
+form {
+    
+    max-width: 150px;
+    height: 150;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    margin-left: 150px;
+    border-radius: 15px;
+    background: var(--Rosa, #FFE9E3);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    box-sizing: border-box
+    
+}
