@@ -1,8 +1,13 @@
-div.form {
-  align-items: flex-start;
-  background-color: var(--azul-claro);
+.form {
   height: 150px;
-  padding: 30px;
+  display: flex;
+  align-items: center;
+  background-color: var(--azul-claro);
+}
+
+.form-position {
+  margin-left: calc((100vw - 1280px) / 2);
+  max-width: 1280px;
 }
 
 .form p {
@@ -41,6 +46,10 @@ div.form {
   border-radius: 2px;
 }
 
+.col > input[type="date"] {
+  color: var(--roxo-escuro);
+}
+
 .form row {
   display: flex;
 }
@@ -58,8 +67,9 @@ div.form {
 }
 
 .intro h1,
-h2 {
+h4 {
   color: var(--roxo-escuro);
+  margin: 5px;
 }
 .personas {
   height: 300px;
@@ -74,6 +84,11 @@ h2 {
   margin: 0 auto;
 }
 
+.personas p {
+  height: 50px;
+  align-content: center;
+}
+
 .personas button {
   padding: 14px 35px;
   border-style: none;
@@ -81,67 +96,90 @@ h2 {
   font-size: 14px;
   font-weight: 400;
   color: var(--branco);
-  background-color: var(--roxo-escuro);
+  background-color: var(--roxo-claro);
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  display: inline-block;
 }
 
 .personas button:hover {
-  background-color: var(--roxo-claro);
+  background-color: var(--roxo-escuro);
 }
 
-.personas h2 {
+.personas button a {
+  text-decoration: none;
+  color: var(--branco);
+}
+
+.personas h4 {
   justify-items: center;
 }
 
 .sitters,
 .users {
-  width: calc(50% - 20px);
   margin: 10px;
   text-align: center;
 }
 
 .highlight {
   height: 70px;
-  padding: 30px;
   background-color: var(--azul-escuro);
   align-content: center;
   text-align: center;
 }
 
+.highlight p {
+  margin: 0 auto;
+}
+
+#carousel {
+  max-width: 980px;
+}
+
 .reviews {
-  height: 230px;
-  padding: 30px;
+  height: 400px;
   background-color: var(--roxo-claro);
 }
 
-.reviews img {
+.item {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.petimage > img {
   width: 300px;
   height: 180px;
-  margin-right: 50px;
+}
+
+.star {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5px;
+  margin-bottom: 10px;
 }
 
 .about {
-  height: 230px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+  margin: auto;
+  max-width: 980px;
+  height: 400px;
+  align-content: center;
 }
 
-.about p,
-h2 {
-  margin: 20px 100px;
+.about h3 {
+  margin: 20px 0px;
 }
 
 .section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 .wrapper {
+  margin: auto;
   display: flex;
   max-width: 1280px;
 }

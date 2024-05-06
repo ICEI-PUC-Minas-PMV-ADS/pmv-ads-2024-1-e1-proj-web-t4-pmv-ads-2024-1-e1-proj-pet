@@ -4,23 +4,227 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet in a Flat</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/buscar.css" />
   </head>
   <body>
     <header>
       <nav>
         <img src="images/logoheader.png" alt="Logo" />
         <div class="header-links">
-          <a href="#">Home</a>
-          <a href="#">Busca</a>
-          <a href="#">Sobre</a>
-          <a href="#">Login</a>
-          <a href="#">Cadastro</a>
+          <a href="index.html" target="_self">Home</a>
+          <a href="buscar.html" target="_self">Busca</a>
+          <a href="sobre.html" target="_self">Sobre</a>
+          <a href="login.html" target="_self">Login</a>
+          <a href="cadastro.html" target="_self">Cadastro</a>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="form">
+        <div class="form-position">
+          <div class="content-form">
+            <div class="fields">
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Localização"
+                    aria-label="Localização"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Data de início"
+                    aria-label="Data de início"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Data do término"
+                    aria-label="Data do término"
+                  />
+                </div>
+              </div>
+            </div>
+            <button type="button" class="form-button">Buscar</button>
+          </div>
+        </div>
+      </div>
+      <div class="global-section">
+        <section>
+          <div>
+            <div id="services">
+              <div class="service-option">
+                <p>
+                  <span
+                    ><img src="images/iconetempet.png" alt="Ícone tem/teve pet"
+                  /></span>
+                  Tem/teve algum pet
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="service-option">
+                <p>
+                  <span
+                    ><img
+                      src="images/iconeremedios.png"
+                      alt="Ícone administra medicamentos"
+                  /></span>
+                  Pode administrar medicamentos
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="service-option">
+                <p>
+                  <span
+                    ><img
+                      src="images/iconeinjecao.png"
+                      alt="Ícone aplica injeções"
+                  /></span>
+                  Pode aplicar injeções
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="service-option">
+                <p>
+                  <span
+                    ><img
+                      src="images/iconefavoritopreto.png"
+                      alt="Ícone aplica injeções"
+                  /></span>
+                  Favorito
+                </p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240096.92212872958!2d-43.96405015!3d-19.902716299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20State%20of%20Minas%20Gerais%2C%20Brazil!5e0!3m2!1sen!2snl!4v1714924708959!5m2!1sen!2snl"
+              width="900"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+        <section>
+          <div class="cards">
+            <div class="card">
+              <div class="card-title">
+                <a href="perfil.html" target="_self" rel="noopener noreferrer"
+                  >Fulana Maria de Tal</a
+                >
+              </div>
+              <div class="card-body">
+                <div class="card-icons">
+                  <div class="iconrow">
+                    <img src="images/iconegato.png" alt="" />
+                    <img src="images/iconecachorro.png" alt="" />
+                    <img src="images/iconepassaro.png" alt="" />
+                  </div>
+                  <div class="iconrow">
+                    <img src="images/iconetempet.png" alt="" />
+                    <img src="images/iconeinjecao.png" alt="" />
+                    <img src="images/iconeremedios.png" alt="" />
+                  </div>
+                  <p>Santa Efigênia</p>
+                </div>
+                <div class="card-photo">
+                  <img src="images/imgperfil1.png" alt="" />
+                  <p>R$XX,XX</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <a href="perfil.html" target="_self" rel="noopener noreferrer"
+                  >Cicrano José Souza</a
+                >
+              </div>
+              <div class="card-body">
+                <div class="card-icons">
+                  <div class="iconrow">
+                    <img src="images/iconegato.png" alt="" />
+                    <img src="images/iconecachorro.png" alt="" />
+                    <img src="images/iconepassaro.png" alt="" />
+                  </div>
+                  <div class="iconrow">
+                    <img src="images/iconetempet.png" alt="" />
+                    <img src="images/iconeinjecao.png" alt="" />
+                    <img src="images/iconeremedios.png" alt="" />
+                  </div>
+                  <p>Savassi</p>
+                </div>
+                <div class="card-photo">
+                  <img src="images/imgperfil2.png" alt="" />
+                  <p>R$XX,XX</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <a href="perfil.html" target="_self" rel="noopener noreferrer"
+                  >Beltrano Silva</a
+                >
+              </div>
+              <div class="card-body">
+                <div class="card-icons">
+                  <div class="iconrow">
+                    <img src="images/iconegato.png" alt="" />
+                    <img src="images/iconecachorro.png" alt="" />
+                    <img src="images/iconepassaro.png" alt="" />
+                  </div>
+                  <div class="iconrow">
+                    <img src="images/iconetempet.png" alt="" />
+                    <img src="images/iconeinjecao.png" alt="" />
+                    <img src="images/iconeremedios.png" alt="" />
+                  </div>
+                  <p>Lourdes</p>
+                </div>
+                <div class="card-photo">
+                  <img src="images/imgperfil4.png" alt="" />
+                  <p>R$XX,XX</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">
+                <a href="perfil.html" target="_self" alt=""> Felícia Santos</a>
+              </div>
+              <div class="card-body">
+                <div class="card-icons">
+                  <div class="iconrow">
+                    <img src="images/iconegato.png" alt="" />
+                    <img src="images/iconecachorro.png" alt="" />
+                    <img src="images/iconepassaro.png" alt="" />
+                  </div>
+                  <div class="iconrow">
+                    <img src="images/iconetempet.png" alt="" />
+                    <img src="images/iconeinjecao.png" alt="" />
+                    <img src="images/iconeremedios.png" alt="" />
+                  </div>
+                  <p>Santa Tereza</p>
+                </div>
+                <div class="card-photo">
+                  <img src="images/imgperfil3.png" alt="" />
+                  <p>R$XX,XX</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer>
       <div class="footer-wrapper">
         <p>© Copyright 2024 Pet in a Flat</p>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet in a Flat</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -14,49 +13,49 @@
       <nav>
         <img src="images/logoheader.png" alt="Logo" />
         <div class="header-links">
-          <a href="#">Home</a>
-          <a href="#">Busca</a>
-          <a href="#">Sobre</a>
-          <a href="#">Login</a>
-          <a href="#">Cadastro</a>
+          <a href="index.html" target="_self">Home</a>
+          <a href="buscar.html" target="_self">Busca</a>
+          <a href="sobre.html" target="_self">Sobre</a>
+          <a href="login.html" target="_self">Login</a>
+          <a href="cadastro.html" target="_self">Cadastro</a>
         </div>
       </nav>
     </header>
     <main>
-      <div class="section form">
-        <div class="cta">
+      <div class="form">
+        <div class="form-position">
           <p>Encontre cuidadores de pet na sua região:</p>
-        </div>
-        <div class="content-form">
-          <div class="fields">
-            <div class="row">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Localização"
-                  aria-label="Localização"
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Data de início"
-                  aria-label="Data de início"
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Data do término"
-                  aria-label="Data do término"
-                />
+          <div class="content-form">
+            <div class="fields">
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Localização"
+                    aria-label="Localização"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Data de início"
+                    aria-label="Data de início"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Data do término"
+                    aria-label="Data do término"
+                  />
+                </div>
               </div>
             </div>
+            <button type="button" class="form-button">Buscar</button>
           </div>
-          <button type="button" class="form-button">Buscar</button>
         </div>
       </div>
       <div class="intro">
@@ -70,48 +69,162 @@
         <div class="wrapper">
           <div class="sitters">
             <img src="images/local.png" alt="Ícone de Localização" />
-            <h2>Busca por pet sitters</h2>
+            <h4>Busca</h4>
             <p>
-              Encontre as melhores pessoas cuidadoras de pet bem pertinho de
-              você.
+              Encontre as melhores pessoas cuidadoras de pet pertinho de você.
             </p>
-            <button>Buscar</button>
+            <button><a href="buscar.html">Buscar</a></button>
           </div>
           <div class="users">
             <img src="images/user.png" alt="Ícone de Usuário" />
-            <h2>Cadastro em nosso site</h2>
+            <h4>Cadastro</h4>
             <p>
-              Faça o seu cadastro de pessoa tutora (donos) ou cuidadora de pet.
+              Faça agora mesmo o seu cadastro de pessoa tutora ou cuidadora de
+              pet.
             </p>
-            <button>Cadastrar</button>
+            <button><a href="cadastro.html">Cadastrar</a></button>
           </div>
         </div>
       </div>
       <div class="highlight">
         <p>Mais de 1200 cuidadores de pet cadastrados!</p>
       </div>
-      <div class="reviews section">
+      <div class="section reviews">
         <div class="wrapper">
-          <div class="petimage">
-            <img src="images/homepage.png" alt="Imagem de pet" />
-          </div>
           <div id="carousel" class="slides" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div>Cavalcanti</div>
+                <div class="item">
+                  <div class="petimage">
+                    <img src="images/homepage.png" alt="Imagem de pet" />
+                  </div>
+                  <div class="review">
+                    <p>
+                      Incrível serviço de pet sitting! Confiei meus animais de
+                      estimação à Fulana de Tal durante uma viagem de última
+                      hora e fiquei muito impressionada com o cuidado e a
+                      atenção que ela deu aos meus peludos. Comunicação
+                      excelente, atualizações regulares e, o mais importante,
+                      meus animais voltaram felizes e saudáveis. Recomendo!
+                    </p>
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <p>Ana C.</p>
+                  </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <div>Ana</div>
+                <div class="item">
+                  <div class="petimage">
+                    <img src="images/homepage.png" alt="Imagem de pet" />
+                  </div>
+                  <div class="review">
+                    <p>
+                      O serviço do pet sitter Cicrano José superou todas as
+                      minhas expectativas! Ele não apenas cuidou dos meus
+                      animais com dedicação e carinho, mas também foi
+                      extremamente flexível com meus horários imprevisíveis.
+                    </p>
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <p>Vinícius S.</p>
+                  </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <div>Daria</div>
+                <div class="item">
+                  <div class="petimage">
+                    <img src="images/catphoto.png" alt="Imagem de pet" />
+                  </div>
+                  <div class="review">
+                    <p>
+                      Experiência excepcional com a cuidadora Beltrana Barbosa.
+                      Desde o primeiro contato, senti confiança. Ela não apenas
+                      alimentou e cuidou dos meus gatinhos, como também brincou
+                      bastante eles. Fiquei muito satisfeita com o
+                      profissionalismo.
+                    </p>
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <img
+                      class="star"
+                      src="images/5stars.png"
+                      alt="5 Estrelas"
+                    />
+                    <p>Grace K.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="about">
-        <h2>Sobre nós</h2>
+        <h3>Sobre nós</h3>
         <p>
           Nós conectamos amantes de animais como você aos cuidadores confiáveis
           que cuidarão dos seus companheiros peludos, emplumados ou escamosos
