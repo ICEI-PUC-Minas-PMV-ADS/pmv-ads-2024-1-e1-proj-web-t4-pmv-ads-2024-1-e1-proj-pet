@@ -1,19 +1,12 @@
 body {
-  font-family: "Poppins", sans-serif;
   color: var(--preto);
-  background-color: var(--branco);
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
 }
 
 .container {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--branco);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1280px;
+  margin: 2.5em auto 5.6em auto;
 }
 
 h1,
@@ -22,39 +15,24 @@ h2 {
 }
 
 h1 {
-  font-size: 2.5em;
-  text-align: center;
+  text-align: left;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 2em;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
 
-p,
-ul {
-  font-size: 1.2em;
+p {
+  font-size: 1.3em;
   margin-bottom: 1em;
   text-align: left;
-}
-
-ul {
-  list-style-position: inside;
 }
 
 @media (max-width: 768px) {
   .container {
     width: 95%;
     padding: 15px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
   }
 }
