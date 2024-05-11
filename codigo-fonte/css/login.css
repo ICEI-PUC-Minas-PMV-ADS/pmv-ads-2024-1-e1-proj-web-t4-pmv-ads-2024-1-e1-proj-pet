@@ -54,7 +54,8 @@ button {
   color: var(--preto)
 }
 
-p, a {
+form p, 
+form a {
     text-decoration: none;
     font-size: 1.3rem;
     text-align: center;
