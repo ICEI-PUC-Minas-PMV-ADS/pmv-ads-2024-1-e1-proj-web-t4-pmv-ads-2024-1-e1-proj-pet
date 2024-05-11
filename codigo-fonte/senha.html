@@ -6,28 +6,28 @@
     <title>Recuperação de senha</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/senha.css" />
+    <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon">
   </head>
   <body>
     <header>
       <nav>
         <img src="images/logoheader.png" alt="Logo" />
         <div class="header-links">
-          <a href="#">Home</a>
-          <a href="#">Busca</a>
-          <a href="#">Sobre</a>
-          <a href="#">Login</a>
-          <a href="#">Cadastro</a>
+          <a href="index.html">Home</a>
+          <a href="buscar.html">Busca</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="login.html">Login</a>
+          <a href="cadastro.html">Cadastro</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <form name="form_login" action="do_login.html" method="POST">
-        <p>RECUPERE SUA SENHA</p>
-        <h2>Por favor, insira o seu email cadastrado.
-          Nós iremos enviar instruções para que possa redefinir sua senha.</h2>
-        <input type="text" placeholder="E-mail" value=""><br>
-         <button type="button">Enviar</button>
+      <form name="form_recuperar" action="do_login.html" method="POST">
+        <h1>Recupere sua senha</h1>
+        <p>Insira seu e-mail cadastrado para receber instruções de como redefinir sua senha:</p>
+        <input type="password" placeholder="Senha" value="">
+        <button type="button">Entrar</button>
       </form>
     </main>
 
