@@ -8,7 +8,7 @@ Implementação da aplicação de acordo com os requisitos.
     
 *   **Descrição da Funcionalidade:** A tela de cadastro está preparada para permitir o registro de tutores e pet sitters, mas não está funcional por falta de JavaScript.
     
-*   **Exemplo da Tela de Cadastro:** \[Adicione uma imagem da tela\]
+*   **Exemplo da Tela de Cadastro:** ![Image](https://i.imgur.com/tIzqDVp.png)
     
 *   **Requisito Atendido (Incompleto):**
     
@@ -19,11 +19,11 @@ Implementação da aplicação de acordo com os requisitos.
 
 ### Tela Index (Página Principal)
 
-*   **Responsável:** \[Ana Cristina Cavalcanti\]
+*   **Responsável:** Ana Cristina Cavalcanti
     
 *   **Descrição da Funcionalidade:** A página inicial apresenta a visão geral da aplicação, mas as funcionalidades ainda não estão implementadas.
     
-*   **Exemplo da Tela Index:** \[Adicione uma imagem da tela\]
+*   **Exemplo da Tela Index:** ![image](https://i.imgur.com/ip3Vjdu.png)
     
 *   **Artefatos da Funcionalidade:**
     
@@ -31,11 +31,11 @@ Implementação da aplicação de acordo com os requisitos.
 
 ### Tela de Login
 
-*   **Responsável:** \[Felipe Soares Kutschera\]
+*   **Responsável:** Felipe Soares Kutschera
     
 *   **Descrição da Funcionalidade:** A tela de login fornece um formulário para usuários existentes, mas o backend não está implementado.
     
-*   **Exemplo da Tela de Login:** \[Adicione uma imagem da tela\]
+*   **Exemplo da Tela de Login:** ![image](https://i.imgur.com/Op4uncY.png)
     
 *   **Artefatos da Funcionalidade:**
     
@@ -43,11 +43,11 @@ Implementação da aplicação de acordo com os requisitos.
 
 ### Tela Sobre
 
-*   **Responsável:** \[Grace Kelly Santos \]
+*   **Responsável:** Grace Kelly Santos
     
 *   **Descrição da Funcionalidade:** A página "Sobre" apresenta a missão e visão da plataforma.
     
-*   **Exemplo da Tela Sobre:** \[Adicione uma imagem da tela\]
+*   **Exemplo da Tela Sobre:** ![image](https://i.imgur.com/GisQNxe.png)
     
 *   **Artefatos da Funcionalidade:**
     
@@ -55,11 +55,11 @@ Implementação da aplicação de acordo com os requisitos.
 
 ### Tela de Busca (RF-02)
 
-*   **Responsável:** \[Ana Cristina Cavalcanti\]
+*   **Responsável:** Ana Cristina Cavalcanti
     
 *   **Descrição da Funcionalidade:** A tela de busca oferece um formulário para localizar pet sitters, mas a funcionalidade não está implementada.
     
-*   **Exemplo da Tela de Busca:** \[Adicione uma imagem da tela\]
+*   **Exemplo da Tela de Busca:** ![image](https://i.imgur.com/sGqhAzi.png)
     
 *   **Requisito Atendido (Incompleto):**
     
