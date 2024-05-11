@@ -1,14 +1,7 @@
-# Template padrão da Aplicação
-
-O layout padrão do site foi construído por meio do uso das linguagens de marcação HTML, CSS e JavaScript que foram usadas a partir da definição de identidade visual, aspectos de responsividade e iconografia.
-
-- Cores: #white, #6F4F8B, #6D739D, #7dbcc8, #B9EAF5, #black
-- Font-family: "Poppins", sans-serif;
-- Font-size: 14px, 16px
 
 # Template Padrão da Aplicação
 
-O layout padrão da aplicação foi projetado com HTML, CSS e JavaScript para criar uma identidade visual coesa, responsiva e intuitiva.
+O layout padrão da aplicação foi projetado com HTML, CSS e JavaScript para criar uma identidade visual consistente, responsiva e intuitiva.
 
 ## Paleta de Cores
 
@@ -23,9 +16,8 @@ Essas cores são usadas como variáveis no CSS para garantir uniformidade e faci
 
 ## Tipografia
 
-*   **Fonte Principal:** `"Poppins", sans-serif`
-*   **Fontes Secundárias:** `"Lobster", cursive`
-*   **Tamanhos de Fonte:** 14px, 16px
+*   **Fonte Principal:** `"Poppins", sans-serif`;
+*   **Tamanhos de Fonte:** 14px, 16px, 20px, 40px;
 
 A fonte "Poppins" é usada para os elementos de texto principais, e os cabeçalhos têm pesos de fonte apropriados.
 
@@ -34,7 +26,7 @@ A fonte "Poppins" é usada para os elementos de texto principais, e os cabeçalh
 ### Cabeçalho
 
 *   **Altura:** 150px
-*   **Cor de Fundo:** `var(--roxo-claro)`
+*   **Cor de Fundo:** `#6d739d`
 
 O cabeçalho contém:
 
@@ -45,7 +37,7 @@ O cabeçalho contém:
 ### Rodapé
 
 *   **Altura:** 150px
-*   **Cor de Fundo:** `var(--roxo-claro)`
+*   **Cor de Fundo:** `#6d739d`
 
 O rodapé contém:
 
