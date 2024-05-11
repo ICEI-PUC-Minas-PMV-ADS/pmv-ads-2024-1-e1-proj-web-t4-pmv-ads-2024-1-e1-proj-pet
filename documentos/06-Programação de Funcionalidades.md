@@ -1,61 +1,73 @@
 # Programação de Funcionalidades
 
-Implementação da aplicação descritas por meio dos requisitos codificados. 
-
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
+Implementação da aplicação de acordo com os requisitos.
 
 ### Tela de Cadastro (RF-01)
 
-Responsável: 
+*   **Responsável:** Grace Kelly Santos
+    
+*   **Descrição da Funcionalidade:** A tela de cadastro está preparada para permitir o registro de tutores e pet sitters, mas não está funcional por falta de JavaScript.
+    
+*   **Exemplo da Tela de Cadastro:** \[Adicione uma imagem da tela\]
+    
+*   **Requisito Atendido (Incompleto):**
+    
+    *   RF-01: O sistema deve permitir o registro e a listagem de pet sitters.
+*   **Artefatos da Funcionalidade:**
+    
+    *   `cadastro.html`
 
-Texto explicando a funcionalidade 
+### Tela Index (Página Principal)
 
-Exemplo da Tela de Cadastro:
-[Adicione imagem da funcionalidade/tela]
+*   **Responsável:** \[Ana Cristina Cavalcanti\]
+    
+*   **Descrição da Funcionalidade:** A página inicial apresenta a visão geral da aplicação, mas as funcionalidades ainda não estão implementadas.
+    
+*   **Exemplo da Tela Index:** \[Adicione uma imagem da tela\]
+    
+*   **Artefatos da Funcionalidade:**
+    
+    *   `index.html`
 
-Requisito atendido
+### Tela de Login
 
-RF-01: O sistema deve permitir o registro e a listagem de pet sitters.
+*   **Responsável:** \[Felipe Soares Kutschera\]
+    
+*   **Descrição da Funcionalidade:** A tela de login fornece um formulário para usuários existentes, mas o backend não está implementado.
+    
+*   **Exemplo da Tela de Login:** \[Adicione uma imagem da tela\]
+    
+*   **Artefatos da Funcionalidade:**
+    
+    *   `login.html`
 
-Artefatos da funcionalidade:
+### Tela Sobre
 
-- nomedapagina.html
+*   **Responsável:** \[Grace Kelly Santos \]
+    
+*   **Descrição da Funcionalidade:** A página "Sobre" apresenta a missão e visão da plataforma.
+    
+*   **Exemplo da Tela Sobre:** \[Adicione uma imagem da tela\]
+    
+*   **Artefatos da Funcionalidade:**
+    
+    *   `sobre.html`
 
-### Listagem de Cadastros
+### Tela de Busca (RF-02)
 
-[Adicione imagem da funcionalidade/tela]
+*   **Responsável:** \[Ana Cristina Cavalcanti\]
+    
+*   **Descrição da Funcionalidade:** A tela de busca oferece um formulário para localizar pet sitters, mas a funcionalidade não está implementada.
+    
+*   **Exemplo da Tela de Busca:** \[Adicione uma imagem da tela\]
+    
+*   **Requisito Atendido (Incompleto):**
+    
+    *   RF-02: O sistema deve permitir a busca e listagem de pet sitters cadastrados.
+*   **Artefatos da Funcionalidade:**
+    
+    *   `buscar.html`
 
+### Observações Gerais
 
-#### Requisito atendido
-
-[RF-X: adicione a descrição do requisito atendido]
-
-
-#### Artefatos da funcionalidade
-
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
-
-
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
-
-#### Instruções de acesso
-
-[Adicione as orientações de acesso à funcionalidade]
-
-
-#### Responsável
-
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
-
-
-
-
-> **Links Úteis**:
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
-
+*   As telas estão prontas, mas as funcionalidades ainda não foram implementadas devido à falta de JavaScript.
