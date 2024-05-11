@@ -1,73 +1,67 @@
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 3.1rem;
+}
 
 form {
-    width: 80%;
-    max-width: 400px;
-    margin: 10px;
-    margin-left: 37%;
-    background-color: var(--azul-escuro);
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    height: 350px;
-  }
-
-  h2 {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
-  }
-  
-  button {
-    width: 100px;
-    height: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 15px;
-    color: var(--branco);
-    background-color: var(--preto);
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  form {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 25px;
-  }
-
-  p a {
-    font-size: 17px;
-    text-align: 25px;
-    margin-bottom: center;
-    color: var(--preto)
-  }
-    
-  h3,a {
-    font-size: 10px;
-    text-align: center;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    color: var(--preto);
-  }
-  
-  [type="text"] {
-  font-size: 15px;
-  max-width: 220px;
-  height: 30px;
-  width: 100%;
-  border-radius: 5px;
-  border: none;
-  padding: 17px; 
-  }
-  
-  [type="password"]{
-    font-size: 15px;
-    max-width: 220px;
-    height: 30px;
     width: 100%;
-    border-radius: 5px;
-    margin-top: 10px;
+    max-width: 780px;
+    margin: 5.6em auto 6.9em auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--azul-escuro);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  input {
+    display: block;
+    margin: auto;
+    width: 30rem;
+    height: 3.8rem;
     border: none;
-    padding: 17px;  
+    margin-bottom: 1.3rem;
+  }
+
+  [type="text"],
+  [type="password"] {
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+button {
+  width: 15.8rem;
+  height: 3.8rem;
+  margin-top: 1.9rem;
+  margin-bottom: 3.1rem;
+  font-size: 1.5rem;
+  color: var(--branco);
+  background-color: var(--preto);
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+#forgot-password {
+  margin-bottom: 3.1rem;
+}
+
+#forgot-password a {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--preto)
+}
+
+p, a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--preto);
+    margin-bottom: 3.8rem;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }

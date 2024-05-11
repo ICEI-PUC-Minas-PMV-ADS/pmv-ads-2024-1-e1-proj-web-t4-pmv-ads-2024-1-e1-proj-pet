@@ -12,24 +12,27 @@
       <nav>
         <img src="images/logoheader.png" alt="Logo" />
         <div class="header-links">
-          <a href="#">Home</a>
-          <a href="#">Busca</a>
-          <a href="#">Sobre</a>
-          <a href="#">Login</a>
-          <a href="#">Cadastro</a>
+          <a href="index.html">Home</a>
+          <a href="buscar.html">Busca</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="login.html">Login</a>
+          <a href="cadastro.html">Cadastro</a>
         </div>
       </nav>
     </header>
+    
     <main>
-
-    <form name="form_login" action="do_login.html" method="POST">
-      <h2>LOGIN</h2>
-      <input type="text" placeholder="E-mail" value=""><br>
-      <input type="password" placeholder="senha" value=""><br>
-       <button type="button">Entrar</button>
-        <p><a href="#">Esqueceu sua senha?</a> </p>
-         <h3>Não está cadastrado? <a href="#">Crie sua Conta</a> ou se <a href="#">torne um Pet Sitter</a></h3>   
-    </form>
+      <form name="form_login" action="do_login.html" method="POST">
+        <h1>Login</h1>
+        <input type="text" placeholder="E-mail" value="">
+        <input type="password" placeholder="Senha" value="">
+        <button type="button">Entrar</button>
+          <p id="forgot-password"><a href="#">Esqueceu sua senha?</a>
+          </p>
+          <p>Não está cadastrado? Crie sua <a href="cadastro.html">conta</a>.
+          </p> 
+      </form>
+    </main>
 
     <footer>
       <div class="footer-wrapper">
