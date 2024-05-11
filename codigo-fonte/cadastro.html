@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro - Pet in a Flat</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/cadastro.css" />
   </head>
   <body>
@@ -23,66 +21,48 @@
         </div>
       </nav>
     </header>
+
     <main>
       <div class="section form">
         <form>
-          <h2>Cadastro</h2>
+          <h1>Cadastro</h1>
           <div class="form-group">
-            <label for="nome">Nome completo</label>
             <input
               type="text"
               class="form-control"
               id="nome"
-              placeholder="Seu nome completo"
+              placeholder="Nome completo"
             />
           </div>
           <div class="form-group">
-            <label for="email">E-mail</label>
-            <input
+              <input
               type="email"
               class="form-control"
               id="email"
-              placeholder="Seu email"
+              placeholder="E-mail"
             />
           </div>
           <div class="form-group">
-            <label for="senha">Senha</label>
             <input
               type="password"
               class="form-control"
               id="senha"
-              placeholder="Crie uma senha"
+              placeholder="Senha"
             />
           </div>
           <div class="form-group">
-            <label for="tipoUsuario">Tipo de usuário</label>
-            <select class="form-control" id="tipoUsuario">
-              <option>Tutor de pet</option>
-              <option>Cuidador de pet</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="telefone">Telefone</label>
             <input
-              type="text"
+              type="password"
               class="form-control"
-              id="telefone"
-              placeholder="Seu telefone"
-            />
-          </div>
-          <div class="form-group">
-            <label for="endereco">Endereço</label>
-            <input
-              type="text"
-              class="form-control"
-              id="endereco"
-              placeholder="Seu endereço"
+              id="senha"
+              placeholder="Confirmar senha"
             />
           </div>
           <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
       </div>
     </main>
+
     <footer>
       <div class="footer-wrapper">
         <p>© Copyright 2024 Pet in a Flat</p>
