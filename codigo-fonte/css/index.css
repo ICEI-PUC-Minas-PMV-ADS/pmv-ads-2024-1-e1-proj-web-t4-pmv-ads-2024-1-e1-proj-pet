@@ -169,6 +169,7 @@ h4 {
 }
 
 .about h3 {
+  color: var(--roxo-escuro);
   margin: 20px 0px;
 }
 
