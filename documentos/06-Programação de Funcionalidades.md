@@ -6,31 +6,35 @@ Implementação da aplicação de acordo com os requisitos.
 
 *   **Responsável:** Grace Kelly Santos
     
-*   **Descrição da Funcionalidade:** A tela de cadastro está preparada para permitir o registro de tutores e pet sitters, mas não está funcional por falta de JavaScript.
+*   **Descrição da Funcionalidade:** A tela de cadastro está preparada para permitir o registro de tutores e pet sitters. A parte que diz respeito ao uso de JavaScript ainda será implementada.
     
   **Exemplo da Tela de Cadastro:** 
 <br />
 <br />
-  ![Image](https://i.imgur.com/tIzqDVp.png)
+  ![Image](https://i.imgur.com/zIsdH7u.png)
     
-*   **Requisito Atendido (Incompleto):**
+*   **Requisito Atendido (Parcialmente):**
     
     *   RF-01: O sistema deve permitir o registro e a listagem de pet sitters.
 *   **Artefatos da Funcionalidade:**
     
     *   `cadastro.html`
 
-### Tela Index (Página Principal)
+### Tela Index (Página Principal) (RF-09)
 
-*   **Responsável:** Ana Cristina Cavalcanti
+*   **Responsável:** Ana Cavalcanti
     
-*   **Descrição da Funcionalidade:** A página inicial apresenta a visão geral da aplicação, mas as funcionalidades ainda não estão finalizadas.
+*   **Descrição da Funcionalidade:** A página inicial apresenta a visão geral da aplicação. O sistema tem uma seção de avaliação de pet sitters.
     
   **Exemplo da Tela Index:**
   <br />
 <br />
 
-![image](https://i.imgur.com/ip3Vjdu.png)
+![image](https://i.imgur.com/oA2OsBY.png)
+
+*   **Requisito Atendido (Parcialmente):**
+    
+    *   RF-09: O sistema deve ter avaliação de tutores e pet sitters.
     
 *   **Artefatos da Funcionalidade:**
     
@@ -40,13 +44,13 @@ Implementação da aplicação de acordo com os requisitos.
 
 *   **Responsável:** Felipe Soares Kutschera
     
-*   **Descrição da Funcionalidade:** A tela de login fornece um formulário para usuários existentes, mas o backend não está implementado.
+*   **Descrição da Funcionalidade:** A tela de login fornece um formulário para usuários cadastrados. A usabilidade do formulário existente ainda será implementada. 
     
   **Exemplo da Tela de Login:** 
   <br />
   <br />
   
-  ![image](https://i.imgur.com/Op4uncY.png)
+  ![image](https://i.imgur.com/Zcj98yp.png)
     
 *   **Artefatos da Funcionalidade:**
     
@@ -62,31 +66,33 @@ Implementação da aplicação de acordo com os requisitos.
   <br />
   <br />
   
-  ![image](https://i.imgur.com/GisQNxe.png)
+  ![image](https://i.imgur.com/dwDWB0q.png)
     
 *   **Artefatos da Funcionalidade:**
     
     *   `sobre.html`
 
-### Tela de Busca (RF-02)
+### Tela de Busca (RF-02 e RF-11)
 
-*   **Responsável:** Ana Cristina Cavalcanti
+*   **Responsável:** Ana Cavalcanti
     
-*   **Descrição da Funcionalidade:** A tela de busca oferece um formulário para localizar pet sitters, mas a funcionalidade não está implementada.
+*   **Descrição da Funcionalidade:** A tela de busca oferece um formulário para localizar pet sitters e tem um mapa da região indicando onde estão os pet sitters cadastrados.
     
   **Exemplo da Tela de Busca:** 
   <br />
   <br />
   
-  ![image](https://i.imgur.com/sGqhAzi.png)
+  ![image](https://i.imgur.com/bTPI8ik.png)
     
-*   **Requisito Atendido (Incompleto):**
+*   **Requisito Atendido (Parcialmente):**
     
     *   RF-02: O sistema deve permitir a busca e listagem de pet sitters cadastrados.
+    *   RF-11: O sistema deve ter um mapa da região indicando onde estão os pet sitters cadastrados.
+      
 *   **Artefatos da Funcionalidade:**
     
     *   `buscar.html`
 
 ### Observações Gerais
 
-*   As telas estão prontas, mas as funcionalidades ainda não foram finalizadas. A parte que diz respeito à JavaScript ainda está em andamento, apenas iniciada. 
+*   As telas estão prontas e a maior parte dos requisitos foi implementada parcialmente. A parte que diz respeito ao uso de JavaScript ainda está em andamento, apenas iniciada. 
