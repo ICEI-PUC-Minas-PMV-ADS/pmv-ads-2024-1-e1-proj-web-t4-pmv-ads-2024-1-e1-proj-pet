@@ -30,7 +30,7 @@ Implementação da aplicação de acordo com os requisitos.
   <br />
 <br />
 
-![image](https://i.imgur.com/oA2OsBY.png)
+![image](https://i.imgur.com/QGXW2Mt.png)
 
 *   **Requisito Atendido (Parcialmente):**
     
