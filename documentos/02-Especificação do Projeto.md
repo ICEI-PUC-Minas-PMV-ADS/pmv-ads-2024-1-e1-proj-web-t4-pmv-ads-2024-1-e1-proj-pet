@@ -110,15 +110,16 @@ Aqui está a tabela atualizada com o RF-03:
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
 
-|ID      | Descrição               |Prioridade |
-|--------|-------------------------|-----------|
-| RNF-01 |  A exibição dos pet sitters cadastrados, no mapa, deve levar no máximo 2 segundos.                    | Alta   | 
-| RNF-02 |  O sistema deve estar disponível 24 h por dia e todos os dias da semana.                    | Alta   |
-| RNF-03 |  O sistema deve ser responsivo, permitindo a visualização em diversos dispositivos como tablets e celulares.                    | Média   |
-| RNF-04 |  O sistema deve ser compatível com os navegadores mais utilizados: Google Chrome, Firefox, Safari, Microsoft Edge.                    | Alta   |
-| RNF-05 |  A sintaxe da aplicação web deve ser semanticamente correta para um melhor rankeamento SEO.                    | Alta   |
-| RNF-06 |  Boa manutenibilidade do Sistema.                    | Alta   |
-| RNF-07 |  A plataforma deve ser intuitiva e de fácil usabilidade.                    | Alta   |
+Aqui está a tabela renumerada:
+
+| ID     | Descrição                                                                     | Prioridade |
+|--------|-------------------------------------------------------------------------------|------------|
+| RNF-01 | A exibição dos pet sitters cadastrados, no mapa, deve levar no máximo 2 segundos. | Média      | 
+| RNF-02 | O sistema deve estar disponível 24 h por dia e todos os dias da semana.           | Média       |
+| RNF-03 | O sistema deve ser responsivo                                                  | Média      |
+| RNF-04 | O sistema deve ser compatível com os navegadores mais utilizados, como Google Chrome, Firefox. | Alta       |
+| RNF-05 | Boa manutenibilidade do Sistema.                                               | Alta       |
+| RNF-06 | A plataforma deve ser intuitiva e de fácil usabilidade.                        | Alta       |
 
 **Prioridade: Alta / Média / Baixa. 
 
