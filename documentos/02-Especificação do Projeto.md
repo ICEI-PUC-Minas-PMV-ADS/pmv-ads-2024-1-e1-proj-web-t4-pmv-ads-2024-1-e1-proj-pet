@@ -73,21 +73,18 @@ Para o desenvolvimento de uma plataforma web de qualidade e bem estrutura, é ne
 
 No desenvolvimento da plataforma web Pet in a flat, é necessário incluir as descrições simplificadas das funcionalidades que serão oferecidas pelo sistema. Cada história de usuário descreve uma parte do comportamento esperado do sistema, focando nas necessidades e nos objetivos do usuário ao interagir com a plataforma. Para comunicar e priorizar requisitos do sistema, garantindo que o produto final atenda às necessidades dos usuários, foi adotada a ferramenta de gestão ágil, conforme especificado na tabela abaixo.
 
-|EU COMO... `QUEM`    | QUERO/PRECISO ... `O QUE`                                          |PARA ... `PORQUE`                         |
-|---------------------|---------------------------                                         |----------------------------------        |
-| Tutor de pet        | Encontrar um pet sitter na minha região que possa cuidar de pets.  | Saber que meus animais estão bem cuidados.|
-| Pet sitter          | Registrar-me na plataforma e criar um perfil detalhado, incluindo minhas habilidades, experiências e tipos de animais que prefiro cuidar. | Aumentar minha visibilidade para tutores potenciais e obter mais oportunidades de trabalho.|
-| Tutor de pet        | Ler avaliações e ver classificações de pet sitters antes de contratar. | Garantir que estou escolhendo um cuidador confiável e bem avaliado pela comunidade.|
-| Pet Sitter          | Receber notificações sobre solicitações de serviço que correspondam ao meu perfil e preferências. | Maximizar meu tempo e aumentar meus rendimentos ao aceitar serviços que se ajustem à minha agenda.|
-| Tutor de pet        | Utilizar um sistema de mensagens seguras para discutir detalhes do serviço com o pet sitter. | Esclarecer dúvidas e combinar especificidades do cuidado do meu pet de forma segura e eficiente.|
-| Pet sitter          | Solicitar a verificação de identidade dos tutores para garantir transações seguras. | Trabalhar com maior segurança, sabendo com quem estou lidando.|
-| Tutor de pet        | Avaliar o pet sitter com base na qualidade do serviço prestado. | Contribuir para a comunidade, fornecendo feedback que ajudará outros tutores a tomarem decisões informadas.|
-| Pet sitter          | Receber avaliações dos tutores para construir minha reputação na plataforma. | Aumentar minha credibilidade e atrair mais clientes.|
-| Tutor de pet        | Filtrar pet sitters por serviços específicos, como cuidados médicos ou hospedagem em domicílio. | Encontrar um profissional especializado para atender às necessidades únicas do meu pet.|
-| Tutor de pet        | Efetuar o pagamento do serviço. | Garantir uma transação segura e conveniente após a conclusão satisfatória do serviço de cuidados com meu pet.|
-| Pet sitter          | Receber o pagamento do serviço prestado. | Assegurar uma remuneração justa e pontual pelo meu trabalho e dedicação ao cuidar dos animais de estimação.|
-| Administrador da plataforma | Revisar e moderar avaliações para assegurar autenticidade e relevância. | Manter a confiança e a integridade das avaliações, garantindo uma comunidade segura e confiável.|
-| Dono da Plataforma (Cliente) | Gerenciar eficazmente a plataforma e garantir a qualidade e satisfação do serviço. | Assegurar a melhor experiência para os usuários e o sucesso contínuo do negócio com gestão de indicadores e performance da plataforma e serviço ofertado.|
+
+Aqui está a tabela atualizada com a parte solicitada incluída:
+
+| EU COMO... `QUEM`        | QUERO/PRECISO ... `O QUE`                                                                  | PARA ... `PORQUE`                                                                   |
+|--------------------------|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Tutor de pet             | Encontrar um pet sitter na minha região que possa cuidar de pets.                          | Saber que meus animais estão bem cuidados.                                           |
+| Pet sitter               | Registrar-me na plataforma e criar um perfil detalhado, incluindo minhas habilidades, experiências e tipos de animais que prefiro cuidar. | Aumentar minha visibilidade para tutores potenciais e obter mais oportunidades de trabalho. |
+| Tutor de pet             | Avaliar o pet sitter com base na qualidade do serviço prestado.                            | Contribuir para a comunidade, fornecendo feedback que ajudará outros tutores a tomarem decisões informadas. |
+| Pet sitter               | Receber avaliações dos tutores para construir minha reputação na plataforma.               | Aumentar minha credibilidade e atrair mais clientes.                                 |
+| Administrador da plataforma | Revisar e moderar avaliações para assegurar autenticidade e relevância.                    | Manter a confiança e a integridade das avaliações, garantindo uma comunidade segura e confiável. |
+| Dono da Plataforma (Cliente) | Gerenciar eficazmente a plataforma e garantir a qualidade e satisfação do serviço.           | Assegurar a melhor experiência para os usuários e o sucesso contínuo do negócio com gestão de indicadores e performance da plataforma e serviço ofertado. |
+
 
 ## Requisitos do Projeto
 
