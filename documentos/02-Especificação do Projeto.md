@@ -92,23 +92,17 @@ Para atender às especificações, funcionalidades e características que a plat
 
 ### Requisitos Funcionais
 
-|ID     | Descrição                       | Prioridade |
-|-------|---------------------------------|------------|
-| RF-01 |  O sistema deve permitir o registro e a listagem de pet sitters.  | Alta   | 
-| RF-02 |  O sistema deve permitir o registro e a listagem de tutores.  | Alta   |
-| RF-03 |  O sistema deve ter uma plataforma de moderação de todas as informações dos usuários.  | Alta   |
-| RF-04 |  O sistema deve fazer uma verificação de identidade de tutores e pet sitters.  | Alta   |
-| RF-05 |  O sistema deve possuir um chat entre tutores e pet sitters.  | Alta   |
-| RF-06 |  O sistema deve ter notificação de mensagens do chat.  | Alta   |
-| RF-07 |  O sistema deve ter solicitação e cancelamento de serviços.  | Alta   |
-| RF-08 |  O sistema deve ter notificação de solicitação e cancelamento de serviço.  | Alta   |
-| RF-09 |  O sistema deve ter avaliação de tutores e pet sitters.  | Alta   |
-| RF-10 |  O sistema deve permitir o pagamento, recebimento e estorno dos valores pagos pelos serviços.  | Alta   |
-| RF-11 |  O sistema deve ter um mapa da região indicando onde estão os pet sitters cadastrados.  | Alta   |
-| RF-12 |  O sistema deve ter um sistema de filtro de informações de pet sitters.  | Alta   |
-| RF-13 |  O sistema deve manter um histórico de serviços contratados.  | Alta   |
-| RF-14 |  O sistema deve permitir que os usuários denunciem comportamentos antiéticos, criminosos e quaisquer outros que ponham em risco a segurança dos usuários.  | Alta   |
-| RF-15 |  O sistema deve ter uma área de gerenciamento de indicadores e performance do negócio.  | Alta   |
+Aqui está a tabela atualizada com o RF-03:
+
+| ID    | Descrição                                                                 | Prioridade |
+|-------|---------------------------------------------------------------------------|------------|
+| RF-01 | O sistema deve permitir o registro de pet sitters.                        | Alta       | 
+| RF-02 | O sistema deve permitir a listagem de pet sitters.                        | Média      |
+| RF-03 | O sistema deve permitir o registro de tutores.                            | Alta       |
+| RF-04 | O sistema deve permitir a listagem de tutores.                            | Média      |
+| RF-05 | O sistema deve ter solicitação e cancelamento de serviços.                | Alta       |
+| RF-06 | O sistema deve ter avaliação de tutores e pet sitters.                    | Alta       |
+| RF-07 | O sistema deve ter um mapa da região indicando onde estão os pet sitters cadastrados. | Alta |
 
 **Prioridade: Alta / Média / Baixa. 
 
