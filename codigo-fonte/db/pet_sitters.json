@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "nome": "Fulana Maria de Tal",
+    "habilidades": ["MEDICAMENTOS", "INJEÇÕES", "TUTOR", "GATO", "CACHORRO", "PASSARO"],
+    "custo": 10.0,
+    "localizacao": "Santa Efigênia"
+  },
+  
+  {
+    "id": 2,
+    "nome": "Cicrano José Souza",
+    "habilidades": ["MEDICAMENTOS", "INJEÇÕES", "GATO", "CACHORRO", "PASSARO"],
+    "custo": 12.0,
+    "localizacao": "Savassi"
+  }
+
+  {
+    "id": 3,
+    "nome": "Beltrano Silva",
+    "habilidades": ["MEDICAMENTOS", "TUTOR", "GATO", "CACHORRO"],
+    "custo": 10.0,
+    "localizacao": "Lourdes"
+  }
+  
+  {
+    "id": 4,
+    "nome": "Felícia Santos",
+    "habilidades": ["MEDICAMENTOS", "GATO", "CACHORRO"],
+    "custo": 15.0,
+    "localizacao": "Santa Tereza"
+  }
+]
