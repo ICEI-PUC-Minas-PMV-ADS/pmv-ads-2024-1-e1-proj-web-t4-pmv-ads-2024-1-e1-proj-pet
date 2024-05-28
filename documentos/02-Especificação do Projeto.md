@@ -73,21 +73,18 @@ Para o desenvolvimento de uma plataforma web de qualidade e bem estrutura, é ne
 
 No desenvolvimento da plataforma web Pet in a flat, é necessário incluir as descrições simplificadas das funcionalidades que serão oferecidas pelo sistema. Cada história de usuário descreve uma parte do comportamento esperado do sistema, focando nas necessidades e nos objetivos do usuário ao interagir com a plataforma. Para comunicar e priorizar requisitos do sistema, garantindo que o produto final atenda às necessidades dos usuários, foi adotada a ferramenta de gestão ágil, conforme especificado na tabela abaixo.
 
-|EU COMO... `QUEM`    | QUERO/PRECISO ... `O QUE`                                          |PARA ... `PORQUE`                         |
-|---------------------|---------------------------                                         |----------------------------------        |
-| Tutor de pet        | Encontrar um pet sitter na minha região que possa cuidar de pets.  | Saber que meus animais estão bem cuidados.|
-| Pet sitter          | Registrar-me na plataforma e criar um perfil detalhado, incluindo minhas habilidades, experiências e tipos de animais que prefiro cuidar. | Aumentar minha visibilidade para tutores potenciais e obter mais oportunidades de trabalho.|
-| Tutor de pet        | Ler avaliações e ver classificações de pet sitters antes de contratar. | Garantir que estou escolhendo um cuidador confiável e bem avaliado pela comunidade.|
-| Pet Sitter          | Receber notificações sobre solicitações de serviço que correspondam ao meu perfil e preferências. | Maximizar meu tempo e aumentar meus rendimentos ao aceitar serviços que se ajustem à minha agenda.|
-| Tutor de pet        | Utilizar um sistema de mensagens seguras para discutir detalhes do serviço com o pet sitter. | Esclarecer dúvidas e combinar especificidades do cuidado do meu pet de forma segura e eficiente.|
-| Pet sitter          | Solicitar a verificação de identidade dos tutores para garantir transações seguras. | Trabalhar com maior segurança, sabendo com quem estou lidando.|
-| Tutor de pet        | Avaliar o pet sitter com base na qualidade do serviço prestado. | Contribuir para a comunidade, fornecendo feedback que ajudará outros tutores a tomarem decisões informadas.|
-| Pet sitter          | Receber avaliações dos tutores para construir minha reputação na plataforma. | Aumentar minha credibilidade e atrair mais clientes.|
-| Tutor de pet        | Filtrar pet sitters por serviços específicos, como cuidados médicos ou hospedagem em domicílio. | Encontrar um profissional especializado para atender às necessidades únicas do meu pet.|
-| Tutor de pet        | Efetuar o pagamento do serviço. | Garantir uma transação segura e conveniente após a conclusão satisfatória do serviço de cuidados com meu pet.|
-| Pet sitter          | Receber o pagamento do serviço prestado. | Assegurar uma remuneração justa e pontual pelo meu trabalho e dedicação ao cuidar dos animais de estimação.|
-| Administrador da plataforma | Revisar e moderar avaliações para assegurar autenticidade e relevância. | Manter a confiança e a integridade das avaliações, garantindo uma comunidade segura e confiável.|
-| Dono da Plataforma (Cliente) | Gerenciar eficazmente a plataforma e garantir a qualidade e satisfação do serviço. | Assegurar a melhor experiência para os usuários e o sucesso contínuo do negócio com gestão de indicadores e performance da plataforma e serviço ofertado.|
+
+Aqui está a tabela atualizada com a parte solicitada incluída:
+
+| EU COMO... `QUEM`        | QUERO/PRECISO ... `O QUE`                                                                  | PARA ... `PORQUE`                                                                   |
+|--------------------------|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Tutor de pet             | Encontrar um pet sitter na minha região que possa cuidar de pets.                          | Saber que meus animais estão bem cuidados.                                           |
+| Pet sitter               | Registrar-me na plataforma e criar um perfil detalhado, incluindo minhas habilidades, experiências e tipos de animais que prefiro cuidar. | Aumentar minha visibilidade para tutores potenciais e obter mais oportunidades de trabalho. |
+| Tutor de pet             | Avaliar o pet sitter com base na qualidade do serviço prestado.                            | Contribuir para a comunidade, fornecendo feedback que ajudará outros tutores a tomarem decisões informadas. |
+| Pet sitter               | Receber avaliações dos tutores para construir minha reputação na plataforma.               | Aumentar minha credibilidade e atrair mais clientes.                                 |
+| Administrador da plataforma | Revisar e moderar avaliações para assegurar autenticidade e relevância.                    | Manter a confiança e a integridade das avaliações, garantindo uma comunidade segura e confiável. |
+| Dono da Plataforma (Cliente) | Gerenciar eficazmente a plataforma e garantir a qualidade e satisfação do serviço.           | Assegurar a melhor experiência para os usuários e o sucesso contínuo do negócio com gestão de indicadores e performance da plataforma e serviço ofertado. |
+
 
 ## Requisitos do Projeto
 
@@ -95,23 +92,17 @@ Para atender às especificações, funcionalidades e características que a plat
 
 ### Requisitos Funcionais
 
-|ID     | Descrição                       | Prioridade |
-|-------|---------------------------------|------------|
-| RF-01 |  O sistema deve permitir o registro e a listagem de pet sitters.  | Alta   | 
-| RF-02 |  O sistema deve permitir o registro e a listagem de tutores.  | Alta   |
-| RF-03 |  O sistema deve ter uma plataforma de moderação de todas as informações dos usuários.  | Alta   |
-| RF-04 |  O sistema deve fazer uma verificação de identidade de tutores e pet sitters.  | Alta   |
-| RF-05 |  O sistema deve possuir um chat entre tutores e pet sitters.  | Alta   |
-| RF-06 |  O sistema deve ter notificação de mensagens do chat.  | Alta   |
-| RF-07 |  O sistema deve ter solicitação e cancelamento de serviços.  | Alta   |
-| RF-08 |  O sistema deve ter notificação de solicitação e cancelamento de serviço.  | Alta   |
-| RF-09 |  O sistema deve ter avaliação de tutores e pet sitters.  | Alta   |
-| RF-10 |  O sistema deve permitir o pagamento, recebimento e estorno dos valores pagos pelos serviços.  | Alta   |
-| RF-11 |  O sistema deve ter um mapa da região indicando onde estão os pet sitters cadastrados.  | Alta   |
-| RF-12 |  O sistema deve ter um sistema de filtro de informações de pet sitters.  | Alta   |
-| RF-13 |  O sistema deve manter um histórico de serviços contratados.  | Alta   |
-| RF-14 |  O sistema deve permitir que os usuários denunciem comportamentos antiéticos, criminosos e quaisquer outros que ponham em risco a segurança dos usuários.  | Alta   |
-| RF-15 |  O sistema deve ter uma área de gerenciamento de indicadores e performance do negócio.  | Alta   |
+Aqui está a tabela atualizada com o RF-03:
+
+| ID    | Descrição                                                                 | Prioridade |
+|-------|---------------------------------------------------------------------------|------------|
+| RF-01 | O sistema deve permitir o registro de pet sitters.                        | Alta       | 
+| RF-02 | O sistema deve permitir a listagem de pet sitters.                        | Média      |
+| RF-03 | O sistema deve permitir o registro de tutores.                            | Alta       |
+| RF-04 | O sistema deve permitir a listagem de tutores.                            | Média      |
+| RF-05 | O sistema deve ter solicitação e cancelamento de serviços.                | Alta       |
+| RF-06 | O sistema deve ter avaliação de tutores e pet sitters.                    | Alta       |
+| RF-07 | O sistema deve ter um mapa da região indicando onde estão os pet sitters cadastrados. | Alta |
 
 **Prioridade: Alta / Média / Baixa. 
 
@@ -119,15 +110,16 @@ Para atender às especificações, funcionalidades e características que a plat
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
 
-|ID      | Descrição               |Prioridade |
-|--------|-------------------------|-----------|
-| RNF-01 |  A exibição dos pet sitters cadastrados, no mapa, deve levar no máximo 2 segundos.                    | Alta   | 
-| RNF-02 |  O sistema deve estar disponível 24 h por dia e todos os dias da semana.                    | Alta   |
-| RNF-03 |  O sistema deve ser responsivo, permitindo a visualização em diversos dispositivos como tablets e celulares.                    | Média   |
-| RNF-04 |  O sistema deve ser compatível com os navegadores mais utilizados: Google Chrome, Firefox, Safari, Microsoft Edge.                    | Alta   |
-| RNF-05 |  A sintaxe da aplicação web deve ser semanticamente correta para um melhor rankeamento SEO.                    | Alta   |
-| RNF-06 |  Boa manutenibilidade do Sistema.                    | Alta   |
-| RNF-07 |  A plataforma deve ser intuitiva e de fácil usabilidade.                    | Alta   |
+Aqui está a tabela renumerada:
+
+| ID     | Descrição                                                                     | Prioridade |
+|--------|-------------------------------------------------------------------------------|------------|
+| RNF-01 | A exibição dos pet sitters cadastrados, no mapa, deve levar no máximo 2 segundos. | Média      | 
+| RNF-02 | O sistema deve estar disponível 24 h por dia e todos os dias da semana.           | Média       |
+| RNF-03 | O sistema deve ser responsivo                                                  | Média      |
+| RNF-04 | O sistema deve ser compatível com os navegadores mais utilizados, como Google Chrome, Firefox. | Alta       |
+| RNF-05 | Boa manutenibilidade do Sistema.                                               | Alta       |
+| RNF-06 | A plataforma deve ser intuitiva e de fácil usabilidade.                        | Alta       |
 
 **Prioridade: Alta / Média / Baixa. 
 
