@@ -23,13 +23,14 @@
       </nav>
     </header>
     <main>
-      <div class="form">
+      <form id="buscaForm" class="form">
         <div class="form-position">
           <div class="content-form">
             <div class="fields">
               <div class="row">
                 <div class="col">
                   <input
+                    id="localizacao"
                     type="text"
                     class="form-control"
                     placeholder="Localização"
@@ -38,6 +39,7 @@
                 </div>
                 <div class="col">
                   <input
+                    id="dataInicio"
                     type="date"
                     class="form-control"
                     placeholder="Data de início"
@@ -46,6 +48,7 @@
                 </div>
                 <div class="col">
                   <input
+                    id="dataTermino"
                     type="date"
                     class="form-control"
                     placeholder="Data do término"
@@ -54,10 +57,10 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="form-button">Buscar</button>
+            <button type="submit" class="form-button">Buscar</button>
           </div>
         </div>
-      </div>
+      </form>
       <div class="global-section">
         <section>
           <div>
@@ -69,7 +72,12 @@
                   /></span>
                   Tem/teve algum pet
                 </p>
-                <input type="checkbox" name="" id="" />
+                <input
+                  class="checkbox-group"
+                  type="checkbox"
+                  name="habilidades[]"
+                  value="tutor"
+                />
               </div>
               <div class="service-option">
                 <p>
@@ -80,7 +88,12 @@
                   /></span>
                   Pode administrar medicamentos
                 </p>
-                <input type="checkbox" name="" id="" />
+                <input
+                  class="checkbox-group"
+                  type="checkbox"
+                  name="habilidades[]"
+                  value="medicamentos"
+                />
               </div>
               <div class="service-option">
                 <p>
@@ -91,7 +104,12 @@
                   /></span>
                   Pode aplicar injeções
                 </p>
-                <input type="checkbox" name="" id="" />
+                <input
+                  class="checkbox-group"
+                  type="checkbox"
+                  name="habilidades[]"
+                  value="injecoes"
+                />
               </div>
               <div class="service-option">
                 <p>
@@ -102,7 +120,12 @@
                   /></span>
                   Favorito
                 </p>
-                <input type="checkbox" name="" id="" />
+                <input
+                  class="checkbox-group"
+                  type="checkbox"
+                  name="habilidades[]"
+                  value="favorito"
+                />
               </div>
             </div>
           </div>
@@ -118,106 +141,7 @@
             ></iframe>
           </div>
         </section>
-        <section>
-          <div class="cards">
-            <div class="card">
-              <div class="card-title">
-                <a href="perfil.html" target="_self" rel="noopener noreferrer"
-                  >Fulana Maria de Tal</a
-                >
-              </div>
-              <div class="card-body">
-                <div class="card-icons">
-                  <div class="iconrow">
-                    <img src="images/iconegato.png" alt="" />
-                    <img src="images/iconecachorro.png" alt="" />
-                    <img src="images/iconepassaro.png" alt="" />
-                  </div>
-                  <div class="iconrow">
-                    <img src="images/iconetempet.png" alt="" />
-                    <img src="images/iconeinjecao.png" alt="" />
-                    <img src="images/iconeremedios.png" alt="" />
-                  </div>
-                  <p>Santa Efigênia</p>
-                </div>
-                <div class="card-photo">
-                  <img src="images/imgperfil1.png" alt="" />
-                  <p>R$10,00</p>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-title">
-                <a href="perfil.html" target="_self" rel="noopener noreferrer"
-                  >Cicrano José Souza</a
-                >
-              </div>
-              <div class="card-body">
-                <div class="card-icons">
-                  <div class="iconrow">
-                    <img src="images/iconegato.png" alt="" />
-                    <img src="images/iconecachorro.png" alt="" />
-                    <img src="images/iconepassaro.png" alt="" />
-                  </div>
-                  <div class="iconrow">
-                    <img src="images/iconeinjecao.png" alt="" />
-                    <img src="images/iconeremedios.png" alt="" />
-                  </div>
-                  <p>Savassi</p>
-                </div>
-                <div class="card-photo">
-                  <img src="images/imgperfil2.png" alt="" />
-                  <p>R$12,00</p>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-title">
-                <a href="perfil.html" target="_self" rel="noopener noreferrer"
-                  >Beltrano Silva</a
-                >
-              </div>
-              <div class="card-body">
-                <div class="card-icons">
-                  <div class="iconrow">
-                    <img src="images/iconegato.png" alt="" />
-                    <img src="images/iconecachorro.png" alt="" />
-                  </div>
-                  <div class="iconrow">
-                    <img src="images/iconetempet.png" alt="" />
-                    <img src="images/iconeremedios.png" alt="" />
-                  </div>
-                  <p>Lourdes</p>
-                </div>
-                <div class="card-photo">
-                  <img src="images/imgperfil4.png" alt="" />
-                  <p>R$10,00</p>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-title">
-                <a href="perfil.html" target="_self" alt=""> Felícia Santos</a>
-              </div>
-              <div class="card-body">
-                <div class="card-icons">
-                  <div class="iconrow">
-                    <img src="images/iconegato.png" alt="" />
-                    <img src="images/iconecachorro.png" alt="" />
-                  </div>
-                  <div class="iconrow">
-                    <img src="images/iconeremedios.png" alt="" />
-                  </div>
-                  <p>Santa Tereza</p>
-                </div>
-                <div class="card-photo">
-                  <img src="images/imgperfil3.png" alt="" />
-                  <p>R$15,00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section id="resultados"></section>
       </div>
     </main>
     <footer>
@@ -236,5 +160,35 @@
         </div>
       </div>
     </footer>
+    <script src="db/pet_sitters.js"></script>
+    <script src="js/busca.js"></script>
+    <script>
+      (() => {
+        let buscaController = new BuscaController();
+
+        const form = document.getElementById("buscaForm");
+        const habilidadesCheckboxes =
+          document.querySelectorAll(".checkbox-group");
+
+        console.log(habilidadesCheckboxes);
+
+        // primeira vez que carrega
+        buscaController.exibirResultados();
+
+        // form submit
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          buscaController.exibirResultados();
+        });
+
+        // checkboxes
+        habilidadesCheckboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", () => {
+            event.preventDefault();
+            buscaController.exibirResultados();
+          });
+        });
+      })(this);
+    </script>
   </body>
 </html>
