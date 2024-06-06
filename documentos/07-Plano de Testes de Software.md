@@ -11,6 +11,24 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Passos | Indicar passos para a execução do teste |
 | Critérios de êxito | Indicar os critérios de êxito  |
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+
+|Caso de Teste    | CT-01 - Verificar a funcionalidade do formulário de busca |
+|:---|:---|
+| Requisitos Associados | RF-02: O sistema deve permitir a listagem de pet sitters. |
+| Objetivo do Teste | Verificar se o formulário de busca retorna resultados com base na localização digitada. |
+| Passos | 1. Acessar o formulário; 2. Digitar o nome de um bairro de Belo Horizonte; 3. Visualizar o que foi retornado na página Busca. |
+| Critérios de êxito | A listagem deve conter todos os perfis que atendam ao critério especificado, no caso, a localidade.  |
+| Responsável pela elaborar do caso de Teste | Ana Cavalcanti |
+
+
+|Caso de Teste    | CT-02 - Verificar a funcionalidade de filtragem de busca |
+|:---|:---|
+| Requisitos Associados | RF-12: O sistema deve ter um sistema de filtro de informações de pet sitters. |
+| Objetivo do Teste | Verificar se o formulário de busca retorna resultados com base no filtro ou nos filtros selecionados. |
+| Passos | 1. Ir à página Busca; 2. Clicar em um ou mais filtros na caixa lateral esquerda que tem opções de filtragem; 3. Visualizar o que foi retornado na página Busca. |
+| Critérios de êxito | A listagem deve conter todos os perfis que atendam a todos os critérios especificados, no caso, os filtros selecionados.  |
+| Responsável pela elaborar do caso de Teste | Ana Cavalcanti |
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)

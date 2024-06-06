@@ -6,7 +6,7 @@ Desenvolvimento de Aplicação Web Front-End
 
 1º Semestre/2024
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O projeto Pet in a Flat tem o propósito de conectar tutores e cuidadores de animais de estimação em uma plataforma segura que permita a filtragem dos profissionais buscados, por meio de critérios relacionados as suas capacidades e experiências. 
 
 ## Integrantes
 
