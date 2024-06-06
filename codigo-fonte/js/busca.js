@@ -13,23 +13,15 @@
     petSittersTable = new PetSitters();
   }
 
-  BuscaController.prototype.criarGruposDeArray = function (array) {
-    const result = [];
-    for (let i = 0; i < array.length; i += 3) {
-      result.push(array.slice(i, i + 3));
-    }
-    return result;
-  };
-
-  BuscaController.prototype.exibirResultados = function (params) {
+  // renderiza o resultado
+  BuscaController.prototype.exibirResultados = function (filtros) {
     const resultsDiv = document.getElementById("resultados");
     resultsDiv.innerHTML = "";
 
     // busca petSitters
-    petSitters = petSittersTable.find({
-      localizacao: document.getElementById("localizacao").value,
-    });
+    petSitters = petSittersTable.find(filtros);
 
+    // começa a renderizar os petsitters
     if (petSitters.length === 0) {
       resultsDiv.innerHTML =
         "Nenhum pet sitter encontrado para esta localização.";
@@ -73,6 +65,64 @@
         resultsDiv.appendChild(sitterDiv);
       });
     }
+  };
+
+  // cria grupos de 3 habilidades
+  BuscaController.prototype.criarGruposDeArray = function (array) {
+    const result = [];
+    for (let i = 0; i < array.length; i += 3) {
+      result.push(array.slice(i, i + 3));
+    }
+    return result;
+  };
+
+  BuscaController.prototype.carregarPagina = function () {
+    const url = new URLSearchParams(window.location.search);
+    const filtros = {
+      localizacao: url.get("localizacao"),
+      dataInicio: url.get("dataDisponibilidadeInicio"),
+      dataTermino: url.get("dataDisponibilidadeTermino"),
+    };
+
+    if (filtros.localizacao) {
+      document
+        .getElementById("localizacao")
+        .setAttribute("value", filtros.localizacao);
+    }
+
+    if (filtros.dataInicio) {
+      document
+        .getElementById("dataDisponibilidadeInicio")
+        .setAttribute("value", filtros.dataInicio);
+    }
+
+    if (filtros.dataTermino) {
+      document
+        .getElementById("dataDisponibilidadeTermino")
+        .setAttribute("value", filtros.dataTermino);
+    }
+
+    this.exibirResultados(filtros);
+  };
+
+  BuscaController.prototype.submit = function () {
+    const todasAsHabilidades = document.getElementsByName("habilidades[]");
+    const habilidadesSelecionadas = [];
+
+    for (let i = 0; i < todasAsHabilidades.length; i++) {
+      if (todasAsHabilidades[i].checked) {
+        habilidadesSelecionadas.push(todasAsHabilidades[i].value);
+      }
+    }
+
+    const filtros = {
+      localizacao: document.getElementById("localizacao").value,
+      habilidadesSelecionadas,
+      dataInicio: document.getElementById("dataDisponibilidadeInicio").value,
+      dataTermino: document.getElementById("dataDisponibilidadeTermino").value,
+    };
+
+    this.exibirResultados(filtros);
   };
 
   exports.BuscaController = BuscaController;

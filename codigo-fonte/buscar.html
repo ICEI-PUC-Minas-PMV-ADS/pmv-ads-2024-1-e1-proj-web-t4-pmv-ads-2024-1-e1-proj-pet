@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <title>Pet in a Flat</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/buscar.css" />
   </head>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col">
                   <input
-                    id="dataInicio"
+                    id="dataDisponibilidadeInicio"
                     type="date"
                     class="form-control"
                     placeholder="Data de início"
@@ -48,7 +48,7 @@
                 </div>
                 <div class="col">
                   <input
-                    id="dataTermino"
+                    id="dataDisponibilidadeTermino"
                     type="date"
                     class="form-control"
                     placeholder="Data do término"
@@ -164,28 +164,25 @@
     <script src="js/busca.js"></script>
     <script>
       (() => {
-        let buscaController = new BuscaController();
+        const buscaController = new BuscaController();
 
         const form = document.getElementById("buscaForm");
         const habilidadesCheckboxes =
           document.querySelectorAll(".checkbox-group");
 
-        console.log(habilidadesCheckboxes);
+        buscaController.carregarPagina();
 
-        // primeira vez que carrega
-        buscaController.exibirResultados();
-
-        // form submit
+        // adiciona um event listener para o form submit
         form.addEventListener("submit", (event) => {
           event.preventDefault();
-          buscaController.exibirResultados();
+          buscaController.submit();
         });
 
-        // checkboxes
+        // adiciona um event listener para os checkboxes
         habilidadesCheckboxes.forEach((checkbox) => {
-          checkbox.addEventListener("change", () => {
+          checkbox.addEventListener("change", (event) => {
             event.preventDefault();
-            buscaController.exibirResultados();
+            buscaController.submit();
           });
         });
       })(this);

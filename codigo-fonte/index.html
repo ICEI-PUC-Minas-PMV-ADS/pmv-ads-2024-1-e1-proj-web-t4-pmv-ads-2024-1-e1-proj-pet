@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <title>Pet in a Flat</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -23,7 +23,7 @@
       </nav>
     </header>
     <main>
-      <div class="form">
+      <form class="form" action="buscar.html">
         <div class="form-position">
           <p>Encontre cuidadores de pet na sua região:</p>
           <div class="content-form">
@@ -31,6 +31,8 @@
               <div class="row">
                 <div class="col">
                   <input
+                    id="localizacao"
+                    name="localizacao"
                     type="text"
                     class="form-control"
                     placeholder="Localização"
@@ -39,6 +41,8 @@
                 </div>
                 <div class="col">
                   <input
+                    id="dataDisponibilidadeInicio"
+                    name="dataDisponibilidadeInicio"
                     type="date"
                     class="form-control"
                     placeholder="Data de início"
@@ -47,6 +51,8 @@
                 </div>
                 <div class="col">
                   <input
+                    id="dataDisponibilidadeTermino"
+                    name="dataDisponibilidadeTermino"
                     type="date"
                     class="form-control"
                     placeholder="Data do término"
@@ -55,10 +61,10 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="form-button">Buscar</button>
+            <button type="submit" class="form-button">Buscar</button>
           </div>
         </div>
-      </div>
+      </form>
       <div class="intro">
         <h1>Pet in a Flat</h1>
         <p>
@@ -251,7 +257,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/jlib/query-3.7.1.js"></script>
+    <script src="js/lib/query-3.7.1.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
   </body>
 </html>
