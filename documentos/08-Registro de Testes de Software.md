@@ -2,11 +2,31 @@
 
 Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
 
-Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste executado]
+Os resultados dos testes funcionais realizados na aplicação são descritos a seguir.
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
+#### Caso de Teste: CT-03 - Verificar a funcionalidade de cadastro de usuário
+
+| Caso de Teste    | CT-03 - Verificar a funcionalidade de cadastro de usuário |
 |:---|:---|
-| Resultados obtidos | Descrever resultados do teste  |
-| Responsável pela execução do caso de Teste | Nome do integrante da equipe |
+| Resultados obtidos | O teste foi bem-sucedido. O formulário de cadastro permitiu a inserção de dados e a criação de um novo usuário. Após a submissão, uma mensagem de sucesso foi exibida e o usuário foi redirecionado para a página de login. |
+| Responsável pela execução do caso de Teste | Grace Kelly |
 
-[Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
+[INSERIR PRINT AQUI]
+
+#### Caso de Teste: CT-04 - Verificar validação de senhas no cadastro de usuário
+
+| Caso de Teste    | CT-04 - Verificar validação de senhas no cadastro de usuário |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. O sistema validou corretamente as senhas, exibindo uma mensagem de erro quando as senhas não coincidiam e impedindo o cadastro até que as senhas fossem iguais e todos os campos estivessem preenchidos. |
+| Responsável pela execução do caso de Teste | Grace Kelly |
+
+[INSERIR PRINT AQUI]
+
+#### Caso de Teste: CT-05 - Verificar cadastro com e-mail já existente
+
+| Caso de Teste    | CT-05 - Verificar cadastro com e-mail já existente |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. O sistema impediu o cadastro de um novo usuário utilizando um e-mail já existente, exibindo uma mensagem de erro. |
+| Responsável pela execução do caso de Teste | Grace Kelly |
+
+[INSERIR PRINT AQUI]
