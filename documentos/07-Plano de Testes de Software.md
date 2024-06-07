@@ -29,6 +29,36 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Passos | 1. Ir à página Busca; 2. Clicar em um ou mais filtros na caixa lateral esquerda que tem opções de filtragem; 3. Visualizar o que foi retornado na página Busca. |
 | Critérios de êxito | A listagem deve conter todos os perfis que atendam a todos os critérios especificados, no caso, os filtros selecionados.  |
 | Responsável pela elaborar do caso de Teste | Ana Cavalcanti |
+
+#### Caso de Teste: CT-03 - Verificar a funcionalidade de cadastro de usuário
+
+| Caso de Teste    | CT-03 - Verificar a funcionalidade de cadastro de usuário |
+|:---|:---|
+| Requisitos Associados | RF-01: O sistema deve permitir o cadastro de novos usuários. |
+| Objetivo do Teste | Verificar se o formulário de cadastro permite que novos usuários sejam cadastrados com sucesso. |
+| Passos | 1. Acessar a página de cadastro; 2. Preencher todos os campos obrigatórios do formulário; 3. Clicar no botão "Cadastrar"; 4. Verificar se uma mensagem de sucesso é exibida e se o usuário é redirecionado para a página de login. 5. Verificar o JSON do novo usuário no localStorage |
+| Critérios de êxito | O cadastro deve ser realizado com sucesso, exibindo uma mensagem de confirmação e redirecionando o usuário para a página de login. O usuário deve estar presente como um JSON no localStorage |
+| Responsável pela elaboração do caso de Teste | Grace Kelly |
+
+#### Caso de Teste: CT-04 - Verificar validação de senhas no cadastro de usuário
+
+| Caso de Teste    | CT-04 - Verificar validação de senhas e preenchimento completo no cadastro de usuário |
+|:---|:---|
+| Requisitos Associados | RF-01: O sistema deve permitir o cadastro de novos usuários. |
+| Objetivo do Teste | Verificar se o sistema valida corretamente a confirmação de senha no formulário de cadastro. |
+| Passos | 1. Acessar a página de cadastro; 2. Preencher os campos de forma incompleta ou com senhas não-iguais ; 3. Clicar no botão "Cadastrar"; 4. Verificar se uma mensagem de erro é exibida informando a inconsistência do preenchimento. |
+| Critérios de êxito | O sistema deve exibir um aviso informando a inconsistência do preenchimento para que o usuário faça o preenchimento completo de maneira correta. |
+| Responsável pela elaboração do caso de Teste | Grace Kelly |
+
+#### Caso de Teste: CT-05 - Verificar cadastro com e-mail já existente
+
+| Caso de Teste    | CT-05 - Verificar cadastro com e-mail já existente |
+|:---|:---|
+| Requisitos Associados | RF-01: O sistema deve permitir o cadastro de novos usuários. |
+| Objetivo do Teste | Verificar se o sistema impede o cadastro de um usuário com um e-mail já existente no banco de dados. |
+| Passos | 1. Acessar a página de cadastro; 2. Preencher todos os campos obrigatórios com dados válidos, usando um e-mail que já esteja cadastrado; 3. Clicar no botão "Cadastrar"; 4. Verificar se uma mensagem de erro é exibida informando que o e-mail já está cadastrado. |
+| Critérios de êxito | O sistema deve exibir uma mensagem de erro informando que o e-mail já está cadastrado e impedir a conclusão do cadastro. |
+| Responsável pela elaboração do caso de Teste | Grace Kelly |
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
