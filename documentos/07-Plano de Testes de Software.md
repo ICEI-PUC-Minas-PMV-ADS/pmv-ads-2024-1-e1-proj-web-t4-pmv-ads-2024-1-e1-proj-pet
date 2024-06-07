@@ -59,6 +59,17 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Passos | 1. Acessar a página de cadastro; 2. Preencher todos os campos obrigatórios com dados válidos, usando um e-mail que já esteja cadastrado; 3. Clicar no botão "Cadastrar"; 4. Verificar se uma mensagem de erro é exibida informando que o e-mail já está cadastrado. |
 | Critérios de êxito | O sistema deve exibir uma mensagem de erro informando que o e-mail já está cadastrado e impedir a conclusão do cadastro. |
 | Responsável pela elaboração do caso de Teste | Grace Kelly |
+
+#### Caso de Teste: CT-06 - Verificar Login com e-mail e senha cadastrados
+
+| Caso de Teste    | CT-06 - Verificar Login com e-mail e senha cadastrados |
+|:---|:---|
+| Requisitos Associados | RF-01: O sistema deve verificar se e-mail e senha estao corretos. |
+| Objetivo do Teste | Verificar se o sistema confirma o e-mail e senha do usuario. |
+| Passos | 1. Acessar a página de Login; 2. Preencher todos os campos obrigatórios com dados válidos, usando um e-mail que já esteja cadastrado; 3. Clicar no botão "Entrar"; 4. Verificar se uma mensagem de confirmação é exibida informando que o Login foi feito com sucesso. |
+| Critérios de êxito | O sistema deve exibir uma mensagem confirmando que o Login foi realizado. |
+| Responsável pela elaboração do caso de Teste | Felipe Soares Kutschera |
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
