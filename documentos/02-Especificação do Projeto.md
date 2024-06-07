@@ -96,13 +96,19 @@ Aqui está a tabela atualizada com o RF-03:
 
 | ID    | Descrição                                                                 | Prioridade |
 |-------|---------------------------------------------------------------------------|------------|
-| RF-01 | O sistema deve permitir o registro de pet sitters.                        | Alta       | 
-| RF-02 | O sistema deve permitir a listagem de pet sitters.                        | Média      |
-| RF-03 | O sistema deve permitir o registro de tutores.                            | Alta       |
-| RF-04 | O sistema deve permitir a listagem de tutores.                            | Média      |
-| RF-05 | O sistema deve ter solicitação e cancelamento de serviços.                | Alta       |
-| RF-06 | O sistema deve ter avaliação de tutores e pet sitters.                    | Alta       |
-| RF-07 | O sistema deve ter um mapa da região indicando onde estão os pet sitters cadastrados. | Alta |
+| RF-01 | O sistema deve permitir o cadastro de usuários.                        | Alta       | 
+| RF-02 | O sistema deve permitir o login de usuários.                           | Alta       | 
+| RF-03 | O sistema deve manter os dados do usuário persistentes após o login.      | Alta       |
+| RF-04 | O sistema deve permitir a busca de pet sitters.                        | Média       |
+| RF-05 | O sistema deve permitir a recuperação de senha para os usuários.       | Baixa      |
+| RF-06 | O sistema deve exibir informações sobre o serviço na página "Sobre".   | Média      |
+| RF-07 | O sistema deve armazenar os dados dos usuários e pet sitters em JSON. | Alta       |
+| RF-08 | O sistema deve mostrar o perfil do pet sitter com detalhes.            | Alta       |
+| RF-09 | O sistema deve validar a entrada de dados no cadastro e login.            | Baixa       |
+| RF-10 | O sistema deve permitir filtrar pet sitters por localização.              | Média       |
+| RF-11 | O sistema deve permitir filtrar pet sitters por habilidades.              | Média      |
+| RF-12 | O sistema deve permitir filtrar pet sitters por experiência prévia.          | Baixa       |
+| RF-13 | O sistema deve exibir a localização dos pet sitters em um mapa.           | Baixa      |
 
 **Prioridade: Alta / Média / Baixa. 
 
