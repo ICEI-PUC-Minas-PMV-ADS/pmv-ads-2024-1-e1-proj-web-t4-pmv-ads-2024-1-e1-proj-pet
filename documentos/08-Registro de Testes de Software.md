@@ -1,3 +1,4 @@
+
 # Registro de Testes de Software
 
 Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
@@ -32,3 +33,12 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Responsável pela execução do caso de Teste | Grace Kelly |
 
 ![Aviso de e-mail já existente](./img/cadastroPrint07.png)
+
+#### Caso de Teste: CT-06 - Verificar Login com e-mail e senha existente
+
+| Caso de Teste    | CT-06 - Verificar Login com e-mail e senha existente |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. O sistema confirmou e-mail e senha do usuario, exibindo uma mensagem de Login realizado com sucesso!. |
+| Responsável pela execução do caso de Teste | Felipe Soares Kutschera |
+
+![teste Login positivo](https://github.com/FelipeKutschera/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/assets/165940217/01539adf-39c1-4dc0-ad50-f41255e29744)
