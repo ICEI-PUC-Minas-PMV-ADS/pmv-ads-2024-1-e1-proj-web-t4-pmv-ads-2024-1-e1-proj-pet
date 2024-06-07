@@ -1,86 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <title>Cadastro - Pet in a Flat</title>
-    <link rel="stylesheet" href="css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/cadastro.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <nav>
-        <img src="images/logoheader.png" alt="Logo" />
-        <div class="header-links">
-          <a href="index.html">Home</a>
-          <a href="buscar.html">Busca</a>
-          <a href="cadastro.html">Cadastro</a>
-          <a href="login.html">Login</a>
-          <a href="sobre.html">Sobre</a>
-        </div>
-      </nav>
+        <nav>
+            <img src="images/logoheader.png" alt="Logo" />
+            <div class="header-links">
+                <a href="index.html">Home</a>
+                <a href="buscar.html">Busca</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="login.html">Login</a>
+                <a href="sobre.html">Sobre</a>
+            </div>
+        </nav>
     </header>
 
     <main>
-      <div class="section form">
-        <form>
-          <h1>Cadastro</h1>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              id="nome"
-              placeholder="Nome completo"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="E-mail"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="password"
-              class="form-control"
-              id="senha"
-              placeholder="Senha"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="password"
-              class="form-control"
-              id="senha"
-              placeholder="Confirmar senha"
-            />
-          </div>
-          <button type="submit" class="btn btn-primary">Cadastrar</button>
-        </form>
-      </div>
+        <div class="section form">
+            <form id="cadastroForm">
+                <h1>Cadastro</h1>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="nome"
+                        placeholder="Nome completo"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="E-mail"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="Senha">Senha</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="senha"
+                        placeholder="Senha"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="confirmarSenha">Confirmar senha</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="confirmarSenha"
+                        placeholder="Confirmar senha"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="bairro"
+                        placeholder="Bairro"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="teveExperiencia">Já teve experiência prévia com animais?</label>
+                    <select id="teveExperiencia" class="form-control">
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="administraMedicamentos">É capacitado para administrar medicamentos orais em animais?</label>
+                    <select id="administraMedicamentos" class="form-control">
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="aplicaInjecao">É capacitado para administrar injeções em animais?</label>
+                    <select id="aplicaInjecao" class="form-control">
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea
+                        class="form-control"
+                        id="descricao"
+                        placeholder="Descrição"
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Cadastrar
+                </button>
+            </form>
+        </div>
     </main>
 
     <footer>
-      <div class="footer-wrapper">
-        <p>© Copyright 2024 Pet in a Flat</p>
-        <div class="footer-social">
-          <h3>Sigam-nos em nossa redes sociais</h3>
-          <div class="footer-links">
-            <a href="#">
-              <img src="images/facebook.png" alt="Logo Facebook" />
-            </a>
-            <a href="#">
-              <img src="images/instagram.png" alt="Logo Instagram" />
-            </a>
-          </div>
+        <div class="footer-wrapper">
+            <p>© Copyright 2024 Pet in a Flat</p>
+            <div class="footer-social">
+                <h3>Sigam-nos em nossa redes sociais</h3>
+                <div class="footer-links">
+                    <a href="#">
+                        <img
+                            src="images/facebook.png"
+                            alt="Logo Facebook"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="images/instagram.png"
+                            alt="Logo Instagram"
+                        />
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
-    <script src="js/lib/query-3.7.1.js"></script>
-    <script src="js/lib/bootstrap.min.js"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
+    <script src="js/cadastro.js"></script>
+</body>
 </html>

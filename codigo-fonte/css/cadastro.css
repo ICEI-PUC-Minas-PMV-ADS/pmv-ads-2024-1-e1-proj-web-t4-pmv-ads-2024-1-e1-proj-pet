@@ -1,6 +1,5 @@
 div.form {
   margin: 5.6rem auto 6.9rem auto;
-  margin-top: 5.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,21 +14,51 @@ form {
   background-color: var(--azul-escuro);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
+  padding: 2rem;
 }
 
 h1 {
   margin-top: 2.5rem;
   margin-bottom: 3.1rem;
   text-align: center;
+  color: var(--branco);
 }
 
-.form input {
-  margin: auto;
-  width: 30rem;
+.form-group {
+  margin-bottom: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group label {
+  width: 100%;
+  max-width: 30rem;
+  text-align: left;
+  color: var(--branco);
+}
+
+.form input,
+.form textarea,
+.form select {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
   padding: 8px;
   margin-bottom: 1.3rem;
-  border-radius: 0px;
   border: 1px solid var(--branco);
+  border-radius: 5px;
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+.form textarea {
+  height: 100px;
+}
+
+.form input[type="file"] {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .form button {
@@ -41,6 +70,9 @@ h1 {
   background-color: var(--preto);
   color: var(--branco);
   text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .form button:hover {
