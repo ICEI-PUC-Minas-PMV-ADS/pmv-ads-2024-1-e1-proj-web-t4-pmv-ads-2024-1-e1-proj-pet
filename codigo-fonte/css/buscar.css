@@ -5,11 +5,6 @@
   background-color: var(--azul-claro);
 }
 
-.form-position {
-  margin-left: calc((100vw - 1280px) / 2);
-  max-width: 1280px;
-}
-
 .form p {
   color: var(--roxo-escuro);
   font-size: 14px;
@@ -77,8 +72,6 @@ section {
 .global-section {
   display: flex;
   justify-content: space-between;
-  max-width: 1280px;
-  margin: auto;
   margin-top: 50px;
 }
 

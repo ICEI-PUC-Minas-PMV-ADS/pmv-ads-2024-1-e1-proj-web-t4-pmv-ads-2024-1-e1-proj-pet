@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
         <img src="images/logoheader.png" alt="Logo" />
         <div class="header-links">
           <a href="index.html" target="_self">Home</a>
@@ -24,56 +24,56 @@
     </header>
     <main>
       <form class="form" action="buscar.html">
-        <div class="form-position">
-          <p>Encontre cuidadores de pet na sua região:</p>
-          <div class="content-form">
-            <div class="fields">
-              <div class="row">
-                <div class="col">
-                  <input
-                    id="localizacao"
-                    name="localizacao"
-                    type="text"
-                    class="form-control"
-                    placeholder="Localização"
-                    aria-label="Localização"
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    id="dataDisponibilidadeInicio"
-                    name="dataDisponibilidadeInicio"
-                    type="date"
-                    class="form-control"
-                    placeholder="Data de início"
-                    aria-label="Data de início"
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    id="dataDisponibilidadeTermino"
-                    name="dataDisponibilidadeTermino"
-                    type="date"
-                    class="form-control"
-                    placeholder="Data do término"
-                    aria-label="Data do término"
-                  />
-                </div>
-              </div>
+        <div class="container content-form d-flex flex-column">
+          <div>
+            <p>Encontre cuidadores de pet na sua região:</p>
+          </div>
+          <div class="d-flex flex-column flex-md-row">
+            <div class="d-flex flex-column flex-md-row flex-grow-1">
+              <input
+                id="localizacao"
+                name="localizacao"
+                type="text"
+                class="form-control"
+                placeholder="Localização"
+                aria-label="Localização"
+              />
+
+              <input
+                id="dataDisponibilidadeInicio"
+                name="dataDisponibilidadeInicio"
+                type="date"
+                class="form-control mt-2 mt-md-0"
+                placeholder="Data de início"
+                aria-label="Data de início"
+              />
+
+              <input
+                id="dataDisponibilidadeTermino"
+                name="dataDisponibilidadeTermino"
+                type="date"
+                class="form-control mt-2 mt-md-0"
+                placeholder="Data do término"
+                aria-label="Data do término"
+              />
             </div>
-            <button type="submit" class="form-button">Buscar</button>
+            <button type="submit" class="form-button mt-4 mt-md-0">
+              Buscar
+            </button>
           </div>
         </div>
       </form>
       <div class="intro">
-        <h1>Pet in a Flat</h1>
-        <p>
-          Aqui acontecem os melhores encontros entre pessoas cuidadoras e
-          tutoras de pet
-        </p>
+        <div class="container">
+          <h1>Pet in a Flat</h1>
+          <p>
+            Aqui acontecem os melhores encontros entre pessoas cuidadoras e
+            tutoras de pet
+          </p>
+        </div>
       </div>
-      <div class="personas section">
-        <div class="wrapper">
+      <div class="personas">
+        <div class="container d-flex flex-column flex-md-row">
           <div class="sitters">
             <img src="images/local.png" alt="Ícone de Localização" />
             <h4>Busca</h4>
@@ -94,18 +94,22 @@
         </div>
       </div>
       <div class="highlight">
-        <p>Mais de 1200 cuidadores de pet cadastrados!</p>
+        <div class="container">
+          <p>Mais de 1200 cuidadores de pet cadastrados!</p>
+        </div>
       </div>
-      <div class="section reviews">
-        <div class="wrapper">
+      <div class="reviews">
+        <div class="container">
           <div id="carousel" class="slides" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="item">
-                  <div class="petimage">
+                <div
+                  class="item d-flex flex-column flex-lg-row flex-nowrap align-items-center"
+                >
+                  <div class="petimage flex-grow-1">
                     <img src="images/homepage.png" alt="Imagem de pet" />
                   </div>
-                  <div class="review">
+                  <div class="review px-md-5 mt-5 mt-md-0">
                     <p>
                       Incrível serviço de pet sitting! Confiei meus animais de
                       estimação à Fulana de Tal durante uma viagem de última
@@ -144,11 +148,13 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="item">
-                  <div class="petimage">
+                <div
+                  class="item d-flex flex-column flex-lg-row flex-nowrap align-items-center"
+                >
+                  <div class="petimage flex-grow-1">
                     <img src="images/homepage1.png" alt="Imagem de pet" />
                   </div>
-                  <div class="review">
+                  <div class="review px-md-5 mt-5 mt-md-0">
                     <p>
                       O serviço do pet sitter Cicrano José superou todas as
                       minhas expectativas! Ele não apenas cuidou dos meus
@@ -185,11 +191,13 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="item">
-                  <div class="petimage">
+                <div
+                  class="item d-flex flex-column flex-lg-row flex-nowrap align-items-center"
+                >
+                  <div class="petimage flex-grow-1">
                     <img src="images/homepage2.jpeg" alt="Imagem de pet" />
                   </div>
-                  <div class="review">
+                  <div class="review px-md-5 mt-5 mt-md-0">
                     <p>
                       Experiência excepcional com a cuidadora Beltrana Barbosa.
                       Desde o primeiro contato, senti confiança. Ela não apenas
@@ -231,14 +239,16 @@
         </div>
       </div>
       <div class="about">
-        <h3>Sobre nós</h3>
-        <p>
-          Nós conectamos amantes de animais como você aos cuidadores confiáveis
-          que cuidarão dos seus companheiros peludos, emplumados ou escamosos
-          com todo o amor e atenção que merecem. Nós entendemos o quão
-          importante é encontrar alguém de confiança para cuidar do seu animal
-          de estimação quando você não pode estar presente.
-        </p>
+        <div class="container">
+          <h3>Sobre nós</h3>
+          <p>
+            Nós conectamos amantes de animais como você aos cuidadores
+            confiáveis que cuidarão dos seus companheiros peludos, emplumados ou
+            escamosos com todo o amor e atenção que merecem. Nós entendemos o
+            quão importante é encontrar alguém de confiança para cuidar do seu
+            animal de estimação quando você não pode estar presente.
+          </p>
+        </div>
       </div>
     </main>
     <footer>

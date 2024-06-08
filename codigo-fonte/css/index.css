@@ -1,13 +1,8 @@
 .form {
-  height: 150px;
+  padding: 40px 0;
   display: flex;
   align-items: center;
   background-color: var(--azul-claro);
-}
-
-.form-position {
-  margin-left: calc((100vw - 1280px) / 2);
-  max-width: 1280px;
 }
 
 .form p {
@@ -54,16 +49,9 @@
   display: flex;
 }
 
-.content-form {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
 .intro {
   text-align: center;
-  height: 150px;
-  padding: 30px;
+  padding: 40px 40px 0;
 }
 
 .intro h1,
@@ -72,9 +60,8 @@ h4 {
   margin: 5px;
 }
 .personas {
-  height: 300px;
   align-items: center;
-  padding: 0px 50px;
+  padding: 40px 50px;
 }
 
 .personas img {
@@ -85,7 +72,6 @@ h4 {
 }
 
 .personas p {
-  height: 50px;
   align-content: center;
 }
 
@@ -133,20 +119,11 @@ h4 {
   margin: 0 auto;
 }
 
-#carousel {
-  max-width: 980px;
-}
-
 .reviews {
-  height: 400px;
+  padding: 40px 0;
   background-color: var(--roxo-claro);
-}
-
-.item {
-  display: flex;
-  gap: 10%;
-  justify-content: center;
-  align-items: flex-start;
+  align-content: center;
+  align-items: center;
 }
 
 .star {
@@ -157,25 +134,11 @@ h4 {
 }
 
 .about {
-  margin: auto;
-  max-width: 980px;
-  height: 400px;
+  padding: 40px 0;
   align-content: center;
 }
 
 .about h3 {
   color: var(--roxo-escuro);
   margin: 20px 0px;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.wrapper {
-  margin: auto;
-  display: flex;
-  max-width: 1280px;
 }
