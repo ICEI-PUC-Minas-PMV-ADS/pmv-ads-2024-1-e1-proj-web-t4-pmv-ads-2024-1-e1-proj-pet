@@ -42,3 +42,13 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Responsável pela execução do caso de Teste | Felipe Soares Kutschera |
 
 ![teste Login positivo](https://github.com/FelipeKutschera/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/assets/165940217/01539adf-39c1-4dc0-ad50-f41255e29744)
+
+#### Caso de Teste: CT-07 - Verificar Login com e-mail e senha existente
+
+| Caso de Teste    | CT-07 - Verificar Login com e-mail e senha existente |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. O sistema confirmou e-mail e senha do usuario, exibindo uma mensagem de E_mail ou senha incorretos!. |
+| Responsável pela execução do caso de Teste | Felipe Soares Kutschera |![teste Login negativo](https://github.com/FelipeKutschera/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/assets/165940217/a47a49b9-a4b4-47bf-b7e4-a64b6f64da30)
+
+
+
