@@ -78,6 +78,22 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | O sistema deve exibir uma mensagem que o e-mail ou a senha estão errados. |
 | Responsável pela elaboração do caso de Teste | Felipe Soares Kutschera |
 
+| Caso de Teste    | CT-08 - Verificar se e-mail é cadastrado para recuperar senha |
+|:---|:---|
+| Requisitos Associados | RF-01: O sistema deve verificar se e-mail é cadastrado para recuperar senha. |
+| Objetivo do Teste | Verificar se o usuario possui e-mail cadastrado para recuperar a senha. |
+| Passos | 1. Acessar a página Recuperar senha; 2. Preencher e-mail, usando um e-mail que já esteja cadastrado; 3. Clicar no botão "Enviar"; 4. Verificar se uma mensagem de confirmação é exibida informando que o e-mail foi enviado. |
+| Critérios de êxito | O sistema deve exibir uma mensagem que o e-mail de recuperação de senha foi enviado. |
+| Responsável pela elaboração do caso de Teste | Felipe Soares Kutschera |
+
+| Caso de Teste    | CT-09 - Verificar se e-mail é cadastrado para recuperar senha |
+|:---|:---|
+| Requisitos Associados | RF-01: O sistema deve verificar se e-mail é cadastrado para recuperar senha. |
+| Objetivo do Teste | Verificar se o usuario possui e-mail cadastrado para recuperar a senha. |
+| Passos | 1. Acessar a página Recuperar senha; 2. Preencher e-mail, usando um e-mail que já esteja cadastrado; 3. Clicar no botão "Enviar"; 4. Verificar se uma mensagem e-mail incorreto, favor tentar novamente é exibiba. |
+| Critérios de êxito | O sistema deve exibir uma mensagem e-mail incorreto. Por favor, tente novamente |
+| Responsável pela elaboração do caso de Teste | Felipe Soares Kutschera |
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
