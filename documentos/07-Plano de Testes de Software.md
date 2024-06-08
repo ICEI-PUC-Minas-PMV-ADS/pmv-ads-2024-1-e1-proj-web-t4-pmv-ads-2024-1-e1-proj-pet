@@ -70,6 +70,14 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | O sistema deve exibir uma mensagem confirmando que o Login foi realizado. |
 | Responsável pela elaboração do caso de Teste | Felipe Soares Kutschera |
 
+| Caso de Teste    | CT-07 - Verificar Login com e-mail e senha cadastrados |
+|:---|:---|
+| Requisitos Associados | RF-01: O sistema deve verificar se e-mail e senha estao corretos. |
+| Objetivo do Teste | Verificar se o sistema impede o usuario de fazer Login com dados errados. |
+| Passos | 1. Acessar a página de Login; 2. Preencher todos os campos obrigatórios com dados válidos, usando um e-mail que já esteja cadastrado; 3. Clicar no botão "Entrar"; 4. Verificar se uma mensagem de confirmação é exibida informando que e-mail ou senha estão errados. |
+| Critérios de êxito | O sistema deve exibir uma mensagem que o e-mail ou a senha estão errados. |
+| Responsável pela elaboração do caso de Teste | Felipe Soares Kutschera |
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
