@@ -5,6 +5,26 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 
 Os resultados dos testes funcionais realizados na aplicação são descritos a seguir.
 
+
+#### Caso de Teste: CT-01 - Verificar a funcionalidade do formulário de busca
+
+| Caso de Teste    | CT-01 - Verificar a funcionalidade do formulário de busca |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. O formulário de busca permite a inserção da localização desejada e mostra os resultados encontrados caso existam registros de pet sitters na referida localização. O usuário também consegue listar pet sitters de acordo com a disponibilidade de datas desses profissionais. |
+| Responsável pela execução do caso de Teste | Ana Cavalcanti |
+
+![Image](https://i.imgur.com/WZgv2Dv.png)
+
+![Image](https://i.imgur.com/xw5r9ZP.png)
+
+#### Caso de Teste: CT-02 - Verificar a funcionalidade de filtragem de busca
+
+| Caso de Teste    | CT-02 - Verificar a funcionalidade de filtragem de busca |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. A partir da seleção de uma ou mais checkboxes é possível listar pet sitters não apenas por localização e datas de disponibilidade, mas também por habilidades: experiência prévia com animais, saber administrar medicamentos, injeções e pet sitters favoritos. | Ana Cavalcanti |
+
+![Image](https://i.imgur.com/gOU6bFX.png)
+
 #### Caso de Teste: CT-03 - Verificar a funcionalidade de cadastro de usuário
 
 | Caso de Teste    | CT-03 - Verificar a funcionalidade de cadastro de usuário |
