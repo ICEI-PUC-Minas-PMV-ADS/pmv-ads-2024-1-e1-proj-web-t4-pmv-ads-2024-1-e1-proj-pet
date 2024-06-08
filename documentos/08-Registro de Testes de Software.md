@@ -16,6 +16,14 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 ![Image](https://i.imgur.com/xw5r9ZP.png)
 
+#### Caso de Teste: CT-02 - Verificar a funcionalidade de filtragem de busca
+
+| Caso de Teste    | CT-02 - Verificar a funcionalidade de filtragem de busca |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. A partir da seleção de uma ou mais checkboxes é possível listar pet sitters não apenas por localização e datas de disponibilidade, mas também por habilidades: experiência prévia com animais, saber administrar medicamentos, injeções e pet sitters favoritos. | Ana Cavalcanti |
+
+![Image](https://i.imgur.com/gOU6bFX.png)
+
 #### Caso de Teste: CT-03 - Verificar a funcionalidade de cadastro de usuário
 
 | Caso de Teste    | CT-03 - Verificar a funcionalidade de cadastro de usuário |
