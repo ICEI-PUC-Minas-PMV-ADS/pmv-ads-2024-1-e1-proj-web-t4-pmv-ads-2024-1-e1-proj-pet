@@ -31,7 +31,7 @@
             src="images/imgperfil1.png"
             alt="Foto de Perfil"
           />
-          <h1>Fulana Maria de tal</h1>
+          <h1 id="name">Fulana Maria de tal</h1>
           <button type="button">Contactar</button>
           <img
             id="favorite-icon"
@@ -44,7 +44,7 @@
       <section class="main-content">
         <div class="about-me">
           <h2>Sobre mim</h2>
-          <p>
+          <p id="about-me">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
             voluptate? Aperiam atque unde ea voluptas iure necessitatibus
             beatae, cum quo eligendi inventore nihil rerum minima provident
@@ -59,35 +59,37 @@
           </p>
           <button type="button">Contactar</button>
           <div>
-            <a href="#">
+            <a href="#" id="logo-instagram">
               <img src="images/logoinstagram-roxo.png" alt="Logo Instagram" />
             </a>
-            <a href="#">
+            <a href="#" id="logo-facebook">
               <img src="images/logofacebook-roxo.png" alt="Logo Facebook" />
             </a>
-            <a href="#">
+            <a href="#" id="logo-twitter">
               <img src="images/logox-roxo.png" alt="Logo X" />
             </a>
           </div>
         </div>
         <div class="user-infos">
           <div class="skills">
-            <p><span id="exp">10</span> Anos de experiência</p>
             <p>
+              <span id="exp">10</span> Anos de experiência
+            </p>
+            <p id="had-pet">
               <span class="icon-skills"
                 ><img
                   src="images/iconetempet.png"
                   alt="Ícone tem/teve pet" /></span
               >Tem/teve algum pet
             </p>
-            <p>
+            <p id="adm-medicines">
               <span class="icon-skills"
                 ><img
                   src="images/iconeremedios.png"
                   alt="Ícone medicamentos" /></span
               >Administra medicamentos
             </p>
-            <p>
+            <p id="apl-shot">
               <span class="icon-skills"
                 ><img
                   src="images/iconeinjecao.png"
@@ -97,14 +99,15 @@
             <p>
               <span class="icon-skills"
                 ><img src="images/iconegps.png" alt="Ícone GPS" /></span
-              >XX,X km de deslocamento
+              > <span id="radius-service">XX,X</span>  km de deslocamento
             </p>
             <p>
               <span class="icon-skills"
                 ><img
                   src="images/iconelocalizacao.png"
-                  alt="Ícone localização" /></span
-              >Santa Efigênia
+                  alt="Ícone localização" />
+              </span>
+              <span id="neighborhood">Santa Efigênia</span>
             </p>
           </div>
           <div class="calendar-wrapper">
