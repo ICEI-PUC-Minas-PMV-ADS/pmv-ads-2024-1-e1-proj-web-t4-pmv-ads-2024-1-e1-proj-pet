@@ -52,5 +52,21 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 ![teste Login negativo](https://github.com/FelipeKutschera/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/assets/165940217/a47a49b9-a4b4-47bf-b7e4-a64b6f64da30)
 
+| Caso de Teste    | CT-08 - Verificar e-mail para recuperação de senha |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. O sistema confirmou e-mail, exibindo uma mensagem de E-mail enviado !. |
+| Responsável pela execução do caso de Teste | Felipe Soares Kutschera |
+
+![recuperar senha positivo](https://github.com/FelipeKutschera/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/assets/165940217/a737ef73-d66c-42fb-8e33-dac25f7b1653)
+
+| Caso de Teste    | CT-09 - Verificar e-mail para recuperação de senha |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. O sistema confirmou e-mail, exibindo uma mensagem de E-mail incorreto, por favor tente novamente !. |
+| Responsável pela execução do caso de Teste | Felipe Soares Kutschera |
+
+![recuperar senha falha](https://github.com/FelipeKutschera/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/assets/165940217/21f1916d-0a25-47b6-9299-40f0dc5d7cc8)
+
+
+
 
 
