@@ -32,7 +32,7 @@
         <div class="card">
           <div class="card-title">
             <a href="perfil.html" target="_self" rel="noopener noreferrer"
-              >${sitter.nome}</a
+              >${sitter.nome} ${sitter.sobrenome}</a
             >
           </div>
           <div class="card-body">
