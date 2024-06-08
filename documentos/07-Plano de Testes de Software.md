@@ -24,7 +24,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 |Caso de Teste    | CT-02 - Verificar a funcionalidade de filtragem de busca |
 |:---|:---|
-| Requisitos Associados | RF-12: O sistema deve ter um sistema de filtro de informações de pet sitters. |
+| Requisitos Associados | RF-04: O sistema deve ter um sistema de filtro de informações de pet sitters. |
 | Objetivo do Teste | Verificar se o formulário de busca retorna resultados com base no filtro ou nos filtros selecionados. |
 | Passos | 1. Ir à página Busca; 2. Clicar em um ou mais filtros na caixa lateral esquerda que tem opções de filtragem; 3. Visualizar o que foi retornado na página Busca. |
 | Critérios de êxito | A listagem deve conter todos os perfis que atendam a todos os critérios especificados, no caso, os filtros selecionados.  |

@@ -13,7 +13,6 @@ O projeto Pet in a Flat tem o propósito de conectar tutores e cuidadores de ani
 * Ana Cristina Cavalcanti Moreira Soares
 * Felipe Soares Kutschera
 * Grace Kelly Santos
-* Isaac Redel Novaes
 * Vinicius Sartini da Silva
 
 ## Orientador
