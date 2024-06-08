@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const cadastroForm = document.getElementById("cadastroForm");
 
@@ -47,14 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
             cadastroForm.reset();
             window.location.href = "login.html";
         }
-
-
-
-
-        if (cadastros.some(c => c.email === email)) {
-            alert("E-mail já cadastrado. Por favor, utilize outro e-mail.");
-            return;
-        }
+        
+        /*
+        *    Rever trecho do código
+        *    if (cadastros.some(c => c.email === email)) {
+        *    alert("E-mail já cadastrado. Por favor, utilize outro e-mail.");
+        *    return;
+        }*/
 
     });
 });
