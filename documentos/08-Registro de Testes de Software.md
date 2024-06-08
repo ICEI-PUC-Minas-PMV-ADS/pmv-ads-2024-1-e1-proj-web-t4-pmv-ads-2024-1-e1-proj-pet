@@ -4,6 +4,15 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 
 Os resultados dos testes funcionais realizados na aplicação são descritos a seguir.
 
+
+#### Caso de Teste: CT-01 - Verificar a funcionalidade do formulário de busca
+
+| Caso de Teste    | CT-01 - Verificar a funcionalidade do formulário de busca |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. O formulário de busca permite a inserção da localização desejada e mostra os resultados encontrados caso existam registros de pet sitters na referida localização. |
+| Responsável pela execução do caso de Teste | Ana Cavalcanti |
+
+
 #### Caso de Teste: CT-03 - Verificar a funcionalidade de cadastro de usuário
 
 | Caso de Teste    | CT-03 - Verificar a funcionalidade de cadastro de usuário |
