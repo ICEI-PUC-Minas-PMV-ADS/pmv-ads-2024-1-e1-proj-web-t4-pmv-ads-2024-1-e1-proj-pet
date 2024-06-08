@@ -27,3 +27,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const form_recuperar = document.getElementById("form_recuperar");
+
+    form_recuperar.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const email = document.getElementById("Entrar").value;
+
+
+        const cadastroJSON = localStorage.getItem("cadastros");
+
+        if (cadastroJSON) {
+            const cadastros = JSON.parse(cadastroJSON);
+            const email = (email);
+
+            const usuario = cadastros.find(cadastros => cadastros.email === email);
+
+            if (usuario) {
+                alert("Login realizado com sucesso!");
+                window.location.href = "index.html";
+            } else {
+                alert("E-mail  incorreto, Por favor, tente novamente.");
+            }
+
+        } else {
+            alert("Nenhum cadastro encontrado. Por favor, faça o cadastro primeiro.");
+        }
+    });
+});

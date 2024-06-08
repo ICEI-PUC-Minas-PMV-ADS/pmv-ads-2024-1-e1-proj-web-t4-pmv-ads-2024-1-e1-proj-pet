@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/senha.css" />
     <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
   </head>
   <body>
     <header>
@@ -24,14 +25,14 @@
     </header>
 
     <main>
-      <form name="form_recuperar" action="do_login.html" method="POST">
+      <form id="form_recuperar" action="do_login.html" method="POST">
         <h1>Recupere sua senha</h1>
         <p>
           Insira seu e-mail cadastrado para receber instruções de como redefinir
           sua senha:
         </p>
-        <input type="password" placeholder="Senha" value="" />
-        <button type="button">Entrar</button>
+        <input type="text" id="email" placeholder="E-mail" value="" />
+        <button type="submit">Enviar</button>
       </form>
     </main>
 
@@ -52,4 +53,8 @@
       </div>
     </footer>
   </body>
+</html>
+<script src="js/lib/jquery-3.7.1.js"></script>
+<script src="js/senha.js"></script>
+</body>
 </html>

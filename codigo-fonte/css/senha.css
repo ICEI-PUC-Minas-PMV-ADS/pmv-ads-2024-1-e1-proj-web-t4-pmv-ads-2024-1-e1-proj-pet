@@ -35,7 +35,7 @@ form p {
   }
 
   [type="text"],
-  [type="password"] {
+  [type="e-mail"] {
   font-size: 0.9rem;
   padding: 1rem;
 }
