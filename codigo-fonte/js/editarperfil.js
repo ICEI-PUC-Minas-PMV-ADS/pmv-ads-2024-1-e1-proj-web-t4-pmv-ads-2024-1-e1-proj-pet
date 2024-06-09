@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     birdOption.disabled = true;
 
     cadastros.forEach(cadastros => {
-        if(cadastros.id == 1) {
+        if(cadastros.id === 1) {
             profilePicture.setAttribute("src", cadastros.foto);
             nameField.value = cadastros.nome;
             lastNameField.value = cadastros.sobrenome;
@@ -72,43 +72,42 @@ document.addEventListener("DOMContentLoaded", function() {
             telField.value = cadastros.telefone;
             //address2Field.value = cadastros.endereco2;
             stateField.value = cadastros.estado;
-            serviceRadiusField.value = `${cadastros.raioAtendimento} km`;
+            serviceRadiusField.value = cadastros.raioAtendimento;
             aboutMeField.value = cadastros.sobreMim;
             //instagramField.value = `@${cadastros.instagram}`;
             //facebookField.value = `@${cadastros.facebook}`;
             //twitterField.value = `@${cadastros.twitter}`;
-            priceDayField.value = `R$${cadastros.custo.toFixed(2)}`;
-            price2DaysField.value = `R$${cadastros.custo2.toFixed(2)}`;
+            priceDayField.value = cadastros.custo;
+            price2DaysField.value = cadastros.custo2;
             yearsExpField.value = cadastros.anosExp;
 
             const abilities = cadastros.habilidades;
-            console.log(abilities);
-            if(abilities.indexOf("TUTOR") != -1) {
+            if(abilities.indexOf("TUTOR") !== -1) {
                 hadPetOption.checked = true;
             } else {
                 hadPetOption.checked = false;
             }
-            if(abilities.indexOf("MEDICAMENTOS") != -1) {
+            if(abilities.indexOf("MEDICAMENTOS") !== -1) {
                 admMedicinesOption.checked = true;
             } else {
                 admMedicinesOption.checked = false;
             }
-            if(abilities.indexOf("INJECOES") != -1) {
+            if(abilities.indexOf("INJECOES") !== -1) {
                 aplShotsOption.checked = true;
             } else {
                 aplShotsOption.checked = false;
             }
-            if(abilities.indexOf("GATO") != -1) {
+            if(abilities.indexOf("GATO") !== -1) {
                 catOption.checked = true;
             } else {
                 catOption.checked = false;
             }
-            if(abilities.indexOf("CACHORRO") != -1) {
+            if(abilities.indexOf("CACHORRO") !== -1) {
                 dogOption.checked = true;
             } else {
                 dogOption.checked = false;
             }
-            if(abilities.indexOf("PASSARO") != -1) {
+            if(abilities.indexOf("PASSARO") !== -1) {
                 birdOption.checked = true;
             } else {
                 birdOption.checked = false;
@@ -191,9 +190,28 @@ document.addEventListener("DOMContentLoaded", function() {
         catOption.disabled = true;
         dogOption.disabled = true;
         birdOption.disabled = true;
+
+        cadastros[0].nome = nameField.value;
+        cadastros[0].nome = nameField.value;
+        cadastros[0].sobrenome = lastNameField.value;
+        cadastros[0].endereco = addressField.value;
+        cadastros[0].city = cityField.value;
+        cadastros[0].cep = postalCodeField.value;
+        cadastros[0].email = emailField.value;
+        cadastros[0].telefone = telField.value;
+        cadastros[0].estado = stateField.value;
+        cadastros[0].raioAtendimento = serviceRadiusField.value;
+        cadastros[0].sobreMim = aboutMeField.value;
+        cadastros[0].custo = priceDayField.value;
+        cadastros[0].custo2 = price2DaysField.value;
+        localStorage.setItem("cadastros", JSON.stringify(cadastros));
+
+
+
         btnEdit.setAttribute("style", "display: block");
         btnConfirm.setAttribute("style", "display: none");
         btnCancel.setAttribute("style", "display: none");
         btnPicture.setAttribute("style", "display: none");
+
     })
 })
