@@ -68,11 +68,9 @@ Para o desenvolvimento de uma plataforma web de qualidade e bem estrutura, é ne
 </tbody>
 </table>
 
-
 ## Histórias de Usuários
 
 No desenvolvimento da plataforma web Pet in a flat, é necessário incluir as descrições simplificadas das funcionalidades que serão oferecidas pelo sistema. Cada história de usuário descreve uma parte do comportamento esperado do sistema, focando nas necessidades e nos objetivos do usuário ao interagir com a plataforma. Para comunicar e priorizar requisitos do sistema, garantindo que o produto final atenda às necessidades dos usuários, foi adotada a ferramenta de gestão ágil, conforme especificado na tabela abaixo.
-
 
 Aqui está a tabela atualizada com a parte solicitada incluída:
 
@@ -85,7 +83,6 @@ Aqui está a tabela atualizada com a parte solicitada incluída:
 | Administrador da plataforma | Revisar e moderar avaliações para assegurar autenticidade e relevância.                    | Manter a confiança e a integridade das avaliações, garantindo uma comunidade segura e confiável. |
 | Dono da Plataforma (Cliente) | Gerenciar eficazmente a plataforma e garantir a qualidade e satisfação do serviço.           | Assegurar a melhor experiência para os usuários e o sucesso contínuo do negócio com gestão de indicadores e performance da plataforma e serviço ofertado. |
 
-
 ## Requisitos do Projeto
 
 Para atender às especificações, funcionalidades e características que a plataforma Pet in a flat deverá possuir e, às necessidades e expectativas dos usuários e stakeholders, as informações foram tabuladas e organizadas em duas categorias: requisitos funcionais e não funcionais, conforme detalhadas a seguir.
@@ -96,21 +93,22 @@ Aqui está a tabela atualizada com o RF-03:
 
 | ID    | Descrição                                                                 | Prioridade |
 |-------|---------------------------------------------------------------------------|------------|
-| RF-01 | O sistema deve permitir o cadastro de usuários.                        | Alta       | 
-| RF-02 | O sistema deve permitir o login de usuários.                           | Alta       | 
+| RF-01 | O sistema deve permitir o cadastro de usuários.                        | Alta       |
+| RF-02 | O sistema deve permitir o login de usuários.                           | Alta       |
 | RF-03 | O sistema deve manter os dados do usuário persistentes após o login.      | Alta       |
 | RF-04 | O sistema deve permitir a busca de pet sitters.                        | Média       |
 | RF-05 | O sistema deve permitir a recuperação de senha para os usuários.       | Baixa      |
 | RF-06 | O sistema deve exibir informações sobre o serviço na página "Sobre".   | Média      |
-| RF-07 | O sistema deve armazenar os dados dos usuários e pet sitters em JSON. | Alta       |
+| RF-07 | O sistema deve armazenar os dados dos usuários e pet sitters. | Alta       |
 | RF-08 | O sistema deve mostrar o perfil do pet sitter com detalhes.            | Alta       |
 | RF-09 | O sistema deve validar a entrada de dados no cadastro e login.            | Baixa       |
 | RF-10 | O sistema deve permitir filtrar pet sitters por localização.              | Média       |
 | RF-11 | O sistema deve permitir filtrar pet sitters por habilidades.              | Média      |
 | RF-12 | O sistema deve permitir filtrar pet sitters por experiência prévia.          | Baixa       |
 | RF-13 | O sistema deve exibir a localização dos pet sitters em um mapa.           | Baixa      |
+| RF-14 | O sistema deve permitir a edição dos dados do usuário.           | Alta      |
 
-**Prioridade: Alta / Média / Baixa. 
+**Prioridade: Alta / Média / Baixa.
 
 ### Requisitos não Funcionais
 
@@ -120,12 +118,11 @@ Aqui está a tabela renumerada:
 
 | ID     | Descrição                                                                     | Prioridade |
 |--------|-------------------------------------------------------------------------------|------------|
-| RNF-01 | A exibição dos pet sitters cadastrados, no mapa, deve levar no máximo 2 segundos. | Média      | 
+| RNF-01 | A exibição dos pet sitters cadastrados, no mapa, deve levar no máximo 2 segundos. | Média      |
 | RNF-02 | O sistema deve estar disponível 24 h por dia e todos os dias da semana.           | Média       |
-| RNF-03 | O sistema deve ser responsivo                                                  | Média      |
+| RNF-03 | O sistema deve ser responsivo.                                                   | Média      |
 | RNF-04 | O sistema deve ser compatível com os navegadores mais utilizados, como Google Chrome, Firefox. | Alta       |
 | RNF-05 | Boa manutenibilidade do Sistema.                                               | Alta       |
 | RNF-06 | A plataforma deve ser intuitiva e de fácil usabilidade.                        | Alta       |
 
-**Prioridade: Alta / Média / Baixa. 
-
+**Prioridade: Alta / Média / Baixa.
