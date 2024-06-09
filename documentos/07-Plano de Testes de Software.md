@@ -1,17 +1,9 @@
 # Plano de Testes de Software
 
-[Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
+Os requisitos para realização dos testes de software são:
+* Navegador da internet: Chorme, Firefox ou Edge
 
-Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
-
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
-
+Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
 |Caso de Teste    | CT-01 - Verificar a funcionalidade do formulário de busca |
 |:---|:---|
@@ -21,7 +13,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | A listagem deve conter todos os perfis que atendam ao critério especificado, no caso, a localidade.  |
 | Responsável pela elaborar do caso de Teste | Ana Cavalcanti |
 
-
 |Caso de Teste    | CT-02 - Verificar a funcionalidade de filtragem de busca |
 |:---|:---|
 | Requisitos Associados | RF-04: O sistema deve ter um sistema de filtro de informações de pet sitters. |
@@ -29,8 +20,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Passos | 1. Ir à página Busca; 2. Clicar em um ou mais filtros na caixa lateral esquerda que tem opções de filtragem; 3. Visualizar o que foi retornado na página Busca. |
 | Critérios de êxito | A listagem deve conter todos os perfis que atendam a todos os critérios especificados, no caso, os filtros selecionados.  |
 | Responsável pela elaborar do caso de Teste | Ana Cavalcanti |
-
-#### Caso de Teste: CT-03 - Verificar a funcionalidade de cadastro de usuário
 
 | Caso de Teste    | CT-03 - Verificar a funcionalidade de cadastro de usuário |
 |:---|:---|
@@ -40,8 +29,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | O cadastro deve ser realizado com sucesso, exibindo uma mensagem de confirmação e redirecionando o usuário para a página de login. O usuário deve estar presente como um JSON no localStorage |
 | Responsável pela elaboração do caso de Teste | Grace Kelly |
 
-#### Caso de Teste: CT-04 - Verificar validação de senhas no cadastro de usuário
-
 | Caso de Teste    | CT-04 - Verificar validação de senhas e preenchimento completo no cadastro de usuário |
 |:---|:---|
 | Requisitos Associados | RF-01: O sistema deve permitir o cadastro de novos usuários. |
@@ -50,8 +37,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | O sistema deve exibir um aviso informando a inconsistência do preenchimento para que o usuário faça o preenchimento completo de maneira correta. |
 | Responsável pela elaboração do caso de Teste | Grace Kelly |
 
-#### Caso de Teste: CT-05 - Verificar cadastro com e-mail já existente
-
 | Caso de Teste    | CT-05 - Verificar cadastro com e-mail já existente |
 |:---|:---|
 | Requisitos Associados | RF-01: O sistema deve permitir o cadastro de novos usuários. |
@@ -59,8 +44,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Passos | 1. Acessar a página de cadastro; 2. Preencher todos os campos obrigatórios com dados válidos, usando um e-mail que já esteja cadastrado; 3. Clicar no botão "Cadastrar"; 4. Verificar se uma mensagem de erro é exibida informando que o e-mail já está cadastrado. |
 | Critérios de êxito | O sistema deve exibir uma mensagem de erro informando que o e-mail já está cadastrado e impedir a conclusão do cadastro. |
 | Responsável pela elaboração do caso de Teste | Grace Kelly |
-
-#### Caso de Teste: CT-06 - Verificar Login com e-mail e senha cadastrados
 
 | Caso de Teste    | CT-06 - Verificar Login com e-mail e senha cadastrados |
 |:---|:---|
@@ -94,10 +77,18 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | O sistema deve exibir uma mensagem e-mail incorreto. Por favor, tente novamente |
 | Responsável pela elaboração do caso de Teste | Felipe Soares Kutschera |
 
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| Caso de Teste    | CT-10 - Verificar os dados mostrado no perfil é referenciado do banco de dados (localStorage) |
+|:---|:---|
+| Requisitos Associados | RF-08: O sistema deve mostrar o perfil do pet sitter com detalhes.  |
+| Objetivo do Teste | Verificar se os dados apresentados na pagina de perfil condizem com os dados no banco de dados (localStorage).|
+| Passos | 1. Acessar a página Perfil; 2. Abrir o devtools do navegador; 3. Acessar a aba "Application"; 4. Verificar o localStorage e os dados. |
+| Critérios de êxito | As informações de nome, sobre mim e as habilidades do usuários devem ser mostradas conforme cadastrado. |
+| Responsável pela elaboração do caso de Teste | Vinicius Sartini da Silva |
+
+| Caso de Teste    | CT-11 - Verificar a edição dos dados do usuário cadastrado no banco de dados (localStorage) |
+|:---|:---|
+| Requisitos Associados | RF-14: O sistema deve permitir a edição dos dados do usuário.  |
+| Objetivo do Teste | Verificar se a edição dos dados previamente cadastrados são armazenadas no banco de dados (localStorage).|
+| Passos | 1. Acessar a página Editar Perfil; 2. Abrir o devtools do navegador; 3. Acessar a aba "Application"; 4. Clicar no botão "Editar"; 5. Editar todos os dados que deseja; 6. Clicar em no botão "Confirmar"; 7. Verificar no localStorage os dados editados. |
+| Critérios de êxito | Todos os dados editados devem ser atualizados no banco de dados (localStorage). |
+| Responsável pela elaboração do caso de Teste | Vinicius Sartini da Silva |
