@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function setName() {
         cadastros.forEach(cadastros => {
             if(cadastros.id == 1) {
-                profilePicture.setAttribute("src", "images/imgperfil1.png")
+                profilePicture.setAttribute("src", "images/imgperfil1.png");
                 title.textContent = `${cadastros.nome} ${cadastros.sobrenome}`;
             }
         });

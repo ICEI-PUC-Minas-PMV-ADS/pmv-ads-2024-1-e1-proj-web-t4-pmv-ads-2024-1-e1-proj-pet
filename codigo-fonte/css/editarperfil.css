@@ -63,13 +63,8 @@ select {
   height: 40px;
 }
 
-.profile-infos input::placeholder {
-  padding-left: 15px;
-}
-
 .profile-infos input:focus {
   outline: none;
-  padding-left: 15px;
 }
 
 .profile-infos select:focus {
@@ -114,6 +109,7 @@ label {
   display: block;
   width: 100%;
   height: 495px;
+  padding: 15px;
   resize: none;
   border: none;
   border-radius: 5px;
@@ -124,7 +120,6 @@ label {
 .about-me-infos textarea:focus,
 .about-me-infos input:focus {
   outline: none;
-  padding: 10px;
 }
 
 .about-me-infos h3 {
@@ -166,10 +161,6 @@ label {
   height: 40px;
 }
 
-.price-field::placeholder {
-  padding-left: 15px;
-}
-
 #years-of-experience {
   margin-bottom: 40px;
 }
@@ -177,10 +168,6 @@ label {
 #years-field {
   width: 40%;
   height: 40px;
-}
-
-#years-field::placeholder {
-  padding-left: 15px;
 }
 
 #services,
@@ -236,13 +223,24 @@ label {
   gap: 5%;
 }
 
+input {
+  padding: 15px;
+}
+
 input[type="button"] {
   display: block;
   width: 120px;
   height: 50px;
+  padding: 0;
   font-size: 20px;
   border-radius: 5px;
   color: var(--branco);
   cursor: pointer;
   background-color: var(--preto);
+}
+
+#btn-cancel,
+#btn-confirm,
+#btn-picture  {
+  display: none;
 }
