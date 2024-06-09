@@ -86,7 +86,17 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 ![recuperar senha falha](https://github.com/FelipeKutschera/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/assets/165940217/21f1916d-0a25-47b6-9299-40f0dc5d7cc8)
 
+| Caso de Teste    | CT-10 - Verificar os dados mostrado no perfil é referenciado do banco de dados (localStorage) |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. Os dados na página e no localStorage são iguais. |
+| Responsável pela execução do caso de Teste | Vinicius Sartini da Silva |
+
+![Dados perfil](img/ct10.png)
 
 
+| Caso de Teste    | CT-11 - Verificar a edição dos dados do usuário cadastrado no banco de dados (localStorage) |
+|:---|:---|
+| Resultados obtidos | O teste foi bem-sucedido. Ao atualizar as informações e confirmar, os dados são atualizados no localStorage.|
+| Responsável pela execução do caso de Teste | Vinicius Sartini da Silva |
 
-
+![Dados editar perfil](img/ct11.png)
