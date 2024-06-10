@@ -72,8 +72,6 @@ Para o desenvolvimento de uma plataforma web de qualidade e bem estrutura, é ne
 
 No desenvolvimento da plataforma web Pet in a flat, é necessário incluir as descrições simplificadas das funcionalidades que serão oferecidas pelo sistema. Cada história de usuário descreve uma parte do comportamento esperado do sistema, focando nas necessidades e nos objetivos do usuário ao interagir com a plataforma. Para comunicar e priorizar requisitos do sistema, garantindo que o produto final atenda às necessidades dos usuários, foi adotada a ferramenta de gestão ágil, conforme especificado na tabela abaixo.
 
-Aqui está a tabela atualizada com a parte solicitada incluída:
-
 | EU COMO... `QUEM`        | QUERO/PRECISO ... `O QUE`                                                                  | PARA ... `PORQUE`                                                                   |
 |--------------------------|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Tutor de pet             | Encontrar um pet sitter na minha região que possa cuidar de pets.                          | Saber que meus animais estão bem cuidados.                                           |
@@ -88,8 +86,6 @@ Aqui está a tabela atualizada com a parte solicitada incluída:
 Para atender às especificações, funcionalidades e características que a plataforma Pet in a flat deverá possuir e, às necessidades e expectativas dos usuários e stakeholders, as informações foram tabuladas e organizadas em duas categorias: requisitos funcionais e não funcionais, conforme detalhadas a seguir.
 
 ### Requisitos Funcionais
-
-Aqui está a tabela atualizada com o RF-03:
 
 | ID    | Descrição                                                                 | Prioridade |
 |-------|---------------------------------------------------------------------------|------------|
@@ -111,10 +107,6 @@ Aqui está a tabela atualizada com o RF-03:
 **Prioridade: Alta / Média / Baixa.
 
 ### Requisitos não Funcionais
-
-[Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
-
-Aqui está a tabela renumerada:
 
 | ID     | Descrição                                                                     | Prioridade |
 |--------|-------------------------------------------------------------------------------|------------|
