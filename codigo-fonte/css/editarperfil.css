@@ -135,6 +135,12 @@ label {
   margin-bottom: 20px;
 }
 
+.social-media-wrapper > img {
+  position: relative;
+  top: -55px;
+  left: 450px;
+}
+
 #pricing {
   display: flex;
   justify-content: space-between;
