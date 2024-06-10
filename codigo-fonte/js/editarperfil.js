@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const petSitterOption = document.querySelector("#pet-sitter-option");
     const emailField = document.querySelector("#email-field");
     const telField = document.querySelector("#tel-field");
-    const address2Field = document.querySelector("#adress2-field");
+    const address2Field = document.querySelector("#address2-field");
     const stateField = document.querySelector("#state-field");
     const serviceRadiusField = document.querySelector("#service-radius-field");
     const aboutMeField = document.querySelector("#about-me-field");
-    const instagramField = document.querySelector("instagram-field");
-    const facebookField = document.querySelector("facebook-field");
-    const twitterField = document.querySelector("twitter-field");
+    const instagramField = document.querySelector("#instagram-field");
+    const facebookField = document.querySelector("#facebook-field");
+    const twitterField = document.querySelector("#twitter-field");
     const priceDayField = document.querySelector("#price-day");
     const price2DaysField = document.querySelector("#price-2days");
     const yearsExpField = document.querySelector("#years-field");
@@ -40,9 +40,13 @@ document.addEventListener("DOMContentLoaded", function() {
     petSitterOption.disabled = true;
     emailField.disabled = true;
     telField.disabled = true;
+    address2Field.disabled = true;
     stateField.disabled = true;
     serviceRadiusField.disabled = true;
     aboutMeField.disabled = true;
+    instagramField.disabled = true;
+    facebookField.disabled = true;
+    twitterField.disabled = true;
     priceDayField.disabled = true;
     price2DaysField.disabled = true;
     yearsExpField.disabled = true;
@@ -70,13 +74,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
             emailField.value = cadastros.email;
             telField.value = cadastros.telefone;
-            //address2Field.value = cadastros.endereco2;
+            address2Field.value = cadastros.endereco2;
             stateField.value = cadastros.estado;
             serviceRadiusField.value = cadastros.raioAtendimento;
             aboutMeField.value = cadastros.sobreMim;
-            //instagramField.value = `@${cadastros.instagram}`;
-            //facebookField.value = `@${cadastros.facebook}`;
-            //twitterField.value = `@${cadastros.twitter}`;
+            instagramField.value = cadastros.instagram;
+            facebookField.value = cadastros.facebook;
+            twitterField.value = cadastros.twitter;
             priceDayField.value = cadastros.custo;
             price2DaysField.value = cadastros.custo2;
             yearsExpField.value = cadastros.anosExp;
@@ -124,6 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
         petSitterOption.disabled = false;
         emailField.disabled = false;
         telField.disabled = false;
+        address2Field.disabled = false;
         stateField.disabled = false;
         serviceRadiusField.disabled = false;
         aboutMeField.disabled = false;
@@ -151,6 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
         petSitterOption.disabled = true;
         emailField.disabled = true;
         telField.disabled = true;
+        address2Field.disabled = true;
         stateField.disabled = true;
         serviceRadiusField.disabled = true;
         aboutMeField.disabled = true;
@@ -178,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function() {
         petSitterOption.disabled = true;
         emailField.disabled = true;
         telField.disabled = true;
+        address2Field.disabled = true;
         stateField.disabled = true;
         serviceRadiusField.disabled = true;
         aboutMeField.disabled = true;
@@ -205,8 +212,6 @@ document.addEventListener("DOMContentLoaded", function() {
         cadastros[0].custo = priceDayField.value;
         cadastros[0].custo2 = price2DaysField.value;
         localStorage.setItem("cadastros", JSON.stringify(cadastros));
-
-
 
         btnEdit.setAttribute("style", "display: block");
         btnConfirm.setAttribute("style", "display: none");
