@@ -32,30 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnConfirm = document.querySelector("#btn-confirm");
     const btnEdit = document.querySelector("#btn-edit");
 
-    nameField.disabled = true;
-    lastNameField.disabled = true;
-    addressField.disabled = true;
-    cityField.disabled = true;
-    postalCodeField.disabled = true;
-    petSitterOption.disabled = true;
-    emailField.disabled = true;
-    telField.disabled = true;
-    address2Field.disabled = true;
-    stateField.disabled = true;
-    serviceRadiusField.disabled = true;
-    aboutMeField.disabled = true;
-    instagramField.disabled = true;
-    facebookField.disabled = true;
-    twitterField.disabled = true;
-    priceDayField.disabled = true;
-    price2DaysField.disabled = true;
-    yearsExpField.disabled = true;
-    hadPetOption.disabled = true;
-    admMedicinesOption.disabled = true;
-    aplShotsOption.disabled = true;
-    catOption.disabled = true;
-    dogOption.disabled = true;
-    birdOption.disabled = true;
+    setFields(true);
 
     cadastros.forEach(cadastros => {
         if(cadastros.id === 1) {
@@ -119,28 +96,42 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    petSitterOption.addEventListener("click", () => {
+        if(petSitterOption.checked) {
+            priceDayField.disabled = false;
+            price2DaysField.disabled = false;
+            yearsExpField.disabled = false;
+            hadPetOption.disabled = false;
+            admMedicinesOption.disabled = false;
+            aplShotsOption.disabled = false;
+            catOption.disabled = false;
+            dogOption.disabled = false;
+            birdOption.disabled = false;
+            } else {
+                priceDayField.disabled = true;
+                price2DaysField.disabled = true;
+                yearsExpField.disabled = true;
+                hadPetOption.disabled = true;
+                admMedicinesOption.disabled = true;
+                aplShotsOption.disabled = true;
+                catOption.disabled = true;
+                dogOption.disabled = true;
+                birdOption.disabled = true;
+                priceDayField.value = "";
+                price2DaysField.value = "";
+                yearsExpField.value = "";
+                hadPetOption.checked = false;
+                admMedicinesOption.checked = false;
+                aplShotsOption.checked = false;
+                catOption.checked = false;
+                dogOption.checked = false;
+                birdOption.checked = false;
+            }
+    })
+
     btnEdit.addEventListener("click", () => {
-        nameField.disabled = false;
-        lastNameField.disabled = false;
-        addressField.disabled = false;
-        cityField.disabled = false;
-        postalCodeField.disabled = false;
-        petSitterOption.disabled = false;
-        emailField.disabled = false;
-        telField.disabled = false;
-        address2Field.disabled = false;
-        stateField.disabled = false;
-        serviceRadiusField.disabled = false;
-        aboutMeField.disabled = false;
-        priceDayField.disabled = false;
-        price2DaysField.disabled = false;
-        yearsExpField.disabled = false;
-        hadPetOption.disabled = false;
-        admMedicinesOption.disabled = false;
-        aplShotsOption.disabled = false;
-        catOption.disabled = false;
-        dogOption.disabled = false;
-        birdOption.disabled = false;
+        setFields(false);
+
         btnEdit.setAttribute("style", "display: none");
         btnConfirm.setAttribute("style", "display: block");
         btnCancel.setAttribute("style", "display: block");
@@ -148,27 +139,8 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     btnCancel.addEventListener("click", () => {
-        nameField.disabled = true;
-        lastNameField.disabled = true;
-        addressField.disabled = true;
-        cityField.disabled = true;
-        postalCodeField.disabled = true;
-        petSitterOption.disabled = true;
-        emailField.disabled = true;
-        telField.disabled = true;
-        address2Field.disabled = true;
-        stateField.disabled = true;
-        serviceRadiusField.disabled = true;
-        aboutMeField.disabled = true;
-        priceDayField.disabled = true;
-        price2DaysField.disabled = true;
-        yearsExpField.disabled = true;
-        hadPetOption.disabled = true;
-        admMedicinesOption.disabled = true;
-        aplShotsOption.disabled = true;
-        catOption.disabled = true;
-        dogOption.disabled = true;
-        birdOption.disabled = true;
+        setFields(true);
+
         btnEdit.setAttribute("style", "display: block");
         btnConfirm.setAttribute("style", "display: none");
         btnCancel.setAttribute("style", "display: none");
@@ -176,39 +148,23 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     btnConfirm.addEventListener("click", () => {
-        nameField.disabled = true;
-        lastNameField.disabled = true;
-        addressField.disabled = true;
-        cityField.disabled = true;
-        postalCodeField.disabled = true;
-        petSitterOption.disabled = true;
-        emailField.disabled = true;
-        telField.disabled = true;
-        address2Field.disabled = true;
-        stateField.disabled = true;
-        serviceRadiusField.disabled = true;
-        aboutMeField.disabled = true;
-        priceDayField.disabled = true;
-        price2DaysField.disabled = true;
-        yearsExpField.disabled = true;
-        hadPetOption.disabled = true;
-        admMedicinesOption.disabled = true;
-        aplShotsOption.disabled = true;
-        catOption.disabled = true;
-        dogOption.disabled = true;
-        birdOption.disabled = true;
+        setFields(true);
 
-        cadastros[0].nome = nameField.value;
         cadastros[0].nome = nameField.value;
         cadastros[0].sobrenome = lastNameField.value;
         cadastros[0].endereco = addressField.value;
-        cadastros[0].city = cityField.value;
+        cadastros[0].endereco2 = address2Field.value;
+        cadastros[0].cidade = cityField.value;
         cadastros[0].cep = postalCodeField.value;
         cadastros[0].email = emailField.value;
         cadastros[0].telefone = telField.value;
         cadastros[0].estado = stateField.value;
         cadastros[0].raioAtendimento = serviceRadiusField.value;
         cadastros[0].sobreMim = aboutMeField.value;
+        cadastros[0].instagram = instagramField.value;
+        cadastros[0].facebook = facebookField.value;
+        cadastros[0].twitter = twitterField.value;
+        cadastros[0].anosExp = yearsExpField.value;
         cadastros[0].custo = priceDayField.value;
         cadastros[0].custo2 = price2DaysField.value;
         localStorage.setItem("cadastros", JSON.stringify(cadastros));
@@ -219,4 +175,31 @@ document.addEventListener("DOMContentLoaded", function() {
         btnPicture.setAttribute("style", "display: none");
 
     })
+
+    function setFields(varBool) {
+        nameField.disabled = varBool;
+        lastNameField.disabled = varBool;
+        addressField.disabled = varBool;
+        cityField.disabled = varBool;
+        postalCodeField.disabled = varBool;
+        petSitterOption.disabled = varBool;
+        emailField.disabled = varBool;
+        telField.disabled = varBool;
+        address2Field.disabled = varBool;
+        stateField.disabled = varBool;
+        serviceRadiusField.disabled = varBool;
+        aboutMeField.disabled = varBool;
+        instagramField.disabled = varBool;
+        facebookField.disabled = varBool;
+        twitterField.disabled = varBool;
+        priceDayField.disabled = varBool;
+        price2DaysField.disabled = varBool;
+        yearsExpField.disabled = varBool;
+        hadPetOption.disabled = varBool;
+        admMedicinesOption.disabled = varBool;
+        aplShotsOption.disabled = varBool;
+        catOption.disabled = varBool;
+        dogOption.disabled = varBool;
+        birdOption.disabled = varBool;
+    }
 })
