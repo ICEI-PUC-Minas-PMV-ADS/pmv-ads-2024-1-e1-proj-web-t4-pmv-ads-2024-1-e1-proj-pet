@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailField = document.querySelector("#email");
     const passwordField = document.querySelector("#senha");
     const confirmPasswordField = document.querySelector("#confirmarSenha");
+    const showPassword = document.querySelector("#show-password");
+    const showConfirmPassword = document.querySelector("#show-confirm-password");
 
     cadastroForm.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -14,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = emailField.value;
         const senha = passwordField.value;
         const confirmarSenha = confirmPasswordField.value;
+        let message = "";
+        let idElement = "";
 
         if (fillName(nome) && findEmail(email) && testPassword(senha, confirmarSenha)) {
             let id = database.length + 1;
@@ -52,6 +56,55 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Cadastro do usuário não foi realizado.");
         }
     });
+
+    nameField.addEventListener("keyup", function() {
+        const errorField = document.querySelector("#error-name");
+        idElement = errorField.id;
+        if (nameField.value !== "" && nameField.value.length > 3) {
+            message = " ";
+            errorMsg(message, idElement);
+        } else {
+            message = "Preencha o campo nome, por favor. O nome deve ter mais de 4 caracteres."
+            errorMsg(message, idElement);
+        }
+    })
+
+    confirmPasswordField.addEventListener("keyup", function() {
+        const errorField = document.querySelector("#error-password");
+        idElement = errorField.id;
+        if (confirmPasswordField.value === passwordField.value) {
+            message = " ";
+            errorMsg(message, idElement);
+        } else {
+            message = "As senhas não coincidem."
+            errorMsg(message, idElement);
+        }
+    })
+
+    showPassword.addEventListener("click", function() {
+        if (passwordField.getAttribute("type") === "password") {
+            passwordField.setAttribute("type", "text");
+            passwordField.focus();
+            showPassword.src = "images/eye.svg";
+        } else {
+            passwordField.setAttribute("type", "password");
+            passwordField.focus();
+            showPassword.src = "images/eye-slash.svg";
+        }
+    });
+
+    showConfirmPassword.addEventListener("click", function() {
+        if (confirmPasswordField.getAttribute("type") === "password") {
+            confirmPasswordField.setAttribute("type", "text");
+            confirmPasswordField.focus();
+            showConfirmPassword.src = "images/eye.svg";
+        } else {
+            confirmPasswordField.setAttribute("type", "password");
+            confirmPasswordField.focus();
+            showConfirmPassword.src = "images/eye-slash.svg";
+        }
+    });
+
 });
 
 function fillName(nameRef) {
@@ -82,6 +135,8 @@ function findEmail(emailRef) {
 }
 
 function testPassword(passwordRef, confirmPasswordRef) {
+    const errorField = document.querySelector("#error-password");
+    idElement = errorField.id;
     if (passwordRef !== "" && confirmPasswordRef !=="") {
         if (passwordRef === confirmPasswordRef) {
             return true;
@@ -90,7 +145,14 @@ function testPassword(passwordRef, confirmPasswordRef) {
             return false;
         }
     } else {
-        console.warn("Preencha os campos de senha, por favor.");
+        message = "Preencha os campos de senha, por favor."
+        errorMsg(message, idElement);
+        console.warn(message);
         return false;
     }
+}
+
+function errorMsg(messageRef, idRef) {
+    const errorText = document.querySelector(`#${idRef}`);
+    errorText.innerHTML = messageRef;
 }

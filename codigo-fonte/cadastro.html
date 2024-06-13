@@ -28,44 +28,22 @@
             <form id="cadastroForm">
                 <h1>Cadastro</h1>
                 <div class="form-group">
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="nome"
-                        placeholder="Nome"
-                        required
-                    />
+                    <input type="text" class="form-control" id="nome" placeholder="Nome"/>
+                    <p id="error-name"></p>
                 </div>
                 <div class="form-group">
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="E-mail"
-                        required
-                    />
+                    <input type="email" class="form-control" id="email" placeholder="E-mail"/>
                 </div>
                 <div class="form-group">
-                    <input
-                        type="password"
-                        class="form-control"
-                        id="senha"
-                        placeholder="Senha"
-                        required
-                    />
+                    <input type="password" class="form-control" id="senha" placeholder="Senha"/>
+                    <img id="show-password" src="images/eye-slash.svg" alt="">
                 </div>
                 <div class="form-group">
-                    <input
-                        type="password"
-                        class="form-control"
-                        id="confirmarSenha"
-                        placeholder="Confirmar senha"
-                        required
-                    />
-
-                <button type="submit" class="btn btn-primary">
-                    Cadastrar
-                </button>
+                    <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirmar senha"/>
+                    <img id="show-confirm-password" src="images/eye-slash.svg" alt="">
+                    <p id="error-password"></p>
+                </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
             </form>
         </div>
     </main>

@@ -25,17 +25,32 @@ h1 {
 }
 
 .form-group {
-  margin-bottom: 1.3rem;
+  height: 50px;
+  position: relative;
+  margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.form-group label {
-  width: 100%;
-  max-width: 30rem;
-  text-align: left;
-  color: var(--branco);
+
+#error-name,
+#error-password {
+  margin-top: .5rem;
+  margin-bottom: 0;
+  font-size: .8rem;
+  color: red;
+}
+
+#show-password,
+#show-confirm-password {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 1.5rem;
+  top: 10px;
+  right: 130px;
 }
 
 .form input,
@@ -45,20 +60,10 @@ h1 {
   width: 100%;
   max-width: 30rem;
   padding: 8px;
-  margin-bottom: 1.3rem;
   border: 1px solid var(--branco);
   border-radius: 5px;
   background-color: var(--branco);
   color: var(--preto);
-}
-
-.form textarea {
-  height: 100px;
-}
-
-.form input[type="file"] {
-  margin-top: 1rem;
-  text-align: center;
 }
 
 .form button {
