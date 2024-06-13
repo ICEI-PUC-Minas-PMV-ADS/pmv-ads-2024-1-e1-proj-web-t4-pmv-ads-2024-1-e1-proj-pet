@@ -25,13 +25,17 @@
 
 <main>
     <form id="loginForm">
-    <h1>Login</h1>
-    <input type="text" id="email" placeholder="E-mail" value="" />
-    <input type="password" id="senha" placeholder="Senha" value="" />
-    <button type="submit">Entrar</button>
-    <p id="forgot-password"><a href="senha.html">Esqueceu sua senha?</a></p>
-    <p>Não está cadastrado? Crie sua <a href="cadastro.html">conta</a>.</p>
+        <h1>Login</h1>
+        <input type="email" id="email" placeholder="E-mail" value="" />
+        <div id="password-field">
+            <input type="password" id="senha" placeholder="Senha" value="" />
+            <img id="show-password" src="images/eye-slash.svg" alt="">
+        </div>      
+        <button type="submit">Entrar</button>
+        <p id="forgot-password"><a href="senha.html">Esqueceu sua senha?</a></p>
+        <p>Não está cadastrado? Crie sua <a href="cadastro.html">conta</a>.</p>
     </form>
+
 </main>
 
 <footer>

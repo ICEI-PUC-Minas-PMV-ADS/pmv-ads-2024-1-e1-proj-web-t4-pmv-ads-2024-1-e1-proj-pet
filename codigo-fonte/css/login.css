@@ -7,10 +7,10 @@ h1 {
 
 form {
   width: 100%;
-  max-width: 780px;
+  max-width: 48rem;
   margin: 5.6em auto 6.9em auto;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
   background-color: var(--azul-escuro);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -25,10 +25,27 @@ input {
   margin-bottom: 1.3rem;
 }
 
-[type="text"],
-[type="password"] {
+input:focus {
+  outline: none;
+}
+
+[type = "email"],
+[type = "text"],
+[type = "password"] {
   font-size: 0.9rem;
   padding: 1rem;
+}
+
+#password-field {
+  position: relative;
+  height: 6.25rem;
+}
+
+p#login-error {
+  position: relative;
+  top: -2.5rem;
+  font-size: .8rem;
+  color: red;
 }
 
 button {
@@ -61,6 +78,14 @@ form a {
   text-align: center;
   color: var(--preto);
   margin-bottom: 3.8rem;
+}
+
+#password-field > img{
+  position: relative;
+  top: -62.5%;
+  left: 28%;
+  width: 1.5rem;
+  cursor: pointer;
 }
 
 a:hover {
