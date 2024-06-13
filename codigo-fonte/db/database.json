@@ -2,7 +2,7 @@
     {
         "id": 1,
         "email": "fulanamariadetal@gmail.com",
-        "senha": "1234",
+        "senha": "81dc9bdb52d04dc20036dbd8313ed055",
         "foto": "images/imgperfil1.png",
         "nome": "Fulana Maria",
         "sobrenome": "de tal",
@@ -36,7 +36,7 @@
         {
         "id": 2,
         "email": "cicranojsouza@gmail.com",
-        "senha": "1234",
+        "senha": "81dc9bdb52d04dc20036dbd8313ed055",
         "foto": "images/imgperfil2.png",
         "nome": "Cicrano José",
         "sobrenome": "Souza",
@@ -69,7 +69,7 @@
         {
         "id": 3,
         "email": "beltranosilva@gmail.com",
-        "senha": "1234",
+        "senha": "81dc9bdb52d04dc20036dbd8313ed055",
         "foto": "images/imgperfil4.png",
         "nome": "Beltrano",
         "sobrenome": "Silva",
@@ -101,7 +101,7 @@
         {
         "id": 4,
         "email": "feliciasantos@gmail.com",
-        "senha": "1234",
+        "senha": "81dc9bdb52d04dc20036dbd8313ed055",
         "foto": "images/imgperfil3.png",
         "nome": "Felícia",
         "sobrenome": "Santos",
