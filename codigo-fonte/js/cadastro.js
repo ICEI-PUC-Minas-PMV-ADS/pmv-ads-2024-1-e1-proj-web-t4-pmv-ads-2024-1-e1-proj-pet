@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
             database.push(entryData);
             localStorage.setItem("database", JSON.stringify(database));
             cadastroForm.submit();
+            console.log("Usuário cadastrado com Sucesso!");
         } else {
             console.error("Cadastro do usuário não foi realizado.");
         }
