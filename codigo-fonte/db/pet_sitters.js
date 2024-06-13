@@ -195,11 +195,5 @@
       });
   };
 
-  PetSitters.prototype.load = function() {
-    let cadastros = JSON.parse(localStorage.getItem("cadastros")) || [];
-    cadastros.push(...petSittersTable);
-    localStorage.setItem("cadastros", JSON.stringify(cadastros));
-  }
-
   exports.PetSitters = PetSitters;
 })(this);
