@@ -56,14 +56,6 @@ function testLogin(emailRef, passwordRef) {
 }
 
 function errorMsg(messageRef) {
-    const passwordDiv = document.querySelector("#password-field");
-    const testErrorP = passwordDiv.querySelector("p#login-error");
-    if (testErrorP == null) {
-        const errorMsg = document.createElement("p");
-        errorMsg.id = "login-error";
-        errorMsg.innerHTML = messageRef;
-        passwordDiv.appendChild(errorMsg);    
-    } else {
-        testErrorP.innerHTML = messageRef;
-    }
+    const errorText = document.querySelector("#login-error");
+    errorText.innerHTML = messageRef;
 }
