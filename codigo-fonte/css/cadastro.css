@@ -9,11 +9,11 @@ div.form {
 
 form {
   width: 100%;
-  max-width: 48.9rem;
+  max-width: 48rem;
   margin: 0 auto;
   background-color: var(--azul-escuro);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-  border-radius: 15px;
+  border-radius: .5rem;
   padding: 2rem;
 }
 
@@ -21,11 +21,11 @@ h1 {
   margin-top: 2.5rem;
   margin-bottom: 3.1rem;
   text-align: center;
+  font-size: 2.5rem;
   color: var(--preto);
 }
 
 .form-group {
-  height: 50px;
   position: relative;
   margin-bottom: 2.5rem;
   display: flex;
@@ -36,10 +36,11 @@ h1 {
 
 #error-name,
 #error-password {
-  margin-top: .5rem;
+  position: absolute;
   margin-bottom: 0;
   font-size: .8rem;
   color: red;
+  top: 4rem;
 }
 
 #show-password,
@@ -49,19 +50,18 @@ h1 {
   padding: 0;
   box-sizing: border-box;
   width: 1.5rem;
-  top: 10px;
+  top: 18px;
   right: 130px;
 }
 
-.form input,
-.form textarea,
-.form select {
+.form-control {
   display: block;
+  height: 3.8rem;
   width: 100%;
   max-width: 30rem;
   padding: 8px;
   border: 1px solid var(--branco);
-  border-radius: 5px;
+  border-radius: 0;
   background-color: var(--branco);
   color: var(--preto);
 }
