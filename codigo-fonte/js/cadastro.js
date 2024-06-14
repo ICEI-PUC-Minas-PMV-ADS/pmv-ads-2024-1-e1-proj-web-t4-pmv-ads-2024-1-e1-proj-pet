@@ -1,4 +1,5 @@
 const database = JSON.parse(localStorage.getItem("database"));
+const authentication = JSON.parse(localStorage.getItem("authentication"));
 
 document.addEventListener("DOMContentLoaded", function () {
     const cadastroForm = document.getElementById("cadastroForm");
@@ -50,9 +51,18 @@ document.addEventListener("DOMContentLoaded", function () {
             };
             database.push(entryData);
             localStorage.setItem("database", JSON.stringify(database));
+
+            const entryDataAuthentication = md5(id + email + senha);
+            authentication.push(entryDataAuthentication);
+            localStorage.setItem("authentication"), JSON.stringify(authentication);
+
             cadastroForm.submit();
             console.log("Usuário cadastrado com Sucesso!");
-            window.location.href = "login.html";
+
+            setTimeout(function() {
+                window.location.href = "login.html";
+            }, 2000);
+
         } else {
             console.error("Cadastro do usuário não foi realizado.");
         }

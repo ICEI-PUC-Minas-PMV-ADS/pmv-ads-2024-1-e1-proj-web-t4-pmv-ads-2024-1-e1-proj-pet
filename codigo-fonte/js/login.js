@@ -1,4 +1,6 @@
 const database = JSON.parse(localStorage.getItem("database"));
+const authentication = JSON.parse(localStorage.getItem("authentication"));
+const authSession = JSON.parse(sessionStorage.getItem("authSession"));
 
 document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.querySelector("#loginForm");
@@ -15,6 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (testLogin(email, senha)) {
             console.log("Login efetuado com sucesso.");
+
+            const authSessionHash = md5(authHashGenerator(email, senha));
+            console.log(authSessionHash);
+            authSession.push(authSessionHash);
+            sessionStorage.setItem("authSession", JSON.stringify(authSession))
+
             loginForm.submit();
             window.location.href = "index.html";
         }
@@ -53,6 +61,17 @@ function testLogin(emailRef, passwordRef) {
         console.error(message);
         return false;
     }
+}
+
+function authHashGenerator(emailRef, passwordRef) {
+    let id = 0;
+    for (let index = 0; index < database.length; index++) {
+        if (emailRef === database[index].email) {
+            id = database[index].id;
+        }
+    }
+    console.log(id);
+    return id + emailRef + passwordRef;
 }
 
 function errorMsg(messageRef) {
