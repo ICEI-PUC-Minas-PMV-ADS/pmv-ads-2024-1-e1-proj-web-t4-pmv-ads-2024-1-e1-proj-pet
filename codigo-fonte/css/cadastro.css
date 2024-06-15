@@ -52,6 +52,7 @@ h1 {
   width: 1.5rem;
   top: 18px;
   right: 130px;
+  cursor: pointer;
 }
 
 .form-control {

@@ -16,10 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let message = "";
 
         if (testLogin(email, senha)) {
-            console.log("Login efetuado com sucesso.");
-
             const authSessionHash = md5(authHashGenerator(email, senha));
-            console.log(authSessionHash);
             authSession.push(authSessionHash);
             sessionStorage.setItem("authSession", JSON.stringify(authSession))
 
@@ -32,11 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (passwordField.getAttribute("type") === "password") {
             passwordField.setAttribute("type", "text");
             passwordField.focus();
-            showPassword.src = "images/eye.svg";
+            showPassword.src = "images/eye-slash.svg";
         } else {
             passwordField.setAttribute("type", "password");
             passwordField.focus();
-            showPassword.src = "images/eye-slash.svg";
+            showPassword.src = "images/eye.svg";
         }
     })
 });

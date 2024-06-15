@@ -52,19 +52,15 @@ document.addEventListener("DOMContentLoaded", function () {
             database.push(entryData);
             localStorage.setItem("database", JSON.stringify(database));
 
-            const entryDataAuthentication = md5(id + email + senha);
+            const entryDataAuthentication = {
+                id: id,
+                hash: md5(id + email + senha)
+            };
             authentication.push(entryDataAuthentication);
-            localStorage.setItem("authentication"), JSON.stringify(authentication);
+            localStorage.setItem("authentication", JSON.stringify(authentication));
 
             cadastroForm.submit();
-            console.log("Usuário cadastrado com Sucesso!");
-
-            setTimeout(function() {
-                window.location.href = "login.html";
-            }, 2000);
-
-        } else {
-            console.error("Cadastro do usuário não foi realizado.");
+            window.location.href = "login.html";
         }
     });
 
@@ -96,11 +92,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (passwordField.getAttribute("type") === "password") {
             passwordField.setAttribute("type", "text");
             passwordField.focus();
-            showPassword.src = "images/eye.svg";
+            showPassword.src = "images/eye-slash.svg";
         } else {
             passwordField.setAttribute("type", "password");
             passwordField.focus();
-            showPassword.src = "images/eye-slash.svg";
+            showPassword.src = "images/eye.svg";
         }
     });
 
@@ -108,11 +104,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (confirmPasswordField.getAttribute("type") === "password") {
             confirmPasswordField.setAttribute("type", "text");
             confirmPasswordField.focus();
-            showConfirmPassword.src = "images/eye.svg";
+            showConfirmPassword.src = "images/eye-slash.svg";
         } else {
             confirmPasswordField.setAttribute("type", "password");
             confirmPasswordField.focus();
-            showConfirmPassword.src = "images/eye-slash.svg";
+            showConfirmPassword.src = "images/eye.svg";
         }
     });
 
@@ -122,7 +118,6 @@ function fillName(nameRef) {
     if (nameRef !== "" && nameRef.length > 3) {
         return true;
     } else {
-        console.warn("Preencha o campo nome, por favor. O nome deve ter mais de 4 caracteres.");
         return false;
     }
 }
@@ -134,14 +129,10 @@ function findEmail(emailRef) {
             dbEmail.push(database[index].email);
         }
         if (!dbEmail.includes(emailRef)) {
-            console.log("Email válido");
             return true;
         } else {
-            console.warn("Email já está cadastrado.");
             return false;
         }
-    } else {
-        console.warn("Preencha o campo de email, por favor.");
     }
 }
 
@@ -152,7 +143,6 @@ function testPassword(passwordRef, confirmPasswordRef) {
         if (passwordRef === confirmPasswordRef) {
             return true;
         } else {
-            console.warn("As senhas não coincidem");
             return false;
         }
     } else {
