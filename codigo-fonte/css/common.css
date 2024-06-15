@@ -46,8 +46,53 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
 .header-links > a {
   margin-left: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.icon-profile {
+  height: 3.5rem;
+  width: 3.5rem;
+  position: relative;
+  display: block;
+  margin-left: 35px;
+}
+
+#btn-dropdown,
+#btn-dropdown > img {
+  height: 100%;
+  width: 100%;
+}
+
+#btn-dropdown{
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.show-content {
+  display: flex;
+}
+
+#dropdown > a {
   font-size: 16px;
   font-weight: 400;
   color: var(--branco);
