@@ -10,14 +10,31 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
         <img src="images/logoheader.png" alt="Logo" />
         <div class="header-links">
-          <a href="index.html">Home</a>
-          <a href="buscar.html">Busca</a>
-          <a href="cadastro.html">Cadastro</a>
-          <a href="login.html">Login</a>
-          <a href="sobre.html">Sobre</a>
+          <div class="links-container">
+            <a href="index.html" target="_self">Home</a>
+          </div>
+          <div class="links-container">
+            <a href="buscar.html" target="_self">Busca</a>
+          </div>
+          <div id="register-container" class="links-container">
+            <a id="register-link" href="cadastro.html" target="_self">Cadastro</a>
+          </div>
+          <div id="login-container" class="links-container">
+            <a id="login-link" href="login.html" target="_self">Login</a>
+          </div>
+          <div class="links-container">
+            <a href="sobre.html" target="_self">Sobre</a>
+          </div>
+          <div class="icon-profile">
+            <button id="btn-dropdown"><img src="images/user-circle.png" alt="Foto do perfil"></button>
+            <div id="dropdown" class="dropdown-content">
+              <a href="perfil.html">Perfil</a>
+              <a id="logout" href="#">Logout</a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -76,5 +93,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/sobre.js"></script>
   </body>
 </html>

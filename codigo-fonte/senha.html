@@ -12,17 +12,27 @@
   </head>
   <body>
     <header>
-      <nav>
-        <img src="images/logoheader.png" alt="Logo" />
-        <div class="header-links">
-          <a href="index.html">Home</a>
-          <a href="buscar.html">Busca</a>
-          <a href="cadastro.html">Cadastro</a>
-          <a href="login.html">Login</a>
-          <a href="sobre.html">Sobre</a>
-        </div>
+      <nav class="container">
+      <img src="images/logoheader.png" alt="Logo" />
+      <div class="header-links">
+          <div class="links-container">
+          <a href="index.html" target="_self">Home</a>
+          </div>
+          <div class="links-container">
+          <a href="buscar.html" target="_self">Busca</a>
+          </div>
+          <div id="register-container" class="links-container">
+          <a id="register-link" href="cadastro.html" target="_self">Cadastro</a>
+          </div>
+          <div id="login-container" class="links-container">
+          <a id="login-link" href="login.html" target="_self">Login</a>
+          </div>
+          <div class="links-container">
+          <a href="sobre.html" target="_self">Sobre</a>
+          </div>
+      </div>
       </nav>
-    </header>
+  </header>
 
     <main>
       <form id="form_recuperar" action="do_login.html" method="POST">

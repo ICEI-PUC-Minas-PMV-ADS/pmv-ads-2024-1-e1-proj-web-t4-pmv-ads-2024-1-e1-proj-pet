@@ -5,10 +5,6 @@ const authSession = JSON.parse(sessionStorage.getItem("authSession"));
 document.addEventListener("DOMContentLoaded", function() {
     const logout = document.querySelector("#logout");
 
-    // Fazer uma lógica para pegar quem está com serPetSitter === true;
-    const numRegister = document.querySelector("#num-register");
-    numRegister.innerHTML = database.length;
-
     if (getAuthenticationHash(authSession)) {
         console.log("Entrou no IF");
         showProfilePic();
@@ -32,7 +28,6 @@ function getAuthenticationHash(authSession) {
         return false;
     }
 }
-
 
 function showProfilePic() {
     const registerContainer = document.querySelector("#register-container");

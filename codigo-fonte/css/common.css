@@ -51,7 +51,11 @@ h1, h2, h3 {
   align-items: center;
 }
 
-.header-links > a {
+.links-container {
+  display: inline;
+}
+
+.links-container > a {
   margin-left: 35px;
   font-size: 16px;
   font-weight: 400;
