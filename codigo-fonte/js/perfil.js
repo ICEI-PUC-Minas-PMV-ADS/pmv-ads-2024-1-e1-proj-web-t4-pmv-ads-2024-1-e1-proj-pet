@@ -33,7 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const profilePicture = document.querySelector("#profile-picture");
     const title = document.querySelector("#name");
+    const btnTop = document.querySelector("#btn-top");
+    const favoriteIcon = document.querySelector("#favorite-icon");
     const aboutMe = document.querySelector("#about-me");
+    const btnBottom = document.querySelector("#btn-bottom");
     const logoInstagram = document.querySelector("#logo-instagram");
     const logoFacebook = document.querySelector("#logo-facebook");
     const logoTwitter = document.querySelector("#logo-twitter");
@@ -44,15 +47,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const radiusServiceValue = document.querySelector("#radius-service");
     const neighborhoodValue = document.querySelector("#neighborhood");
 
+    
     profilePicture.setAttribute("src", user.foto);
     title.textContent = `${user.nome} ${user.sobrenome}`;
+    btnTop.innerHTML = "Editar";
+    favoriteIcon.setAttribute("style", "display: none")
     aboutMe.textContent = `${user.sobreMim}`;
+    btnBottom.innerHTML = "Editar";
+
     if (user.instagram === "") {
         logoInstagram.setAttribute("style", "display: none");
     } else {
         logoInstagram.setAttribute("style", "display: inline");
     }
-    if (user.Facebook === "") {
+    if (user.facebook === "") {
         logoFacebook.setAttribute("style", "display: none");
     } else {
         logoFacebook.setAttribute("style", "display: inline");
@@ -84,10 +92,13 @@ document.addEventListener("DOMContentLoaded", function() {
     radiusServiceValue.textContent = `${user.raioAtendimento}`;
     neighborhoodValue.textContent = `${user.localizacao}`;
 
-    logout.addEventListener("click", function() {
-        sessionStorage.clear();
-        window.location.href = "index.html"
-    });
+    btnTop.addEventListener("click", function(){
+        window.location.href = "editarperfil.html";
+    })
+    
+    btnBottom.addEventListener("click", function(){
+        window.location.href = "editarperfil.html";
+    })
 });
 
 function getAuthenticationHash(authSession) {

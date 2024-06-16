@@ -12,16 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     if (getAuthenticationHash(authSession)) {
-        console.log("Entrou no IF");
         showProfilePic();
     } else {
-        console.log("Entrou no Else");
         hideProfilePic();
     }
 
     logout.addEventListener("click", function() {
         sessionStorage.clear();
-        location.reload();
+        window.location.href = "index.html";
     });
 });
 

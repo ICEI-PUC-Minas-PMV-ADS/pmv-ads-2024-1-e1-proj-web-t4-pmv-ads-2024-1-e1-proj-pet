@@ -1,6 +1,26 @@
+const database = JSON.parse(localStorage.getItem("database"));
+const authentication = JSON.parse(localStorage.getItem("authentication"));
+const authSession = JSON.parse(sessionStorage.getItem("authSession"));
+
 document.addEventListener("DOMContentLoaded", function() {
-    const cadastros = JSON.parse(localStorage.getItem("cadastros"));
-    console.log(cadastros);
+    const authenticationHash = getAuthenticationHash(authSession);
+
+    let idAuthentication;
+    let user;
+
+    for (let index = 0; index < authentication.length; index++) {
+        if (authenticationHash === authentication[index].hash) {
+            idAuthentication = authentication[index].id;
+            break;
+        }
+    }
+
+    for (let index = 0; index < database.length; index++) {
+        if (idAuthentication === database[index].id) {
+            user = database[index];
+            break;
+        }
+    }
 
     const profilePicture = document.querySelector("#profile-pic");
     const nameField = document.querySelector("#name-field");
@@ -31,72 +51,70 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnCancel = document.querySelector("#btn-cancel");
     const btnConfirm = document.querySelector("#btn-confirm");
     const btnEdit = document.querySelector("#btn-edit");
+    const btnProfile = document.querySelector("#btn-profile");
+    const checkboxes = document.querySelectorAll(`input[type="checkbox"]`);
+    let checkboxesState = [];
 
     setFields(true);
 
-    cadastros.forEach(cadastros => {
-        if(cadastros.id === 1) {
-            profilePicture.setAttribute("src", cadastros.foto);
-            nameField.value = cadastros.nome;
-            lastNameField.value = cadastros.sobrenome;
-            addressField.value = cadastros.endereco;
-            cityField.value = cadastros.cidade;
-            postalCodeField.value = cadastros.cep;
-            
-            if(cadastros.serPetSitter) {
-                petSitterOption.checked = true;
-            } else {
-                petSitterOption.checked = false;
-            }
+    profilePicture.setAttribute("src", user.foto);
+    nameField.value = user.nome;
+    lastNameField.value = user.sobrenome;
+    addressField.value = user.endereco;
+    cityField.value = user.cidade;
+    postalCodeField.value = user.cep;
 
-            emailField.value = cadastros.email;
-            telField.value = cadastros.telefone;
-            address2Field.value = cadastros.endereco2;
-            stateField.value = cadastros.estado;
-            serviceRadiusField.value = cadastros.raioAtendimento;
-            aboutMeField.value = cadastros.sobreMim;
-            instagramField.value = cadastros.instagram;
-            facebookField.value = cadastros.facebook;
-            twitterField.value = cadastros.twitter;
-            priceDayField.value = cadastros.custo;
-            price2DaysField.value = cadastros.custo2;
-            yearsExpField.value = cadastros.anosExp;
+    if(user.serPetSitter) {
+        petSitterOption.checked = true;
+    } else {
+        petSitterOption.checked = false;
+    }
 
-            const abilities = cadastros.habilidades;
-            if(abilities.indexOf("TUTOR") !== -1) {
-                hadPetOption.checked = true;
-            } else {
-                hadPetOption.checked = false;
-            }
-            if(abilities.indexOf("MEDICAMENTOS") !== -1) {
-                admMedicinesOption.checked = true;
-            } else {
-                admMedicinesOption.checked = false;
-            }
-            if(abilities.indexOf("INJECOES") !== -1) {
-                aplShotsOption.checked = true;
-            } else {
-                aplShotsOption.checked = false;
-            }
-            if(abilities.indexOf("GATO") !== -1) {
-                catOption.checked = true;
-            } else {
-                catOption.checked = false;
-            }
-            if(abilities.indexOf("CACHORRO") !== -1) {
-                dogOption.checked = true;
-            } else {
-                dogOption.checked = false;
-            }
-            if(abilities.indexOf("PASSARO") !== -1) {
-                birdOption.checked = true;
-            } else {
-                birdOption.checked = false;
-            }
-        }
-    });
+    emailField.value = user.email;
+    telField.value = user.telefone;
+    address2Field.value = user.endereco2;
+    stateField.value = user.estado;
+    serviceRadiusField.value = user.raioAtendimento;
+    aboutMeField.value = user.sobreMim;
+    instagramField.value = user.instagram;
+    facebookField.value = user.facebook;
+    twitterField.value = user.twitter;
+    priceDayField.value = user.custo;
+    price2DaysField.value = user.custo2;
+    yearsExpField.value = user.anosExp;
 
-    petSitterOption.addEventListener("click", () => {
+    if(user.habilidades.indexOf("TUTOR") === -1) {
+        hadPetOption.checked = false;
+    } else {
+        hadPetOption.checked = true;
+    }
+    if(user.habilidades.indexOf("MEDICAMENTOS") === -1) {
+        admMedicinesOption.checked = false;
+    } else {
+        admMedicinesOption.checked = true;
+    }
+    if(user.habilidades.indexOf("INJECOES") === -1) {
+        aplShotsOption.checked = false;
+    } else {
+        aplShotsOption.checked = true;
+    }
+    if(user.habilidades.indexOf("GATO") === -1) {
+        catOption.checked = false;
+    } else {
+        catOption.checked = true;
+    }
+    if(user.habilidades.indexOf("CACHORRO") === -1) {
+        dogOption.checked = false;
+    } else {
+        dogOption.checked = true;
+    }
+    if(user.habilidades.indexOf("PASSARO") === -1) {
+        birdOption.checked = false;
+    } else {
+        birdOption.checked = true;
+    }
+
+    petSitterOption.addEventListener("click", function() {
         if(petSitterOption.checked) {
             priceDayField.disabled = false;
             price2DaysField.disabled = false;
@@ -127,54 +145,129 @@ document.addEventListener("DOMContentLoaded", function() {
                 dogOption.checked = false;
                 birdOption.checked = false;
             }
-    })
+    });
 
-    btnEdit.addEventListener("click", () => {
+    btnEdit.addEventListener("click", function() {
         setFields(false);
 
+        // SALVA OS ESTADOS DOS CHECKBOXES
+        for (let index = 0; index < checkboxes.length; index++) {
+            checkboxesState[index] = checkboxes[index].checked;
+        }
+
         btnEdit.setAttribute("style", "display: none");
+        btnProfile.setAttribute("style", "display: none");
         btnConfirm.setAttribute("style", "display: block");
         btnCancel.setAttribute("style", "display: block");
         btnPicture.setAttribute("style", "display: block");
     })
 
-    btnCancel.addEventListener("click", () => {
+    btnProfile.addEventListener("click", function() {
+        window.location.href = "perfil.html";
+    });
+
+    btnCancel.addEventListener("click", function() {
         setFields(true);
 
+        // SE OS CHECKBOXES ESTÃO EM ESTADOS DIFERENTES DOS SALVOS, INVERTE
+        for (let index = 0; index < checkboxes.length; index++) {
+            if(checkboxes[index].checked !== checkboxesState[index]) {
+                checkboxes[index].checked = !checkboxes[index].checked;
+            }
+        }
+
         btnEdit.setAttribute("style", "display: block");
+        btnProfile.setAttribute("style", "display: block");
         btnConfirm.setAttribute("style", "display: none");
         btnCancel.setAttribute("style", "display: none");
         btnPicture.setAttribute("style", "display: none");
-    })
+    });
 
-    btnConfirm.addEventListener("click", () => {
+    btnConfirm.addEventListener("click", function() {
         setFields(true);
 
-        cadastros[0].nome = nameField.value;
-        cadastros[0].sobrenome = lastNameField.value;
-        cadastros[0].endereco = addressField.value;
-        cadastros[0].endereco2 = address2Field.value;
-        cadastros[0].cidade = cityField.value;
-        cadastros[0].cep = postalCodeField.value;
-        cadastros[0].email = emailField.value;
-        cadastros[0].telefone = telField.value;
-        cadastros[0].estado = stateField.value;
-        cadastros[0].raioAtendimento = serviceRadiusField.value;
-        cadastros[0].sobreMim = aboutMeField.value;
-        cadastros[0].instagram = instagramField.value;
-        cadastros[0].facebook = facebookField.value;
-        cadastros[0].twitter = twitterField.value;
-        cadastros[0].anosExp = yearsExpField.value;
-        cadastros[0].custo = priceDayField.value;
-        cadastros[0].custo2 = price2DaysField.value;
-        localStorage.setItem("cadastros", JSON.stringify(cadastros));
+        user.nome = nameField.value;
+        user.sobrenome = lastNameField.value;
+        user.endereco = addressField.value;
+        user.endereco2 = address2Field.value;
+        user.cidade = cityField.value;
+        user.cep = postalCodeField.value;
+        user.email = emailField.value;
+        user.telefone = telField.value;
+        user.estado = stateField.value;
+        user.raioAtendimento = serviceRadiusField.value;
+        user.sobreMim = aboutMeField.value;
+        user.instagram = instagramField.value;
+        user.facebook = facebookField.value;
+        user.twitter = twitterField.value;
+        user.anosExp = yearsExpField.value;
+        user.custo = priceDayField.value;
+        user.custo2 = price2DaysField.value;
+
+        localStorage.setItem("database", JSON.stringify(database));
 
         btnEdit.setAttribute("style", "display: block");
+        btnProfile.setAttribute("style", "display: block");
         btnConfirm.setAttribute("style", "display: none");
         btnCancel.setAttribute("style", "display: none");
         btnPicture.setAttribute("style", "display: none");
 
-    })
+    });
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener("change", function() {
+            if (checkbox.id === "had-pet") {
+                if (!checkbox.checked && user.habilidades.indexOf("TUTOR") !== -1) {
+                    // OPÇÃO DESMARCADA E TEM TUTOR NA LISTA
+                    let indexItem = user.habilidades.indexOf("TUTOR");
+                    user.habilidades.splice(indexItem, 1);
+                } else if (checkbox.checked && user.habilidades.indexOf("TUTOR") === -1) {
+                    // OPÇÃO MARCADA E NÃO TEM TUTOR NA LISTA
+                    user.habilidades.push("TUTOR");
+                }
+            }
+            if (checkbox.id === "adm-medicines") {
+                if (!checkbox.checked && user.habilidades.indexOf("MEDICAMENTOS") !== -1) {
+                    let indexItem = user.habilidades.indexOf("MEDICAMENTOS");
+                    user.habilidades.splice(indexItem, 1);
+                } else if (checkbox.checked && user.habilidades.indexOf("MEDICAMENTOS") === -1) {
+                    user.habilidades.push("MEDICAMENTOS");
+                }
+            }
+            if (checkbox.id === "apl-shots") {
+                if (!checkbox.checked && user.habilidades.indexOf("INJECOES") !== -1) {
+                    let indexItem = user.habilidades.indexOf("INJECOES");
+                    user.habilidades.splice(indexItem, 1);
+                } else if (checkbox.checked && user.habilidades.indexOf("INJECOES") === -1) {
+                    user.habilidades.push("INJECOES");
+                }
+            }
+            if (checkbox.id === "cat-option") {
+                if (!checkbox.checked && user.habilidades.indexOf("GATO") !== -1) {
+                    let indexItem = user.habilidades.indexOf("GATO");
+                    user.habilidades.splice(indexItem, 1);
+                } else if (checkbox.checked && user.habilidades.indexOf("GATO") === -1) {
+                    user.habilidades.push("GATO");
+                }
+            }
+            if (checkbox.id === "dog-option") {
+                if (!checkbox.checked && user.habilidades.indexOf("CACHORRO") !== -1) {
+                    let indexItem = user.habilidades.indexOf("CACHORRO");
+                    user.habilidades.splice(indexItem, 1);
+                } else if (checkbox.checked && user.habilidades.indexOf("CACHORRO") === -1) {
+                    user.habilidades.push("CACHORRO");
+                }
+            }
+            if (checkbox.id === "bird-option") {
+                if (!checkbox.checked && user.habilidades.indexOf("PASSARO") !== -1) {
+                    let indexItem = user.habilidades.indexOf("PASSARO");
+                    user.habilidades.splice(indexItem, 1);
+                } else if (checkbox.checked && user.habilidades.indexOf("PASSARO") === -1) {
+                    user.habilidades.push("PASSARO");
+                }
+            }
+        });
+    });
 
     function setFields(varBool) {
         nameField.disabled = varBool;
@@ -202,4 +295,15 @@ document.addEventListener("DOMContentLoaded", function() {
         dogOption.disabled = varBool;
         birdOption.disabled = varBool;
     }
-})
+
+});
+
+function getAuthenticationHash(authSession) {
+    if (authSession !== null) {
+        for (let index = 0; index < authSession.length; index++) {
+            return authSession[index];
+        }
+    } else {
+        return false;
+    }
+}
