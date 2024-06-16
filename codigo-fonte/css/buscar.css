@@ -55,15 +55,12 @@
   align-items: center;
 }
 
-.map {
-  width: 100%;
-}
-
-iframe {
+#map {
   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
+
 section {
   width: 45%;
   margin-bottom: 50px;

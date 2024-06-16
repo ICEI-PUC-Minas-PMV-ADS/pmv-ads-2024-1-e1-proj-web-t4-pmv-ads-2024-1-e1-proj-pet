@@ -214,19 +214,19 @@
           mapId: "9d362e2f13af2586",
         });
 
-        const locations = [
-          { lat: -19.938083, lng: -43.940167, title: "Lourdes" },
-          { lat: -19.924982, lng: -43.923171, title: "Santa Efigênia" },
-          { lat: -19.923611, lng: -43.922222, title: "Santa Tereza" },
-          { lat: -19.933889, lng: -43.937222, title: "Savassi" },
+        const coordinates = [
+          { lat: -19.9312655, lng: -43.9445181, title: "Lourdes" },
+          { lat: -19.9196703, lng: -43.9134601, title: "Santa Efigênia" },
+          { lat: -19.9149758, lng: -43.9215342, title: "Santa Tereza" },
+          { lat: -19.9270414, lng: -43.9406938, title: "Savassi" },
         ];
 
-        const markers = locations.map(
+        const markers = coordinates.map(
           (location) =>
             new AdvancedMarkerElement({
-              position: { lat: location.lat, lng: location.lng },
+              position: { lat: coordinates.lat, lng: coordinates.lng },
               map,
-              title: location.title,
+              title: coordinates.title,
             })
         );
       }
