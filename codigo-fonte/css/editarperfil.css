@@ -247,6 +247,87 @@ input[type="button"] {
 
 #btn-cancel,
 #btn-confirm,
-#btn-picture  {
+#btn-picture {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .links-container > a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .icon-profile {
+    margin-left: 0;
+  }
+
+  #profile-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #profile-picture {
+    align-items: center;
+  }
+
+  .profile-infos {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .profile-infos input[type="text"],
+  .profile-infos input[type="email"],
+  .profile-infos input[type="tel"],
+  .profile-infos select {
+    width: 100%;
+  }
+
+  #about-me-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-me-infos {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about-me-infos textarea {
+    height: 200px;
+  }
+
+  .social-media-wrapper > img {
+    top: -45px;
+    left: 90%;
+  }
+
+  #pricing {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #one-visit,
+  #two-visits {
+    width: 100%;
+  }
+
+  #years-field {
+    width: 100%;
+  }
+
+  #services,
+  #pet-type {
+    padding: 20px;
+  }
 }

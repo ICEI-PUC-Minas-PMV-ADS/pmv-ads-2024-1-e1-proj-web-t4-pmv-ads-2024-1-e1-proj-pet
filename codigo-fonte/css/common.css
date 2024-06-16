@@ -42,7 +42,9 @@ nav > img {
   display: block;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 600;
 }
 
@@ -77,7 +79,7 @@ h1, h2, h3 {
   width: 100%;
 }
 
-#btn-dropdown{
+#btn-dropdown {
   border: none;
   background-color: transparent;
 }
