@@ -21,7 +21,9 @@
             <a href="buscar.html" target="_self">Busca</a>
           </div>
           <div id="register-container" class="links-container">
-            <a id="register-link" href="cadastro.html" target="_self">Cadastro</a>
+            <a id="register-link" href="cadastro.html" target="_self"
+              >Cadastro</a
+            >
           </div>
           <div id="login-container" class="links-container">
             <a id="login-link" href="login.html" target="_self">Login</a>
@@ -30,7 +32,9 @@
             <a href="sobre.html" target="_self">Sobre</a>
           </div>
           <div class="icon-profile">
-            <button id="btn-dropdown"><img src="images/user-circle.png" alt="Foto do perfil"></button>
+            <button id="btn-dropdown">
+              <img src="images/user-circle.png" alt="Foto do perfil" />
+            </button>
             <div id="dropdown" class="dropdown-content">
               <a href="perfil.html">Perfil</a>
               <a id="logout" href="#">Logout</a>
@@ -39,7 +43,7 @@
         </div>
       </nav>
     </header>
-    
+
     <main>
       <form id="buscaForm" class="form">
         <div class="content-form container">
@@ -145,17 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240096.92212872958!2d-43.96405015!3d-19.902716299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20State%20of%20Minas%20Gerais%2C%20Brazil!5e0!3m2!1sen!2snl!4v1714924708959!5m2!1sen!2snl"
-              width="900"
-              height="600"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+          <div id="map" class="h-50"></div>
         </section>
         <section id="resultados"></section>
       </div>
@@ -179,6 +173,9 @@
     <script src="db/pet_sitters.js"></script>
     <script src="js/busca.js"></script>
     <script src="js/header.js"></script>
+    <!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyAEklTcPkW2JY9N-vbAVX7_KGOaLtGE3n0", v: "weekly"});</script>
     <script>
       (() => {
         const buscaController = new BuscaController();
@@ -189,13 +186,11 @@
 
         buscaController.carregarPagina();
 
-        // adiciona um event listener para o form submit
         form.addEventListener("submit", (event) => {
           event.preventDefault();
           buscaController.submit();
         });
 
-        // adiciona um event listener para os checkboxes
         habilidadesCheckboxes.forEach((checkbox) => {
           checkbox.addEventListener("change", (event) => {
             event.preventDefault();
@@ -203,6 +198,40 @@
           });
         });
       })(this);
+    </script>
+    <script>
+      async function initMap() {
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary(
+          "marker"
+        );
+
+        const bh = { lat: -19.9027163, lng: -43.9640501 };
+
+        const map = new Map(document.getElementById("map"), {
+          center: bh,
+          zoom: 12,
+          mapId: "9d362e2f13af2586",
+        });
+
+        const locations = [
+          { lat: -19.938083, lng: -43.940167, title: "Lourdes" },
+          { lat: -19.924982, lng: -43.923171, title: "Santa Efigênia" },
+          { lat: -19.923611, lng: -43.922222, title: "Santa Tereza" },
+          { lat: -19.933889, lng: -43.937222, title: "Savassi" },
+        ];
+
+        const markers = locations.map(
+          (location) =>
+            new AdvancedMarkerElement({
+              position: { lat: location.lat, lng: location.lng },
+              map,
+              title: location.title,
+            })
+        );
+      }
+
+      initMap();
     </script>
   </body>
 </html>
