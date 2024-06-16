@@ -1,160 +1,250 @@
 main {
-    margin: auto;
+  margin: auto;
 }
 
 .header-perfil {
-    background-color: var(--azul-claro);
+  background-color: var(--azul-claro);
 }
 
 .header-perfil-wrapper {
-    max-width: 1280px;
-    height: 100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+  max-width: 1280px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .header-perfil-wrapper h1 {
-    margin-left: 60px;
-    font-size: 40px;
-    color: var(--roxo-escuro);
+  margin-left: 60px;
+  font-size: 40px;
+  color: var(--roxo-escuro);
 }
 
 .header-perfil-wrapper button {
-    margin-left: 300px;
-    height: 45px;
-    padding: 0 30px;
-    border-style: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--branco);
-    background-color: var(--roxo-escuro);
-    cursor: pointer;
+  margin-left: 300px;
+  height: 45px;
+  padding: 0 30px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--branco);
+  background-color: var(--roxo-escuro);
+  cursor: pointer;
 }
 
 #profile-picture {
-    margin-top: 260px;
+  margin-top: 260px;
 }
 
 #favorite-icon {
-    margin-left: 50px;
-    width: 50px;
+  margin-left: 50px;
+  width: 50px;
 }
 
 .main-content {
-    max-width: 1280px;
-    margin: auto;
-    display: flex;
-    justify-content: end;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: end;
 }
 
 .about-me,
 .user-infos {
-    margin-top: 100px;
-    max-width: 520px;
-    margin-bottom: 60px;
+  margin-top: 100px;
+  max-width: 520px;
+  margin-bottom: 60px;
 }
 
 .about-me h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
-.about-me, .user-infos p {
-    font-size: 20px;
+.about-me,
+.user-infos p {
+  font-size: 20px;
 }
 
 .about-me button {
-    height: 45px;
-    padding: 0 30px;
-    border-style: none;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--branco);
-    background-color: var(--roxo-escuro);
-    cursor: pointer;
-    margin: 40px 0;
+  height: 45px;
+  padding: 0 30px;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--branco);
+  background-color: var(--roxo-escuro);
+  cursor: pointer;
+  margin: 40px 0;
 }
 
 .about-me > div {
-    display: flex;
-    gap: 25px;
+  display: flex;
+  gap: 25px;
 }
 
-
 .user-infos {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .skills p {
-    display: flex;
-    gap: 20px;
-    padding: 10px 50px 10px 30px;
+  display: flex;
+  gap: 20px;
+  padding: 10px 50px 10px 30px;
 }
 
 .skills,
 .calendar-wrapper {
-    border-radius: 10px;
-    background-color: var(--azul-escuro);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  background-color: var(--azul-escuro);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .skills {
-    margin-bottom:  40px;
+  margin-bottom: 40px;
 }
 
 #exp {
-    height: 28px;
-    width: 28px;
-    border-radius: 14px;
-    text-align: center;
-    align-content: center;
-    background-color: var(--preto);
-    color: var(--azul-escuro);
+  height: 28px;
+  width: 28px;
+  border-radius: 14px;
+  text-align: center;
+  align-content: center;
+  background-color: var(--preto);
+  color: var(--azul-escuro);
 }
 
 .calendar {
-    margin: auto;
-    max-width: fit-content;
-    padding: 20px 0;
-    margin-bottom: 20px;
+  margin: auto;
+  max-width: fit-content;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .calendar-labels {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 20px;
 }
 
 .calendar-labels div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .calendar-labels p {
-    margin: 0;
-    font-size: 14px;
-    text-align: center;
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
 }
 
 #available,
 #unavailable {
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
 }
 
 #available {
-    background-color: var(--roxo-claro);
+  background-color: var(--roxo-claro);
 }
 
 #unavailable {
-    background-color: var(--roxo-escuro);
+  background-color: var(--roxo-escuro);
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 1280px) {
+  .header-perfil-wrapper,
+  .main-content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links-container {
+    margin: 10px 0;
+  }
+
+  .header-perfil-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .header-perfil-wrapper h1 {
+    margin-left: 0;
+    font-size: 32px;
+  }
+
+  .header-perfil-wrapper button {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-me,
+  .user-infos {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .user-infos {
+    margin-left: 0;
+  }
+
+  .skills p {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header,
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-wrapper > p {
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-social h3 {
+    margin: 20px 0;
+  }
+
+  .header-links {
+    width: 100%;
+  }
+
+  .icon-profile {
+    margin-left: 0;
+  }
 }
