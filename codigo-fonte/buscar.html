@@ -199,39 +199,5 @@
         });
       })(this);
     </script>
-    <script>
-      async function initMap() {
-        const { Map } = await google.maps.importLibrary("maps");
-        const { AdvancedMarkerElement } = await google.maps.importLibrary(
-          "marker"
-        );
-
-        const bh = { lat: -19.9027163, lng: -43.9640501 };
-
-        const map = new Map(document.getElementById("map"), {
-          center: bh,
-          zoom: 12,
-          mapId: "9d362e2f13af2586",
-        });
-
-        const coordinates = [
-          { lat: -19.9312655, lng: -43.9445181, title: "Lourdes" },
-          { lat: -19.9196703, lng: -43.9134601, title: "Santa Efigênia" },
-          { lat: -19.9149758, lng: -43.9215342, title: "Santa Tereza" },
-          { lat: -19.9270414, lng: -43.9406938, title: "Savassi" },
-        ];
-
-        const markers = coordinates.map(
-          (location) =>
-            new AdvancedMarkerElement({
-              position: { lat: coordinates.lat, lng: coordinates.lng },
-              map,
-              title: coordinates.title,
-            })
-        );
-      }
-
-      initMap();
-    </script>
   </body>
 </html>

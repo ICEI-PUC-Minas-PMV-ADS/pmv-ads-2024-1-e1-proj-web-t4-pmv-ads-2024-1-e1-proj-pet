@@ -2,30 +2,30 @@ const database = JSON.parse(localStorage.getItem("database"));
 const authentication = JSON.parse(localStorage.getItem("authentication"));
 const authSession = JSON.parse(sessionStorage.getItem("authSession"));
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const logout = document.querySelector("#logout");
 
   if (getAuthenticationHash(authSession)) {
-      console.log("Entrou no IF");
-      showProfilePic();
+    console.log("Entrou no IF");
+    showProfilePic();
   } else {
-      console.log("Entrou no Else");
-      hideProfilePic();
+    console.log("Entrou no Else");
+    hideProfilePic();
   }
 
-  logout.addEventListener("click", function() {
-      sessionStorage.clear();
-      location.reload();
+  logout.addEventListener("click", function () {
+    sessionStorage.clear();
+    location.reload();
   });
 });
 
 function getAuthenticationHash(authSession) {
   if (authSession !== null) {
-      for (let index = 0; index < authSession.length; index++) {
-          return authSession[index];
-      }
+    for (let index = 0; index < authSession.length; index++) {
+      return authSession[index];
+    }
   } else {
-      return false;
+    return false;
   }
 }
 
@@ -40,7 +40,7 @@ function showProfilePic() {
 
 function hideProfilePic() {
   const divIconProfile = document.querySelector(".icon-profile");
-  divIconProfile.setAttribute("style", "display: none")
+  divIconProfile.setAttribute("style", "display: none");
 }
 
 ((exports) => {
@@ -65,6 +65,7 @@ function hideProfilePic() {
 
     // busca petSitters
     petSitters = petSittersTable.find(filtros);
+    console.log(petSitters);
 
     // começa a renderizar os petsitters
     if (petSitters.length === 0) {
@@ -109,6 +110,12 @@ function hideProfilePic() {
       `;
         resultsDiv.appendChild(sitterDiv);
       });
+
+      const enderecos = petSitters.map((petSitter) => {
+        return `${petSitter.endereco}, ${petSitter.localizacao}, ${petSitter.cidade}, ${petSitter.estado}`;
+      });
+
+      this.initMap(enderecos);
     }
   };
 
@@ -168,6 +175,39 @@ function hideProfilePic() {
     };
 
     this.exibirResultados(filtros);
+  };
+  // initMap
+  BuscaController.prototype.initMap = async function (enderecos) {
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    const geocoder = new google.maps.Geocoder();
+
+    const bh = { lat: -19.9027163, lng: -43.9640501 };
+
+    const map = new Map(document.getElementById("map"), {
+      center: bh,
+      zoom: 12,
+      mapId: "9d362e2f13af2586",
+    });
+
+    // const enderecos = [
+    //   "Rua Men de Sá, 300, Belo Horizonte, Minas Gerais",
+    //   "Rua Sergipe, 44, Belo Horizonte, Minas Gerais",
+    //   "Rua Rio de Janeiro, 1500, 300, Belo Horizonte, Minas Gerais",
+    //   "Rua Salinas, 1437, 300, Belo Horizonte, Minas Gerais",
+    // ];
+
+    enderecos.map((endereco) =>
+      geocoder.geocode({ address: endereco }, (results, status) => {
+        if (status === "OK") {
+          new AdvancedMarkerElement({
+            position: results[0].geometry.location,
+            map,
+            title: endereco,
+          });
+        }
+      })
+    );
   };
 
   exports.BuscaController = BuscaController;
