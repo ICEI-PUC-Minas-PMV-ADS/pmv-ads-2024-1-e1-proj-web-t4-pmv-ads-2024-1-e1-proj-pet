@@ -7,22 +7,24 @@ main {
 }
 
 .header-perfil-wrapper {
+  position: relative;
   max-width: 1280px;
   height: 100px;
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .header-perfil-wrapper h1 {
-  margin-left: 60px;
+  margin-left: 280px;
+  margin-bottom: 0px;
   font-size: 40px;
   color: var(--roxo-escuro);
 }
 
 .header-perfil-wrapper button {
-  margin-left: 300px;
+  
   height: 45px;
   padding: 0 30px;
   border-style: none;
@@ -35,7 +37,9 @@ main {
 }
 
 #profile-picture {
-  margin-top: 260px;
+  position: absolute;
+  top: 1rem;
+  left: 0rem;
 }
 
 #favorite-icon {
@@ -47,7 +51,7 @@ main {
   max-width: 1280px;
   margin: auto;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .about-me,
@@ -57,9 +61,19 @@ main {
   margin-bottom: 60px;
 }
 
+.about-me {
+  width: 100%;
+  margin-left: 200px;
+}
+
 .about-me h2 {
+  margin-left: 100px;
   font-size: 30px;
   margin-bottom: 40px;
+}
+
+p#about-me {
+  height: 470;
 }
 
 .about-me,
@@ -84,10 +98,6 @@ main {
 .about-me > div {
   display: flex;
   gap: 25px;
-}
-
-.user-infos {
-  margin-left: 50px;
 }
 
 .skills p {
