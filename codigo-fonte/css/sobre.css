@@ -6,7 +6,10 @@ body {
 .container {
   width: 100%;
   max-width: 1280px;
-  margin: 2.5em auto 5.6em auto;
+}
+
+main > div.container {
+  margin: 2.5rem auto 5.6rem auto;
 }
 
 h1,
