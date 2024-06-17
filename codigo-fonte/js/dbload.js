@@ -5,6 +5,7 @@ const authenticatedSessionTest = JSON.parse(sessionStorage.getItem("authSession"
 document.addEventListener("DOMContentLoaded", function () {
     if (databaseTest === null) {
         fetchData();
+        location.reload();
     }
     
     if (authenticationTest === null) {
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const authSession = JSON.parse(sessionStorage.getItem("authSession")) || [];
         sessionStorage.setItem("authSession", JSON.stringify(authSession));
     }
+
 });
 
 async function fetchData() {
