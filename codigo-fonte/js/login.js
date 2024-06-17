@@ -12,11 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         const email = emailField.value;
-        const senha = md5(passwordField.value);
+        const senha = passwordField.value;
+        const senhaMD5 = md5(passwordField.value);
         let message = "";
 
-        if (testLogin(email, senha)) {
-            const authSessionHash = md5(authHashGenerator(email, senha));
+        if (testLogin(email, senhaMD5)) {
+            const authSessionHash = authHashGenerator(email, senha);
             authSession.push(authSessionHash);
             sessionStorage.setItem("authSession", JSON.stringify(authSession))
 
@@ -43,7 +44,6 @@ function testLogin(emailRef, passwordRef) {
         for (let index = 0; index < database.length; index++) {
             if (emailRef === database[index].email &&
                 passwordRef === database[index].senha) {
-                    console.log("Credenciais válidas");
                     return true;
             }            
         }
@@ -67,8 +67,7 @@ function authHashGenerator(emailRef, passwordRef) {
             id = database[index].id;
         }
     }
-    console.log(id);
-    return id + emailRef + passwordRef;
+    return md5(id + emailRef + passwordRef);
 }
 
 function errorMsg(messageRef) {

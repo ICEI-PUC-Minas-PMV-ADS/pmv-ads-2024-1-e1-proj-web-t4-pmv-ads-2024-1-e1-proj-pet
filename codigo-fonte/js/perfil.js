@@ -14,19 +14,15 @@ document.addEventListener("DOMContentLoaded", function() {
     let idAuthentication;
     let user;
 
-    console.log("antes do for");
     for (let index = 0; index < authentication.length; index++) {
         if (authenticationHash === authentication[index].hash) {
             idAuthentication = authentication[index].id;
-            console.log(idAuthentication);
             break;
         }
     }
-    console.log("antes do for 2");
     for (let index = 0; index < database.length; index++) {
         if (idAuthentication === database[index].id) {
             user = database[index];
-            console.log(user);
             break;
         }
     }
@@ -47,8 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const radiusServiceValue = document.querySelector("#radius-service");
     const neighborhoodValue = document.querySelector("#neighborhood");
 
-    
-    profilePicture.setAttribute("src", user.foto);
+    if (user.foto === "") {
+        profilePicture.setAttribute("src", "images/user-circle.png");
+    } else {
+        profilePicture.setAttribute("src", user.foto);
+    }
     title.textContent = `${user.nome} ${user.sobrenome}`;
     btnTop.innerHTML = "Editar";
     favoriteIcon.setAttribute("style", "display: none")

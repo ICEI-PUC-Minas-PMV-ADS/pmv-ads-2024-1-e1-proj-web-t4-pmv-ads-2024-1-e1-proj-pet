@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 id: id,
                 hash: md5(id + email + senha)
             };
+
             authentication.push(entryDataAuthentication);
             localStorage.setItem("authentication", JSON.stringify(authentication));
 

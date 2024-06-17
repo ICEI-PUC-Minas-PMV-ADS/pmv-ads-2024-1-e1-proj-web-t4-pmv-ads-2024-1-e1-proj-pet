@@ -3,6 +3,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnProfilePic = document.querySelector("#btn-dropdown");
     const dropdownContent = document.querySelector("#dropdown");
 
+    
+    if (getAuthenticationHash(authSession)) {
+        const user = getUser(database, authentication, authSession);
+        showProfilePic(user);
+    } else {
+        hideProfilePic();
+    }
+
     btnProfilePic.addEventListener("click", function() {
         dropdownContent.classList.toggle("show-content");
     });
@@ -11,11 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
         dropdownContent.classList.remove("show-content");
     });
 
-    if (getAuthenticationHash(authSession)) {
-        showProfilePic();
-    } else {
-        hideProfilePic();
-    }
 
     logout.addEventListener("click", function() {
         sessionStorage.clear();
@@ -33,13 +36,38 @@ function getAuthenticationHash(authSession) {
     }
 }
 
-function showProfilePic() {
+function getUser(database, authentication, authSession) {
+    const authenticationHash = getAuthenticationHash(authSession);
+    let idUser, user;
+    for (let index = 0; index < authentication.length; index++) {
+        if (authenticationHash === authentication[index].hash) {
+            idUser = authentication[index].id;
+            break;
+        }
+    }
+
+    for (let index = 0; index < database.length; index++) {
+        if (idUser === database[index].id) {
+            user = database[index];
+            break;
+        }
+    }
+    return user;
+}
+
+function showProfilePic(user) {
     const registerContainer = document.querySelector("#register-container");
     const loginContainer = document.querySelector("#login-container");
     const divIconProfile = document.querySelector(".icon-profile");
+    const headerProfilePic = document.querySelector("#header-profile-pic");
     registerContainer.setAttribute("style", "display: none");
     loginContainer.setAttribute("style", "display: none");
     divIconProfile.setAttribute("style", "display: block");
+    if(user.foto === "") {
+        headerProfilePic.setAttribute("src", "images/user-circle.png");
+    } else {
+        headerProfilePic.setAttribute("src", user.foto);
+    }
 }
 
 function hideProfilePic() {

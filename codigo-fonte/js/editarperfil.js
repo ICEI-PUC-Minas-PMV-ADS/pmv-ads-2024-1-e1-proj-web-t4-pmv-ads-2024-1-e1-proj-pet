@@ -48,16 +48,25 @@ document.addEventListener("DOMContentLoaded", function() {
     const dogOption = document.querySelector("#dog-option");
     const birdOption = document.querySelector("#bird-option");
     const btnPicture = document.querySelector("#btn-picture");
+    const fileInput = document.querySelector("#btn-input-file");
     const btnCancel = document.querySelector("#btn-cancel");
     const btnConfirm = document.querySelector("#btn-confirm");
     const btnEdit = document.querySelector("#btn-edit");
     const btnProfile = document.querySelector("#btn-profile");
     const checkboxes = document.querySelectorAll(`input[type="checkbox"]`);
     let checkboxesState = [];
+    let profPicture;
+
+    $("#tel-field").mask("(00) 00000-0000");
+    $("#postal-code-field").mask("00000-000");
 
     setFields(true);
 
-    profilePicture.setAttribute("src", user.foto);
+    if (user.foto === "") {
+        profilePicture.setAttribute("src", "images/user-circle.png");
+    } else {
+        profilePicture.setAttribute("src", user.foto);
+    }
     nameField.value = user.nome;
     lastNameField.value = user.sobrenome;
     addressField.value = user.endereco;
@@ -114,6 +123,23 @@ document.addEventListener("DOMContentLoaded", function() {
         birdOption.checked = true;
     }
 
+    btnPicture.addEventListener("click", function() {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener("change", function() {
+        const file = fileInput.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const photoBase64String = event.target.result;
+                profilePicture.setAttribute("src", photoBase64String);
+                profPicture = photoBase64String;
+            }
+            reader.readAsDataURL(file);
+        }
+    });
+
     petSitterOption.addEventListener("click", function() {
         if(petSitterOption.checked) {
             priceDayField.disabled = false;
@@ -160,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
         btnConfirm.setAttribute("style", "display: block");
         btnCancel.setAttribute("style", "display: block");
         btnPicture.setAttribute("style", "display: block");
-    })
+    });
 
     btnProfile.addEventListener("click", function() {
         window.location.href = "perfil.html";
@@ -186,6 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btnConfirm.addEventListener("click", function() {
         setFields(true);
 
+        user.foto = profPicture;
         user.nome = nameField.value;
         user.sobrenome = lastNameField.value;
         user.endereco = addressField.value;
@@ -196,6 +223,7 @@ document.addEventListener("DOMContentLoaded", function() {
         user.telefone = telField.value;
         user.estado = stateField.value;
         user.raioAtendimento = serviceRadiusField.value;
+        user.serPetSitter = petSitterOption.checked;
         user.sobreMim = aboutMeField.value;
         user.instagram = instagramField.value;
         user.facebook = facebookField.value;
@@ -211,6 +239,8 @@ document.addEventListener("DOMContentLoaded", function() {
         btnConfirm.setAttribute("style", "display: none");
         btnCancel.setAttribute("style", "display: none");
         btnPicture.setAttribute("style", "display: none");
+
+        location.reload();
 
     });
 

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let index = 0; index < database.length; index++) {
             const authenticationHash = {
                 id: index + 1,
-                hash: md5(database[index].id + database[index].email + database[index].senha)
+                hash: md5(database[index].id + database[index].email + database[index].senhaHash)
             }
             authentication.push(authenticationHash);
         }

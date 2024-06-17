@@ -29,7 +29,7 @@
             <a href="sobre.html" target="_self">Sobre</a>
           </div>
           <div class="icon-profile">
-            <button id="btn-dropdown"><img src="images/user-circle.png" alt="Foto do perfil"></button>
+            <button id="btn-dropdown"><img id="header-profile-pic" src="" alt="Foto do perfil"></button>
             <div id="dropdown" class="dropdown-content">
               <a href="perfil.html">Perfil</a>
               <a id="logout" href="#">Logout</a>
@@ -45,7 +45,10 @@
         <div id="profile-wrapper">
           <div id="profile-picture">
             <img id="profile-pic" src="" alt="Foto de perfil" />
-            <button id="btn-picture" type="button">Editar</button>
+            <button id="btn-picture" type="button">
+              Editar
+              <input type="file" name="btn-input-file" id="btn-input-file" accept=".png, .jpg, .jpeg">
+            </button>
           </div>
           <div class="profile-infos">
             <input id="name-field" type="text" placeholder="Nome"/>
@@ -180,8 +183,9 @@
       </div>
     </footer>
 
+    <script src="js/lib/jquery-3.7.1.js"></script>
+    <script src="js/lib/jquery.mask.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/editarperfil.js"></script>
-    <script src="teste.js"></script>
   </body>
 </html>

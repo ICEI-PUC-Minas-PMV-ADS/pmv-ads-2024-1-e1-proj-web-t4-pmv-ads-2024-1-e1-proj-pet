@@ -45,6 +45,10 @@ h2 {
   cursor: pointer;
 }
 
+#btn-input-file {
+  display: none;
+}
+
 .profile-infos {
   max-width: 285px;
   width: 100%;
