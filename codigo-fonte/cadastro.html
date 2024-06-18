@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
@@ -8,80 +8,98 @@
     <link rel="stylesheet" href="css/lib/bootstrap.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/cadastro.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="container">
-        <img src="images/logoheader.png" alt="Logo" />
+      <nav class="container">
+        <a href="index.html">
+          <img src="images/logoheader.png" alt="Logo" />
+        </a>
         <div class="header-links">
-            <div class="links-container">
+          <div class="links-container">
             <a href="index.html" target="_self">Home</a>
-            </div>
-            <div class="links-container">
+          </div>
+          <div class="links-container">
             <a href="buscar.html" target="_self">Busca</a>
-            </div>
-            <div id="register-container" class="links-container">
-            <a id="register-link" href="cadastro.html" target="_self">Cadastro</a>
-            </div>
-            <div id="login-container" class="links-container">
+          </div>
+          <div id="register-container" class="links-container">
+            <a id="register-link" href="cadastro.html" target="_self"
+              >Cadastro</a
+            >
+          </div>
+          <div id="login-container" class="links-container">
             <a id="login-link" href="login.html" target="_self">Login</a>
-            </div>
-            <div class="links-container">
+          </div>
+          <div class="links-container">
             <a href="sobre.html" target="_self">Sobre</a>
-            </div>
+          </div>
         </div>
-        </nav>
+      </nav>
     </header>
 
     <main>
-        <div class="section form">
-            <form id="cadastroForm">
-                <h1>Cadastro</h1>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="nome" placeholder="Nome"/>
-                    <p id="error-name"></p>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="E-mail"/>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="senha" placeholder="Senha"/>
-                    <img id="show-password" src="images/eye.svg" alt="">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirmar senha"/>
-                    <img id="show-confirm-password" src="images/eye.svg" alt="">
-                    <p id="error-password"></p>
-                </div>
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
-            </form>
-        </div>
+      <div class="section form">
+        <form id="cadastroForm">
+          <h1>Cadastro</h1>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="nome"
+              placeholder="Nome"
+            />
+            <p id="error-name"></p>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              id="senha"
+              placeholder="Senha"
+            />
+            <img id="show-password" src="images/eye.svg" alt="" />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              id="confirmarSenha"
+              placeholder="Confirmar senha"
+            />
+            <img id="show-confirm-password" src="images/eye.svg" alt="" />
+            <p id="error-password"></p>
+          </div>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+      </div>
     </main>
 
     <footer>
-        <div class="footer-wrapper">
-            <p>© Copyright 2024 Pet in a Flat</p>
-            <div class="footer-social">
-                <h3>Sigam-nos em nossa redes sociais</h3>
-                <div class="footer-links">
-                    <a href="#">
-                        <img
-                            src="images/facebook.png"
-                            alt="Logo Facebook"
-                        />
-                    </a>
-                    <a href="#">
-                        <img
-                            src="images/instagram.png"
-                            alt="Logo Instagram"
-                        />
-                    </a>
-                </div>
-            </div>
+      <div class="footer-wrapper">
+        <p>© Copyright 2024 Pet in a Flat</p>
+        <div class="footer-social">
+          <h3>Sigam-nos em nossa redes sociais</h3>
+          <div class="footer-links">
+            <a href="#">
+              <img src="images/facebook.png" alt="Logo Facebook" />
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" alt="Logo Instagram" />
+            </a>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
     <script src="db/pet_sitters.js"></script>
     <script src="js/cadastro.js"></script>
-</body>
+  </body>
 </html>
