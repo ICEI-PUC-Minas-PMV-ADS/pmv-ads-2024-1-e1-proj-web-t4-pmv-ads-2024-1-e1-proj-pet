@@ -40,6 +40,8 @@ header nav {
 
 nav > img {
   display: block;
+  height: 130px;
+  width: 130px;
 }
 
 h1,
