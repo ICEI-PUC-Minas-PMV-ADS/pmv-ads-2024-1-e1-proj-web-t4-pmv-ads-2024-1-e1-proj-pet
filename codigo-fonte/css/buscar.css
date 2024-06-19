@@ -85,6 +85,11 @@ section {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.service-option:last-child {
+  margin-bottom: 0;
 }
 
 #services p {
@@ -94,6 +99,7 @@ section {
   display: flex;
   justify-content: start;
   align-items: center;
+  margin: 0;
 }
 
 #services input[type="checkbox"] {
@@ -237,7 +243,7 @@ section {
   }
 
   .service-option {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 
