@@ -185,3 +185,73 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  header,
+  footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links-container {
+    margin: 10px 0;
+  }
+
+  .form {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .form .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form input,
+  .form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .global-section {
+    flex-direction: column;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  #services {
+    padding: 20px;
+  }
+
+  .service-option {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #map {
+    height: 300px;
+  }
+
+  .card-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-photo img {
+    width: 100px;
+    height: 100px;
+  }
+}
