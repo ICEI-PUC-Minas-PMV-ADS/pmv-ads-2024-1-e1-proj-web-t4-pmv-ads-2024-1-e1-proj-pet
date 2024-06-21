@@ -1,26 +1,46 @@
+const database = JSON.parse(localStorage.getItem("database"));
+const authentication = JSON.parse(localStorage.getItem("authentication"));
+const authSession = JSON.parse(sessionStorage.getItem("authSession"));
+
 document.addEventListener("DOMContentLoaded", function () {
-    const form_recuperar  = document.getElementById("form_recuperar");
+    const form_recuperar = document.querySelector("#form_recuperar");
+    const emailField = document.querySelector("#email");
 
     form_recuperar.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const email = document.getElementById("email").value;
+        const email = emailField.value;
+        let message = "";
+        
 
-        const cadastroJSON = localStorage.getItem("cadastros");
-
-        if (cadastroJSON) {
-            const cadastros = JSON.parse(cadastroJSON);
-
-            const usuario = cadastros.find(cadastros => cadastros.email === email);
-
-            if (usuario) {
-                alert("E-mail enviado");
-                window.location.href = "index.html";
-            } else {
-                alert("E-mail incorreto. Por favor, tente novamente.");
-              }
+        if (testLogin(email)) {
+            errorMsg("E-mail enviado", true); 
+          
         }
     });
 });
 
+function testLogin(emailRef) {
+    if (emailRef !== "") {
+        for (let index = 0; index < database.length; index++) {
+            if (emailRef === database[index].email) {
+                return true;  
+            }            
+        }
+        message = "E-mail inválido. Por favor, tente novamente."
+        errorMsg(message);
+        console.error(message);
+        return false;
+        
+    } else {
+        message = "Por favor, insira o seu e-mail.";
+        errorMsg(message);
+        console.error(message);
+        return false;
+    }
+}
 
+function errorMsg(messageRef) {
+    const errorText = document.querySelector("#email-error");
+    errorText.innerHTML = messageRef;
+}

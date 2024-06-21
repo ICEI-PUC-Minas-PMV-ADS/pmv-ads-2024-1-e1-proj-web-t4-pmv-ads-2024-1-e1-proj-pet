@@ -46,6 +46,7 @@ p#login-error {
   top: -2.5rem;
   font-size: .8rem;
   color: red;
+  font-size: 20px;
 }
 
 button {
