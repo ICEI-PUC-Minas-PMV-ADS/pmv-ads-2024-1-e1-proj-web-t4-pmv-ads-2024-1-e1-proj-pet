@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
 
         if (testLogin(email)) {
-            errorMsg("E-mail enviado", true); 
+            errorMsg("E-mail enviado.", true); 
           
         }
     });
