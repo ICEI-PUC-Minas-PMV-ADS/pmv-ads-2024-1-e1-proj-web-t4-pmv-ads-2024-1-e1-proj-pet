@@ -147,13 +147,17 @@ label {
   height: 40px;
   border: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-  margin-bottom: 20px;
 }
 
-.social-media-wrapper > img {
+.social-media-wrapper {
   position: relative;
-  top: -55px;
-  left: 450px;
+  margin-bottom: 30px;
+}
+
+.social-media-logo {
+  position: absolute;
+  top: 5px;
+  right: 30px;
 }
 
 #pricing {
@@ -322,9 +326,9 @@ input[type="button"] {
     height: 200px;
   }
 
-  .social-media-wrapper > img {
-    top: -45px;
-    left: 90%;
+  .social-media-logo {
+    top: 5px;
+    right: 30px;
   }
 
   #pricing {
