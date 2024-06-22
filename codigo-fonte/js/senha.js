@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (testLogin(email)) {
             errorMsg("E-mail enviado.", true); 
-          
         }
     });
 });
@@ -41,6 +40,6 @@ function testLogin(emailRef) {
 }
 
 function errorMsg(messageRef) {
-    const errorText = document.querySelector("#email-error");
+    const errorText = document.querySelector("#email-sent");
     errorText.innerHTML = messageRef;
 }

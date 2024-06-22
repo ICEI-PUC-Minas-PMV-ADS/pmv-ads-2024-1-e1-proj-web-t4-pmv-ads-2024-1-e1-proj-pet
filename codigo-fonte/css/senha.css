@@ -3,7 +3,7 @@ form {
   max-width: 780px;
   margin: 5.6em auto 6.9em auto;
   padding: 10px;
-  border-radius: 0.5px;
+  border-radius: 0.5rem;
   background-color: var(--azul-escuro);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -25,18 +25,23 @@ form p {
   margin-bottom: 3.8rem;
 }
 
-  input {
-    display: center;
-    margin-left: auto;
-    width: 30rem;
-    height: 3.8rem;
-    border: none;
-    margin-bottom: 1.3rem;
-    font-size: 17px;
-  }
+.input-email {
+  position: relative;
+}
 
-  [type="text"],
-  [type="e-mail"] {
+input {
+  display: center;
+  margin-left: auto;
+  width: 30rem;
+  height: 3.8rem;
+  padding: 1rem;
+  border: none;
+  margin-bottom: 1.3rem;
+  font-size: 17px;
+}
+
+[type="text"],
+[type="e-mail"] {
   font-size: 0.9rem;
   padding: 1rem;
 }
@@ -54,10 +59,12 @@ button {
   cursor: pointer;
 }
 
-p#email-error {
-  position: relative;
-  top: -0.5rem;
-  position: relative;
-  color: red;
+p#email-sent {
+  width: 100%;
+  position: absolute;
+  top: 4rem;
+  color: var(--preto);
   font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
 }
