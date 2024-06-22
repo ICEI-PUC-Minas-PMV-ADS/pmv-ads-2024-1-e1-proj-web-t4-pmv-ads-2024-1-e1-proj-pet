@@ -2,11 +2,12 @@ const database = JSON.parse(localStorage.getItem("database"));
 const authentication = JSON.parse(localStorage.getItem("authentication"));
 const authenticatedSession = JSON.parse(sessionStorage.getItem("authSession"));
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async function() {
     const authenticationHash = getAuthenticationHash(authenticatedSession);
 
     let idAuthentication;
     let user;
+    const userState = {};
 
     for (let index = 0; index < authentication.length; index++) {
         if (authenticationHash === authentication[index].hash) {
@@ -21,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
             break;
         }
     }
+
+    saveFieldsStates(user, userState);
 
     const profilePicture = document.querySelector("#profile-pic");
     const nameField = document.querySelector("#name-field");
@@ -73,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
     addressField.value = user.endereco;
     cityField.value = user.cidade;
     postalCodeField.value = user.cep;
+    let neighborhood = user.localizacao;
 
     if(user.serPetSitter) {
         petSitterOption.checked = true;
@@ -123,6 +127,19 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         birdOption.checked = true;
     }
+
+    postalCodeField.addEventListener("change", async function() {
+        const postalCodeValue = postalCodeField.value;
+        const getAddress = await getPostalCode(postalCodeValue);
+        if (getAddress) {
+            addressField.value = getAddress.logradouro;
+            neighborhood = getAddress.bairro
+            cityField.value = getAddress.localidade
+            stateField.value = getAddress.uf;
+        } else {
+            console.error("CEP não encontrado!")
+        }
+    })
 
     btnPicture.addEventListener("click", function() {
         fileInput.click();
@@ -206,16 +223,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     btnCancel.addEventListener("click", function() {
         setFields(true);
-
+        loadFieldsStates(userState);
+        profilePicture.setAttribute("src", user.foto);
         // SE OS CHECKBOXES ESTÃO EM ESTADOS DIFERENTES DOS SALVOS, INVERTE
         for (let index = 0; index < checkboxes.length; index++) {
             if(checkboxes[index].checked !== checkboxesState[index]) {
                 checkboxes[index].checked = !checkboxes[index].checked;
             }
         }
-
-        profilePicture.setAttribute("src", user.foto);
-
         btnEdit.setAttribute("style", "display: block");
         btnProfile.setAttribute("style", "display: block");
         btnConfirm.setAttribute("style", "display: none");
@@ -236,6 +251,7 @@ document.addEventListener("DOMContentLoaded", function() {
         user.endereco2 = address2Field.value;
         user.cidade = cityField.value;
         user.cep = postalCodeField.value;
+        user.localizacao = neighborhood;
         user.email = emailField.value;
         user.telefone = telField.value;
         user.estado = stateField.value;
@@ -343,8 +359,68 @@ document.addEventListener("DOMContentLoaded", function() {
         dogOption.disabled = varBool;
         birdOption.disabled = varBool;
     }
+    
+    function saveFieldsStates(user, userState) {
+        userState.email = user.email;
+        userState.foto = user.foto;
+        userState.nome = user.nome;
+        userState.sobrenome = user.sobrenome;
+        userState.telefone = user.telefone;
+        userState.endereco = user.endereco;
+        userState.endereco2 = user.endereco2;
+        userState.cidade = user.cidade;
+        userState.estado = user.estado;
+        userState.cep = user.cep;
+        userState.serPetSitter = user.serPetSitter;
+        userState.raioAtendimento = user.raioAtendimento;
+        userState.sobreMim = user.sobreMim;
+        userState.custo = user.custo;
+        userState.custo2 = user.custo2;
+        userState.anosExp = user.anosExp;
+        userState.instagram = user.instagram;
+        userState.facebook = user.facebook;
+        userState.twitter = user.twitter;
+        userState.localizacao = user.localizacao;
+    }
 
+    function loadFieldsStates(userState) {
+        emailField.value = userState.email;
+        nameField.value = userState.nome;
+        lastNameField.value = userState.sobrenome;
+        telField.value = userState.telefone;
+        addressField.value = userState.endereco;
+        address2Field.value = userState.endereco2;
+        cityField.value = userState.cidade;
+        stateField.value = userState.estado;
+        postalCodeField.value = userState.cep;
+        serviceRadiusField.value = userState.raioAtendimento;
+        aboutMeField.value = userState.sobreMim;
+        priceDayField.value = userState.custo;
+        price2DaysField.value = userState.custo2;
+        yearsExpField.value = userState.anosExp;
+        instagramField.value = userState.instagram;
+        facebookField.value = userState.facebook;
+        twitterField.value = userState.twitter;
+        neighborhood = userState.localizacao;
+    }
 });
+
+async function getPostalCode(postalCodeRef) {
+    try {
+        const response = await fetch(`https://viacep.com.br/ws/${postalCodeRef}/json/`);
+        if (!response.ok) {
+            throw new Error('Erro ao buscar endereço');
+        }
+        const data = await response.json();
+        if (data.erro) {
+            throw new Error('CEP não encontrado');
+        }
+        return data;
+    } catch (error) {
+        console.error('Erro:', error);
+        return null;
+    }
+}
 
 function getAuthenticationHash(authenticatedSession) {
     if (authenticatedSession !== null) {
