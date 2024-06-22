@@ -1,6 +1,6 @@
 const database = JSON.parse(localStorage.getItem("database"));
 const authentication = JSON.parse(localStorage.getItem("authentication"));
-const authSession = JSON.parse(sessionStorage.getItem("authSession"));
+const authenticatedSession = JSON.parse(sessionStorage.getItem("authSession"));
 
 $('.calendar').datepicker({
     language: "pt-BR",
@@ -9,7 +9,7 @@ $('.calendar').datepicker({
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const authenticationHash = getAuthenticationHash(authSession);
+    const authenticationHash = getAuthenticationHash(authenticatedSession);
 
     let idAuthentication;
     let user;
@@ -100,10 +100,10 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 });
 
-function getAuthenticationHash(authSession) {
-    if (authSession !== null) {
-        for (let index = 0; index < authSession.length; index++) {
-            return authSession[index];
+function getAuthenticationHash(authenticatedSession) {
+    if (authenticatedSession !== null) {
+        for (let index = 0; index < authenticatedSession.length; index++) {
+            return authenticatedSession[index];
         }
     } else {
         return false;

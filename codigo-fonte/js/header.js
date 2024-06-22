@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const dropdownContent = document.querySelector("#dropdown");
 
     
-    if (getAuthenticationHash(authSession)) {
-        const user = getUser(database, authentication, authSession);
+    if (getAuthenticationHash(authenticatedSession)) {
+        const user = getUser(database, authentication, authenticatedSession);
         showProfilePic(user);
     } else {
         hideProfilePic();
@@ -26,18 +26,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function getAuthenticationHash(authSession) {
-    if (authSession !== null) {
-        for (let index = 0; index < authSession.length; index++) {
-            return authSession[index];
+function getAuthenticationHash(authenticatedSession) {
+    if (authenticatedSession !== null) {
+        for (let index = 0; index < authenticatedSession.length; index++) {
+            return authenticatedSession[index];
         }
     } else {
         return false;
     }
 }
 
-function getUser(database, authentication, authSession) {
-    const authenticationHash = getAuthenticationHash(authSession);
+function getUser(database, authentication, authenticatedSession) {
+    const authenticationHash = getAuthenticationHash(authenticatedSession);
     let idUser, user;
     for (let index = 0; index < authentication.length; index++) {
         if (authenticationHash === authentication[index].hash) {
