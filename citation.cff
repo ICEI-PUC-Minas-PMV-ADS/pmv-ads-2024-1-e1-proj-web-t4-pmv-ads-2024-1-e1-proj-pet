@@ -1,0 +1,22 @@
+message: Please cite this software using these metadata.
+title: Pet in a Flat
+authors:
+  - family-names: Cavalcanti Moreira Soares
+    given-names: Ana Cristina
+  - family-names: Soares Kutschera
+    given-names: Felipe
+  - family-names: Kelly Santos
+    given-names: Grace
+  - family-names: Sartini da Silva
+    given-names: Vinicius
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Rodrigo Costa
+    given-names: Marco
+keywords:
+  - Pets
+  - Cuidados
+  - Animais de estimação
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet
+version: 1.0.0
+date-released: 2024-06-23

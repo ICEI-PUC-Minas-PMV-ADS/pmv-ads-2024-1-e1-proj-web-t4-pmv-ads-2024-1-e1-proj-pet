@@ -36,38 +36,6 @@ Para o desenvolvimento de uma plataforma web de qualidade e bem estrutura, é ne
 </tbody>
 </table>
 
-<table>
-<tbody>
-<tr align=center>
-<th colspan="2">Perfil: Administrador da plataforma </th>
-</tr>
-<tr>
-<td width="150px"><b>Descrição</b></td>
-<td width="600px">Responsável pela manutenção e gerenciamento da plataforma, garantindo que o sistema funcione corretamente e ofereça uma experiência segura e satisfatória para tutores e pet sitters.</td>
-</tr>
-<tr>
-<td><b>Necessidades</b></td>
-<td>Ferramentas de monitoramento e gerenciamento de usuários e transações; Capacidade de responder a questões de suporte e manter a integridade da plataforma; Análise de dados para melhorar e adaptar continuamente a plataforma às necessidades dos usuários.</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<tbody>
-<tr align=center>
-<th colspan="2">Perfil: Dono da plataforma (Clinte) </th>
-</tr>
-<tr>
-<td width="150px"><b>Descrição</b></td>
-<td width="600px">Este usuário tem interesse direto no sucesso operacional e financeiro da plataforma que acompanha a gestão de indicadores e resultados da plataforma.</td>
-</tr>
-<tr>
-<td><b>Necessidades</b></td>
-<td>Funcionalidades que atendam às demandas do mercado de pet sitting, baseando-se em pesquisa e análise de dados; Interface intuitiva e atraente para usuários (tutores e pet sitters) e fácil de gerenciar para o administrador; Relatórios e analytics para monitorar o desempenho da plataforma, preferências dos usuários, e eficácia das funcionalidades implementadas; Segurança de dados e transações financeiras, para proteger as informações dos usuários e garantir transações seguras.</td>
-</tr>
-</tbody>
-</table>
-
 ## Histórias de Usuários
 
 No desenvolvimento da plataforma web Pet in a flat, é necessário incluir as descrições simplificadas das funcionalidades que serão oferecidas pelo sistema. Cada história de usuário descreve uma parte do comportamento esperado do sistema, focando nas necessidades e nos objetivos do usuário ao interagir com a plataforma. Para comunicar e priorizar requisitos do sistema, garantindo que o produto final atenda às necessidades dos usuários, foi adotada a ferramenta de gestão ágil, conforme especificado na tabela abaixo.
@@ -78,8 +46,6 @@ No desenvolvimento da plataforma web Pet in a flat, é necessário incluir as de
 | Pet sitter               | Registrar-me na plataforma e criar um perfil detalhado, incluindo minhas habilidades, experiências e tipos de animais que prefiro cuidar. | Aumentar minha visibilidade para tutores potenciais e obter mais oportunidades de trabalho. |
 | Tutor de pet             | Avaliar o pet sitter com base na qualidade do serviço prestado.                            | Contribuir para a comunidade, fornecendo feedback que ajudará outros tutores a tomarem decisões informadas. |
 | Pet sitter               | Receber avaliações dos tutores para construir minha reputação na plataforma.               | Aumentar minha credibilidade e atrair mais clientes.                                 |
-| Administrador da plataforma | Revisar e moderar avaliações para assegurar autenticidade e relevância.                    | Manter a confiança e a integridade das avaliações, garantindo uma comunidade segura e confiável. |
-| Dono da Plataforma (Cliente) | Gerenciar eficazmente a plataforma e garantir a qualidade e satisfação do serviço.           | Assegurar a melhor experiência para os usuários e o sucesso contínuo do negócio com gestão de indicadores e performance da plataforma e serviço ofertado. |
 
 ## Requisitos do Projeto
 
