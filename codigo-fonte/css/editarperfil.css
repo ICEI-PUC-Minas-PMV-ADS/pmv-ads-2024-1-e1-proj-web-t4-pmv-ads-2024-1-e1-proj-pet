@@ -24,12 +24,23 @@ h2 {
 }
 
 #profile-picture {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
 
-#profile-picture img {
+#delete-profile-pic {
+  display: none;
+  position: absolute;
+  top: -1rem;
+  left: 6.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+#profile-pic {
   width: 128px;
   margin-bottom: 20px;
 }

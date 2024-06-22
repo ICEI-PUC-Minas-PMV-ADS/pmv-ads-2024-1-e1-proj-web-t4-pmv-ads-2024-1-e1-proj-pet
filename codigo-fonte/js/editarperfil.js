@@ -53,9 +53,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnConfirm = document.querySelector("#btn-confirm");
     const btnEdit = document.querySelector("#btn-edit");
     const btnProfile = document.querySelector("#btn-profile");
+    const btnDelProfPic = document.querySelector("#delete-profile-pic");
     const checkboxes = document.querySelectorAll(`input[type="checkbox"]`);
     let checkboxesState = [];
-    let profPicture;
+    let profPicture = "";
 
     $("#tel-field").mask("(00) 00000-0000");
     $("#postal-code-field").mask("00000-000");
@@ -140,6 +141,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    btnDelProfPic.addEventListener("click", function() {
+        profilePicture.setAttribute("src", "images/user-circle.png");
+        profPicture = "images/user-circle.png";
+    });
+
     petSitterOption.addEventListener("click", function() {
         if(petSitterOption.checked) {
             priceDayField.disabled = false;
@@ -176,6 +182,11 @@ document.addEventListener("DOMContentLoaded", function() {
     btnEdit.addEventListener("click", function() {
         setFields(false);
 
+        window.scrollTo({
+            top: 0, 
+            behavior: 'smooth'
+        });
+
         // SALVA OS ESTADOS DOS CHECKBOXES
         for (let index = 0; index < checkboxes.length; index++) {
             checkboxesState[index] = checkboxes[index].checked;
@@ -186,6 +197,7 @@ document.addEventListener("DOMContentLoaded", function() {
         btnConfirm.setAttribute("style", "display: block");
         btnCancel.setAttribute("style", "display: block");
         btnPicture.setAttribute("style", "display: block");
+        btnDelProfPic.setAttribute("style", "display: block");
     });
 
     btnProfile.addEventListener("click", function() {
@@ -202,17 +214,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
+        profilePicture.setAttribute("src", user.foto);
+
         btnEdit.setAttribute("style", "display: block");
         btnProfile.setAttribute("style", "display: block");
         btnConfirm.setAttribute("style", "display: none");
         btnCancel.setAttribute("style", "display: none");
         btnPicture.setAttribute("style", "display: none");
+        btnDelProfPic.setAttribute("style", "display: none");
     });
 
     btnConfirm.addEventListener("click", function() {
         setFields(true);
 
-        user.foto = profPicture;
+        if(profPicture !== "") {
+            user.foto = profPicture;
+        }
         user.nome = nameField.value;
         user.sobrenome = lastNameField.value;
         user.endereco = addressField.value;
@@ -239,6 +256,7 @@ document.addEventListener("DOMContentLoaded", function() {
         btnConfirm.setAttribute("style", "display: none");
         btnCancel.setAttribute("style", "display: none");
         btnPicture.setAttribute("style", "display: none");
+        btnDelProfPic.setAttribute("style", "display: none");
 
         location.reload();
 
