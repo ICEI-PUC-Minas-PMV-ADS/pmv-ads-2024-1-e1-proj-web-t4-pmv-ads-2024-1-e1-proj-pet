@@ -124,6 +124,8 @@ function fillName(nameRef) {
 }
 
 function findEmail(emailRef) {
+    const errorField = document.querySelector("#error-password");
+    idElement = errorField.id;
     if (emailRef !== "") {
         const dbEmail = [];
         for (let index = 0; index < database.length; index++) {
@@ -132,6 +134,8 @@ function findEmail(emailRef) {
         if (!dbEmail.includes(emailRef)) {
             return true;
         } else {
+            message = "E-mail já está cadastrado.";
+            errorMsg(message, idElement)
             return false;
         }
     }
