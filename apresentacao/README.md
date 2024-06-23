@@ -4,16 +4,9 @@
 
 [Apresentação da Etapa 5](/apresentacao/Apresentação%20-%20Etapa%205.pdf)
 
-## Vídeo de apresentação
+## Vídeo de apresentação da aplicação
 
-A equipe também deverá gravar um vídeo de, no máximo, três minutos, com a apresentação da solução. Vocês deverão abrir a aplicação hospedada e apresentar o seu funcionamento. Poderão ser utilizados quaisquer recursos na montagem do vídeo, mas não se esqueçam de mostrar as funcionalidades da aplicação. Seguem as especificações técnicas que devem ser obedecidas na geração do vídeo:
-
-> - tamanho do arquivo limitado a 90Mb
-> - taxa de FPS limitada a 30 quadros por segundo
-> - resolução HD (720p) ou Full HD (1080p)
-> - formato mp4.
-
-[Adicione vídeo de apresentação.]
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-pet/assets/124714518/63190b82-4c7a-454e-8bcc-52cd61fd9c00
 
 ## Hospedagem
 
