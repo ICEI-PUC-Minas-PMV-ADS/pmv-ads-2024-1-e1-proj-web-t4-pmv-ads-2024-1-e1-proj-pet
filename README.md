@@ -35,7 +35,7 @@ O projeto Pet in a Flat tem o propósito de conectar tutores e cuidadores de ani
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+* https://felipekutschera.github.io/Pet-in-a-Flat/
 
 # Código-Fonte
 
