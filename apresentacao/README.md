@@ -2,7 +2,7 @@
 
 ## Conjunto de Slides
 
-[Apresentação da Etapa 5](apresentacao/Apresentação%20-%20Etapa%205.pdf)
+[Apresentação da Etapa 5](/apresentacao/Apresentação%20-%20Etapa%205.pdf)
 
 ## Vídeo de apresentação
 
