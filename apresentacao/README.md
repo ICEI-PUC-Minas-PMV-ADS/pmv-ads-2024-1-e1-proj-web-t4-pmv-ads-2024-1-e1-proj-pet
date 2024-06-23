@@ -2,13 +2,7 @@
 
 ## Conjunto de Slides
 
-[Apresentação - Etapa 5](apresentacao/Apresentação - Etapa 5.pdf)
-
-> **Links Úteis**:
->
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
+[Apresentação da Etapa 5](apresentacao/Apresentação%20-%20Etapa%205.pdf)
 
 ## Vídeo de apresentação
 
